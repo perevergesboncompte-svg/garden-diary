@@ -46,7 +46,7 @@ def species_table():
             continue
         rec = {}
         for line in f.read_text().splitlines():
-            m = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+            m = re.match(r"^- ([A-Za-z][A-Za-z -]*?):\s*(.*)$", line)
             if not m:
                 continue
             k, v = m.group(1).strip(), m.group(2).strip()
@@ -88,7 +88,7 @@ def plants():
             cur = {"name": line[4:].strip(), "fields": {}}
             out.append(cur)
         elif cur is not None:
-            m = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+            m = re.match(r"^- ([A-Za-z][A-Za-z -]*?):\s*(.*)$", line)
             if m:
                 cur["fields"][m.group(1).strip().lower()] = m.group(2).strip()
     return out

@@ -75,7 +75,7 @@ def parse_blocks(text, h_major, h_minor):
             continue
         if cur is None:
             continue
-        m = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+        m = re.match(r"^- ([A-Za-z][A-Za-z -]*?):\s*(.*)$", line)
         if m:
             key = m.group(1).strip().lower()
             cur["fields"][key] = m.group(2).strip()
@@ -123,12 +123,18 @@ def parse_species():
                 cur = (line[3:].strip(), [])
                 sections.append(cur)
             else:
-                m = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+                m = re.match(r"^- ([A-Za-z][A-Za-z -]*?):\s*(.*)$", line)
                 if m:
                     if cur is None:
                         cur = ("", [])
                         sections.append(cur)
                     cur[1].append((m.group(1).strip(), m.group(2).strip()))
+        parsed = sum(len(i) for _, i in sections)
+        bullets = sum(1 for ln in f.read_text().splitlines()
+                      if ln.startswith("- ") and ":" in ln)
+        if parsed < bullets:
+            sys.exit(f"{f.name}: parser kept {parsed} of {bullets} fields. A key the "
+                     f"regex rejects would vanish from the site silently.")
         out[f.stem] = {"slug": f.stem, "name": title, "sections": sections}
     return out
 
@@ -150,7 +156,7 @@ def parse_journal():
             continue
         if cur is None:
             continue
-        fm = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+        fm = re.match(r"^- ([A-Za-z][A-Za-z -]*?):\s*(.*)$", line)
         if fm:
             k = fm.group(1).strip().lower()
             cur["fields"][k] = fm.group(2).strip()
@@ -627,7 +633,7 @@ def build_today(plants):
             flush()
             sec, items = line[3:].strip(), []
         else:
-            fm = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+            fm = re.match(r"^- ([A-Za-z][A-Za-z -]*?):\s*(.*)$", line)
             if fm:
                 items.append((fm.group(1).strip(), fm.group(2).strip()))
             elif line.startswith("- "):
