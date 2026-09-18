@@ -537,7 +537,7 @@ def build_conditions(info, tables):
             "Chance of a night at or below 32 F",
             "Hottest month",
             "Sun needed by cool-season crops",
-            "Growing format", "Bed size", "Container"]
+            "Growing format", "Bed size", "Bed depth", "Bed base", "Container"]
     rows = "".join(f"<dt>{esc(k)}</dt><dd>{esc(info[k])}</dd>"
                    for k in keep if info.get(k))
     parts.append(f"<dl>{rows}</dl>")
