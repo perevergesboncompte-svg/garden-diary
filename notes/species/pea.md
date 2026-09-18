@@ -4,7 +4,7 @@
 - Family: Leguminosae [EcoCrop]
 
 ## Sowing
-- Sowing depth mm: 25 [hand-entered]
+- Sowing depth mm: 25 [NC State Extension gives one inch, which this matches]
 - Row spacing cm: 30 [OpenFarm]
 - Plant spacing cm: 3 [OpenFarm]
 - Days to germination: 7 [PlantVarietyDB, median of 5 varieties]

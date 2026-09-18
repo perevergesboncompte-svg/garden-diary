@@ -4,7 +4,7 @@
 - Family: Cruciferae [EcoCrop]
 
 ## Sowing
-- Sowing depth mm: 13 [hand-entered]
+- Sowing depth mm: 13 [NC State Extension gives a quarter to half an inch for small cultivars, which this matches]
 - Row spacing cm: 10 [OpenFarm]
 - Plant spacing cm: 8 [OpenFarm]
 - Days to germination: 4 [PlantVarietyDB, median of 14 varieties]

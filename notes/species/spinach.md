@@ -4,7 +4,7 @@
 - Family: Chenopodiaceae [EcoCrop]
 
 ## Sowing
-- Sowing depth mm: 13 [hand-entered]
+- Sowing depth mm: 13 [NC State Extension gives quarter to half an inch, which this matches]
 - Row spacing cm: 30 [OpenFarm]
 - Plant spacing cm: 20 [OpenFarm]
 - Days to germination: 7 [PlantVarietyDB, median of 3 varieties]

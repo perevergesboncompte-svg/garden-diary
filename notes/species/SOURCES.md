@@ -104,10 +104,45 @@ Their tables are not.
 Arugula, cilantro, dill and basil are absent from the UC chart, so their files say so
 rather than borrowing a month range from somewhere less local.
 
+## NC State Extension [NC State Extension]
+
+North Carolina Extension Gardener Plant Toolbox, https://plants.ces.ncsu.edu, read
+through its unauthenticated API at `/api/plants/?q=<binomial>`.
+
+Supplies the sowing depths that carry a corroboration note, and lettuce's bolting
+temperature. A land-grant extension service, so it is the most authoritative source
+behind these files.
+
+It earned its place by catching a mistake. The hand-entered sowing depths were about
+to be "corrected" against a single community dataset that gives lettuce 3 mm. NC State
+gives a quarter to three eighths of an inch, which is 6 to 10 mm and matches the hand
+value. Peas, dill, spinach and radish matched too. One unverified source is not a
+reason to overwrite a figure.
+
+NC State grants no reuse licence, so the numbers here are facts cited against a link
+and none of their prose is reproduced. Note for whoever extends this: Virginia
+Cooperative Extension is the one extension service that grants reuse in writing, for
+attribution and with commercial use allowed, so prefer it where it covers the crop.
+
 ## openplantdb [openplantdb]
 
-https://github.com/cwfrazier1/openplantdb, dedicated to the public domain under
-CC0 1.0.
+https://github.com/cwfrazier1/openplantdb, carrying a CC0 1.0 dedication.
+
+**Read this before adding more of it.** An earlier version of this file called that
+CC0 the cleanest licence in the survey. That was wrong, and the licence label says
+nothing about how the data was made. The repository's commit history is twenty
+consecutive "plantdb overnight" commits adding between 30 and 922 plants a night,
+its README still advertises 294 plants while the file holds 19,766, and the README
+carries a self-instruction never to paste text from seed catalogues, which indicates
+what the reference material was. It is bulk-generated, and the compiler's CC0 covers
+only their own compilation.
+
+Its figures are kept here for one reason: they hold up when checked. The germination
+windows agreed with independent hand estimates on seven of fifteen crops exactly and
+sat within a few days on the rest, and the values used are medians across dozens of
+varieties rather than any single row. Individual figures are facts, and facts are not
+copyrightable. But treat this as corroboration, not authority, and prefer an extension
+service wherever one covers the field.
 
 Supplies the germination window, germination soil temperature, and days to harvest
 from seed. Each figure is a median across that crop's varieties within the vegetable

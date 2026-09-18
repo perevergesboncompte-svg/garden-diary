@@ -4,7 +4,7 @@
 - Family: Umbelliferae [EcoCrop]
 
 ## Sowing
-- Sowing depth mm: 6 [hand-entered]
+- Sowing depth mm: 6 [NC State Extension gives a quarter inch, it needs light to germinate, which this matches]
 - Row spacing cm: 30 [OpenFarm]
 - Plant spacing cm: 50 [OpenFarm]
 - Days to germination: 7 [PlantVarietyDB, median of 6 varieties]

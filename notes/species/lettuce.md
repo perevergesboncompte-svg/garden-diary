@@ -4,7 +4,7 @@
 - Family: Compositae [EcoCrop]
 
 ## Sowing
-- Sowing depth mm: 6 [hand-entered]
+- Sowing depth mm: 6 [NC State Extension gives a quarter to three eighths of an inch, which this matches]
 - Row spacing cm: 30 [OpenFarm]
 - Plant spacing cm: 30 [OpenFarm]
 - Days to germination: 4 [PlantVarietyDB, median of 2 varieties]
@@ -18,7 +18,7 @@
 - Field cycle days: 35 to 85 [EcoCrop, whole-field cycle, longer than days to first pick]
 - Optimal temperature F: 54 to 70 [EcoCrop]
 - Absolute temperature F: 41 to 86 [EcoCrop]
-- Bolts above F: 80 [hand-entered]
+- Bolts above F: 70 to 80 F, and dry soil triggers it too [NC State Extension]
 - Killed below F: 32 [EcoCrop]
 - Sun: Partial Sun [OpenFarm]
 - Soil pH: 4.2 to 7.5, optimal 6 to 7 [EcoCrop]
