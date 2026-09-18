@@ -20,7 +20,7 @@
 
 ## Dill
 - Water: 60 mL for the whole 8 in pot, which it shares with 2 other plants. One watering serves them all, so do not repeat it per plant
-- Germination: day 3, expect first sprouts 2026-09-25 to 2026-09-29
+- Germination: day 3, expect first sprouts 2026-09-22 to 2026-09-29
 
 ## Spinach
 - Water: 300 mL, split into two light passes to keep the top 2 cm damp without washing seed

@@ -8,12 +8,13 @@
 - Row spacing cm: 30 [OpenFarm]
 - Plant spacing cm: 3 [OpenFarm]
 - Days to germination: 7 [PlantVarietyDB, median of 5 varieties]
-- Germination window days: 7 to 14 [hand-entered]
+- Germination window days: 7 to 14 [openplantdb, median of 53 varieties, matches the hand-entered estimate]
+- Germination soil temperature F: 45 to 75 [openplantdb, median of 53 varieties]
 - Local sowing months: October to February best, March still works [UC Master Gardeners Orange County]
 - Succession interval days: 18 [hand-entered]
 
 ## Growing
-- Days to harvest: 60 [PlantVarietyDB, median of 5 varieties]
+- Days to harvest from seed: 60 to 70 [openplantdb, median of 53 varieties sown direct, not transplanted]
 - Field cycle days: 60 to 140 [EcoCrop, whole-field cycle, longer than days to first pick]
 - Optimal temperature F: 50 to 75 [EcoCrop]
 - Absolute temperature F: 39 to 86 [EcoCrop]

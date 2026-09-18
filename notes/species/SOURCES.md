@@ -104,16 +104,43 @@ Their tables are not.
 Arugula, cilantro, dill and basil are absent from the UC chart, so their files say so
 rather than borrowing a month range from somewhere less local.
 
+## openplantdb [openplantdb]
+
+https://github.com/cwfrazier1/openplantdb, dedicated to the public domain under
+CC0 1.0.
+
+Supplies the germination window, germination soil temperature, and days to harvest
+from seed. Each figure is a median across that crop's varieties within the vegetable
+and herb categories, matched on botanical binomial, with the sample size stated.
+
+Two reasons it earns a place despite being largely a cultivar catalogue. It is the
+only source anywhere that records whether a days-to-maturity figure counts from seed
+or from transplant, which is the ambiguity that made every other maturity figure
+unusable. And its germination soil temperature is directly actionable: it says
+plainly whether the ground is currently too warm to sow.
+
+Match on binomial and take a median, never a single row. A name search for "lettuce"
+in this file returns Canada Wild Lettuce and Lettuce Leaf Basil, and the first of
+those reports 90 to 150 days to maturity.
+
 ## hand-entered [hand-entered]
 
 Sowing depth, bolting threshold, raised-bed verdict, succession interval and
 repeat-harvest behaviour.
 
-These are hand-entered because no open dataset contains them, which was checked
-across fourteen candidate sources rather than assumed. Beware one trap in this area:
-a dataset that appears to carry rooting depth holds EcoCrop's three soil-depth
-buckets converted to inches, giving three distinct values across 227 crops dressed
-up as one-decimal measurements.
+An earlier version of this file claimed the germination window was hand-entered
+because no open dataset carried it. That was wrong, and openplantdb above now
+supplies it. The hand estimates survived the comparison: seven of fifteen matched the
+sourced median exactly and the rest sat within a few days, but they are sourced now
+rather than asserted.
+
+What remains genuinely hand-entered is the list at the top of this section. The
+bolting threshold is the one field no open dataset carries as a number anywhere, and
+EcoCrop's optimal-maximum temperature is the best available proxy for it.
+
+Beware one trap in this area: a dataset that appears to carry rooting depth holds
+EcoCrop's three soil-depth buckets converted to inches, giving three distinct values
+across 227 crops dressed up as one-decimal measurements.
 
 Treat these as the least certain figures here, and correct them from your own
 results. A measured value from your own bed beats any of these sources, because it
