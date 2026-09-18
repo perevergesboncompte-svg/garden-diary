@@ -9,6 +9,7 @@
 - Plant spacing cm: 75 [OpenFarm]
 - Days to germination: 5 [PlantVarietyDB, median of 10 varieties]
 - Germination window days: 7 to 14 [hand-entered]
+- Local sowing months: October to February best, March still works [UC Master Gardeners Orange County]
 
 ## Growing
 - Days to harvest: 60 [PlantVarietyDB, median of 10 varieties]
@@ -19,7 +20,7 @@
 - Killed below F: 32 [EcoCrop]
 - Sun: Full Sun [OpenFarm]
 - Soil pH: 4.5 to 8.3, optimal 5.4 to 6 [EcoCrop]
-- Crop coefficient: 1.0 [hand-entered, FAO-56 class]
+- Crop coefficient: 1.0 [hand-entered, small-vegetable class after FAO-56 Table 12, cited not copied]
 
 ## Raised beds and containers
 - Root depth: intermediate [INRAE]

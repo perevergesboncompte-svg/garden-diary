@@ -19,6 +19,17 @@ Because the climate type is `frost_free`, all seasonal timing comes from
 - Coldest temperature in the 10-year record: 36.6 F (2015-12-29)
 - Days at or below 32 F, 2015-2024: 0
 - Days at or below 36 F, 2015-2024: 0
+- Chance of a night at or below 36 F: 6% in January, 2% in February, 5% in
+  December, 0% every other month (NOAA 1991-2020 normals, Santa Ana KSNA)
+- Chance of a night at or below 32 F: 0% in every month (same source)
+- Hottest month: September, not July. Santa Ana averages 3.6 days above 90 F in
+  September against 0.8 in July, because that is Santa Ana wind season. Coastal
+  Costa Mesa is milder still, Newport Beach averaging 0.1 such days in September.
+
+The 2015-2024 window this profile's monthly table was built from ran warm, so it
+recorded no night at or below 36 F. The long-run normals above say a cold January
+night is uncommon rather than impossible. Frost is the part that is genuinely
+absent: zero probability in every month, in a 30-year record.
 
 ### Monthly normals (Open-Meteo ERA5, 2015-2024)
 

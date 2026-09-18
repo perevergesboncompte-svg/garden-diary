@@ -9,6 +9,7 @@
 - Plant spacing cm: 10 [OpenFarm]
 - Days to germination: 14 [PlantVarietyDB, median of 2 varieties]
 - Germination window days: 14 to 28 [hand-entered]
+- Local sowing months: October to March [UC Master Gardeners Orange County]
 
 ## Growing
 - Days to harvest: 62 [PlantVarietyDB, median of 2 varieties]
@@ -18,7 +19,7 @@
 - Bolts above F: 85 [hand-entered]
 - Killed below F: 32 [EcoCrop]
 - Soil pH: 5.3 to 8.3, optimal 6 to 7.5 [EcoCrop]
-- Crop coefficient: 0.9 [hand-entered, FAO-56 class]
+- Crop coefficient: 0.9 [hand-entered, small-vegetable class after FAO-56 Table 12, cited not copied]
 
 ## Raised beds and containers
 - Root depth: shallow [INRAE]

@@ -9,6 +9,7 @@
 - Plant spacing cm: 10 [OpenFarm]
 - Days to germination: 7 [PlantVarietyDB, median of 5 varieties]
 - Germination window days: 7 to 14 [hand-entered]
+- Local sowing months: year round, June to September second best [UC Master Gardeners Orange County]
 - Succession interval days: 21 [hand-entered]
 
 ## Growing
@@ -19,7 +20,7 @@
 - Killed below F: 27 [EcoCrop]
 - Sun: Full Sun [OpenFarm]
 - Soil pH: 5 to 8.3, optimal 6 to 6.8 [EcoCrop]
-- Crop coefficient: 1.0 [hand-entered, FAO-56 class]
+- Crop coefficient: 1.0 [hand-entered, small-vegetable class after FAO-56 Table 12, cited not copied]
 
 ## Raised beds and containers
 - Root depth: intermediate [INRAE]

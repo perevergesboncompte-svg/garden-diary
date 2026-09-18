@@ -78,6 +78,32 @@ It is a French market-garden dataset, calibrated to the oceanic climate of
 north-west France, so read its rotation advice as sound and its timing as foreign.
 It omits the perennial culinary herbs, which is why dill has no entry.
 
+## UC Master Gardeners Orange County [UC Master Gardeners Orange County]
+
+Seed Planting Chart, revision U08/2016, at
+https://ucanr.edu/sites/default/files/2025-07/Seed_Planting_Chart_2507_0.pdf
+
+Supplies the local sowing months, and it is the most locally correct source that
+exists for this garden: it is written for Sunset zones 22, 23 and 24 rather than for
+a national average, and it marks each month optimal or merely acceptable.
+
+**Cited, not copied.** UC ANR licenses its material CC BY-NC-ND 4.0, and the
+NoDerivatives term means reformatting their chart into this schema would be a
+derivative work. So the months are recorded here as plain facts against a deep link,
+which is what US law leaves unprotected (Feist v. Rural Telephone: facts are not
+copyrightable, only original selection and arrangement). Their table, their colour
+grid and their prose are not reproduced. Do not paste the chart into this repo, and
+do not mirror the PDF.
+
+The same reasoning governs the other cite-only authorities behind these files: FAO
+Irrigation and Drainage Paper 56, whose Table 12 crop coefficients are reserved and
+non-commercial, and the seed vendors and university extension services, all of which
+assert copyright with no reuse grant. Individual figures taken from them are facts.
+Their tables are not.
+
+Arugula, cilantro, dill and basil are absent from the UC chart, so their files say so
+rather than borrowing a month range from somewhere less local.
+
 ## hand-entered [hand-entered]
 
 Sowing depth, bolting threshold, raised-bed verdict, succession interval and
