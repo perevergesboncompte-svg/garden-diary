@@ -165,7 +165,7 @@ def parse_profile():
     info = {}
     last = None
     for line in text.splitlines():
-        m = re.match(r"^- ([A-Za-z][A-Za-z0-9 _]*?):\s*(.*)$", line)
+        m = re.match(r"^- ([A-Za-z][A-Za-z0-9 _-]*?):\s*(.*)$", line)
         if m:
             last = m.group(1).strip()
             if last.lower() in REDACT_KEYS:

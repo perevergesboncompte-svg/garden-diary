@@ -74,7 +74,7 @@ def profile():
     text = (SKILL / "profile.md").read_text()
     out = {}
     for line in text.splitlines():
-        m = re.match(r"^- ([A-Za-z][A-Za-z0-9 _]*?):\s*(.*)$", line)
+        m = re.match(r"^- ([A-Za-z][A-Za-z0-9 _-]*?):\s*(.*)$", line)
         if m:
             out[m.group(1).strip().lower()] = m.group(2).strip()
     return out
