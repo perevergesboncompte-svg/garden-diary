@@ -224,7 +224,7 @@ def entries_for(plant, entries):
     return hits
 
 
-def page(title, body, nav_here=""):
+def page(title, body, nav_here="", plant=None):
     def link(href, label, key):
         c = ' class="here"' if key == nav_here else ""
         return f'<a href="{href}"{c}>{label}</a>'
@@ -241,7 +241,8 @@ def page(title, body, nav_here=""):
     if slug:
         add = (f'<span class="actions">'
                f'<a class="add" href="{depth}note.html">Add a note</a>'
-               f'<a class="add alt" href="{photo_url(slug)}">Add photos</a>'
+               f'<a class="add alt" href="{photo_url(slug, plant)}">'
+               f'{"Add photos of this" if plant else "Add photos"}</a>'
                f'</span>')
     return f"""<!doctype html>
 <html lang="en"><head>
@@ -397,6 +398,23 @@ def progress_block(p, sp):
             "the imported ones, because they carry this soil and this aspect.</p>")
 
 
+def plant_photos(p):
+    d = ROOT / "photos" / p["slug"]
+    if not d.is_dir():
+        return ""
+    imgs = sorted((f for f in d.iterdir()
+                   if f.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")),
+                  reverse=True)
+    if not imgs:
+        return ""
+    cells = "".join(
+        f'<figure><a href="../photos/{p["slug"]}/{f.name}">'
+        f'<img src="../photos/{p["slug"]}/{f.name}" alt="{esc(p["name"])} on '
+        f'{esc(f.stem[:10])}" loading="lazy"></a>'
+        f'<figcaption>{esc(f.stem[:10])}</figcaption></figure>' for f in imgs)
+    return f"<h2>Photos</h2><div class='gallery'>{cells}</div>"
+
+
 def build_plant(p, entries):
     parts = [f"<h1>{esc(p['name'])} {badge(p['status'])}</h1>",
              f"<p class='meta'>{esc(p['section'])}</p>"]
@@ -412,6 +430,7 @@ def build_plant(p, entries):
         parts.append("<h2>Notes</h2><p>" + esc(p["fields"]["notes"]) + "</p>")
 
     sp = SPECIES.get(p["fields"].get("species", ""))
+    parts.append(plant_photos(p))
     parts.append(progress_block(p, sp))
     if sp:
         parts.append(f"<h2>General {esc(sp['name'].lower())}</h2>")
@@ -439,7 +458,7 @@ def build_plant(p, entries):
             f"<time>{e['date'].strftime('%d %b %Y')}</time></h3>"
             + field_list(e["fields"], e["order"], skip=("plants",))
             + "</article>")
-    return page(p["name"], "".join(parts), "plant")
+    return page(p["name"], "".join(parts), "plant", plant=p["slug"])
 
 
 def build_note(plants, slug):
@@ -689,8 +708,14 @@ def repo_slug():
     return m.group(1) if m else None
 
 
-def photo_url(slug):
-    return f"https://github.com/{slug}/upload/main/inbox"
+def photo_url(slug, plant=None):
+    """Upload straight into the plant's own inbox folder when we know the plant.
+
+    GitHub creates the folder from the path, so a photo taken on the spinach page
+    arrives already attached to that planting with nothing for the user to label.
+    """
+    sub = f"/{plant}" if plant else ""
+    return f"https://github.com/{slug}/upload/main/inbox{sub}"
 
 
 def secrets():
