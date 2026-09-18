@@ -104,6 +104,45 @@ Their tables are not.
 Arugula, cilantro, dill and basil are absent from the UC chart, so their files say so
 rather than borrowing a month range from somewhere less local.
 
+## Mid-Atlantic Commercial Vegetable Recommendations [Mid-Atlantic Commercial Vegetable Recommendations]
+
+2026/2027 edition, Chapter B, Table B-1 "Target Soil pH Values for Vegetable Crops", a
+joint publication of nine land-grant universities and USDA, at
+https://njaes.rutgers.edu/pubs/commercial-veg-rec/soil-nutrient-management.pdf
+
+Supplies the target pH and the lime-below threshold. This is the actionable pH figure:
+EcoCrop's range says what a crop tolerates, this says what to aim for. Most vegetables
+target 6.5. Carrot at 6.0 is the genuine outlier and was re-read in the source because
+it looks like an error.
+
+The caveat recorded on every row matters here specifically, because a raised-bed mix is
+high in organic matter by design: above about 6 percent organic matter, crops wanting
+6.5 tolerate roughly 5.6. So do not chase 6.5 with lime in a compost-rich bed on the
+strength of a mineral-soil number.
+
+Per-crop pH does not exist in print for arugula or dill. Both appear only under generic
+herb guidance, and no number is invented for them here.
+
+## Container depth sources
+
+Three extension services publish per-crop container depth and they disagree, so the
+figures here are ranges with each endpoint attributed: NC State Extension chapter 18
+Table 18-1, University of Maryland "Growing Vegetables in Containers" (2025), and
+Colorado State GardenNotes #724.
+
+The disagreements are real and not resolvable. Carrot runs 8 inches to 12 across the
+three. Lettuce and radish run 4 to 8. Averaging them would invent a number nobody
+published.
+
+One value is excluded rather than reported: NC State prints 20 inches for bok choy,
+against kale at 8 and mustard greens at 4 to 6 in the same table. That is treated as a
+misprint.
+
+All three are quote-and-link. None grants reuse. The claim that the NC State handbook
+is CC BY-NC-SA does not hold up: the page carries no document-level licence, its
+Creative Commons tags are per-photograph, and four of those photos are CC BY-ND, which
+forbids derivatives. Treat its text as all rights reserved and do not reuse its images.
+
 ## MSU Extension [MSU Extension]
 
 "Bolting in spring vegetables", Phillips, Goldy and Brainard, MSU Extension, 20 May

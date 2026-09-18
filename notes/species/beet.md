@@ -20,11 +20,13 @@
 - Absolute temperature F: 41 to 86 [EcoCrop]
 - Killed below F: 27 [EcoCrop]
 - Sun: Full Sun [OpenFarm]
+- Target soil pH: 6.5, lime below 6.2 [Mid-Atlantic Commercial Vegetable Recommendations. In a high-organic raised-bed mix above 6 percent organic matter, crops wanting 6.5 tolerate about 5.6]
 - Soil pH: 5 to 8.3, optimal 6 to 6.8 [EcoCrop]
 - Crop coefficient: 1.0 [hand-entered, small-vegetable class after FAO-56 Table 12, cited not copied]
 
 ## Raised beds and containers
 - Root depth: intermediate [INRAE]
+- Container depth inches: 8 [NC State 8, Colorado State 8]
 - Minimum soil depth inches: 18 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
 - Raised bed: good [hand-entered]
 - Container friendly: 5 of 5 varieties say yes [PlantVarietyDB]

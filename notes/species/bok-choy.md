@@ -25,6 +25,7 @@
 
 ## Raised beds and containers
 - Root depth: shallow [INRAE]
+- Container depth inches: no usable figure [NC State prints 20 inches, an outlier against kale 8 and mustard 4 to 6 in the same table, so treat it as a misprint rather than guidance]
 - Minimum soil depth inches: 12 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
 - Raised bed: good [hand-entered]
 - Container friendly: 1 of 1 varieties say yes [PlantVarietyDB]

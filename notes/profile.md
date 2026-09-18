@@ -96,6 +96,13 @@ winter is the productive season in this climate, this is the site's main limitat
 Nothing fruiting (tomato, pepper, squash, cucumber, basil) will produce well at this
 exposure. Leafy crops, roots, and most herbs will.
 
+Maryland Extension puts cool-season crops at 3 to 6 hours of direct sun and
+warm-season crops at 6 to 8, which places this site inside the range for everything
+currently planted and outside it for anything fruiting. Colorado State disagrees
+upward on individual crops, asking 8 hours for radish, beet, kale and onion against 6
+for lettuce, spinach and chard. Both are extension services and neither is wrong, so
+read 4 to 5 measured hours as comfortable for leafy greens and marginal for roots.
+
 ## Integrations
 
 - tasks_backend: none
