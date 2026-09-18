@@ -62,6 +62,9 @@ by three or four hours, which matters for any bed that only gets morning light. 
 - Bed size: 21 x 23 in each (0.31 m2 each, 0.94 m2 total)
 - Container: 8 in diameter (0.032 m2)
 - Sun window hours: 14-18
+- Sun needed by cool-season crops: 3 to 6 hours (Maryland Extension), so this site's
+  measured 4 to 5 hours is inside the range for leafy greens and marginal for roots,
+  which Colorado State puts at 8 hours
 - Indoor seedling space: unknown
 - Native soil type: unknown
 - Compost system: unknown
