@@ -18,7 +18,7 @@
 - Field cycle days: 35 to 140 [EcoCrop, whole-field cycle, longer than days to first pick]
 - Optimal temperature F: 59 to 77 [EcoCrop]
 - Absolute temperature F: 39 to 90 [EcoCrop]
-- Bolts above F: 75 [hand-entered]
+- Bolts above F: 85 F, it is happy between 50 and 85 [Texas A&M Extension]
 - Killed below F: 32 [EcoCrop]
 - Sun: Full Sun [OpenFarm]
 - Soil pH: 4 to 8, optimal 5.5 to 7.5 [EcoCrop]

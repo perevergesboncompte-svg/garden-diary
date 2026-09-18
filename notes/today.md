@@ -12,7 +12,6 @@
 ## Cilantro
 - Water: 60 mL for the whole 8 in pot, which it shares with 2 other plants. One watering serves them all, so do not repeat it per plant
 - Germination: day 3, expect first sprouts 2026-09-22 to 2026-09-29
-- Heat watch: 6 of the next 6 days clear this crop's 75 F bolting threshold, peaking 80 F on 2026-09-23. Sustained heat is what triggers bolting, not one warm afternoon
 
 ## Parsley
 - Water: 60 mL for the whole 8 in pot, which it shares with 2 other plants. One watering serves them all, so do not repeat it per plant

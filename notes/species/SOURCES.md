@@ -104,6 +104,48 @@ Their tables are not.
 Arugula, cilantro, dill and basil are absent from the UC chart, so their files say so
 rather than borrowing a month range from somewhere less local.
 
+## MSU Extension [MSU Extension]
+
+"Bolting in spring vegetables", Phillips, Goldy and Brainard, MSU Extension, 20 May
+2020. Supplies the vernalisation figures in each crop's Bolting section.
+
+**This source inverts the usual framing, and it matters more here than any other
+figure in these files.** Its opening line: the blame for bolting is usually put on
+warm temperatures, but the true trigger is often the cold. For spinach, lettuce,
+chard, beet, radish, carrot, kale, parsley, bok choy and onion, running to seed is
+caused by accumulated cold at the seedling stage, not by summer heat.
+
+That is a live risk in this garden rather than a curiosity. Winter nights here sit
+around 48 to 50 F, which is inside the vernalising band for most of those crops.
+Winter days reaching the mid sixties partly undo it for the crops with a
+devernalisation threshold, which is why those thresholds are recorded too. Where a
+crop shows "nothing reverses it", accumulated cold is permanent.
+
+Read the two Bolting lines together with the heat threshold above them. They are
+different mechanisms and both are real.
+
+Two things not to repeat. Broccoli bolting from heat is backwards: peer-reviewed work
+(Farnham and Bjorkman 2011, HortScience 46(8):1093) states plainly that cold induction
+of small plants is the cause, and heat instead ruins head quality. And the germination
+tables that circulate under Harrington's name contain misprints, including a lettuce
+maximum of 95 F where the primary source says 85.
+
+## USDA NRCS [USDA NRCS]
+
+North Carolina Irrigation Guide, Table NC3-1, and New Jersey Irrigation Guide, Table
+NJ 3.4. Federal works, so public domain under 17 USC 105 and the only redistributable
+per-crop depth figures that exist.
+
+Supplies the minimum soil depth. Carry its caveat, which is recorded inline on every
+row: this is a minimum effective rooting depth for irrigation scheduling on restricted
+soils, not a recommendation for how deep to build a box.
+
+Depth figures across the literature measure at least three different quantities and
+are not comparable. Lettuce is 6 inches by one NRCS table (top half of the root zone),
+18 by another (minimum effective), 24 unrestricted, 18 to 24 as a maximum-rooting band,
+and over 6 feet in the deepest measurements. None of those is an error. Always label
+which quantity a number is.
+
 ## NC State Extension [NC State Extension]
 
 North Carolina Extension Gardener Plant Toolbox, https://plants.ces.ncsu.edu, read

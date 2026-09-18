@@ -24,6 +24,7 @@
 
 ## Raised beds and containers
 - Root depth: shallow [INRAE]
+- Minimum soil depth inches: 12 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
 - Raised bed: excellent [hand-entered]
 - Container friendly: 0 of 1 varieties say yes [PlantVarietyDB]
 - Soil profile depth: medium (50-150 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
@@ -34,6 +35,10 @@
 - Rotation gap in open ground years: 4 [INRAE]
 - Avoid these soils: sandy, acid [INRAE]
 - Do not follow: Alliaceae [INRAE]
+
+## Bolting
+- Cold is the main trigger: 35 to 64 F, best 48 to 55 F for 4 to 12 weeks vernalises this crop and it then runs to seed [MSU Extension]
+- Warm days undo some of it: above 68 F reverses accumulated cold [MSU Extension]
 
 ## Harvest
 - Repeat harvest: cut 2.5 cm above the base, 3 to 4 regrowths [hand-entered]

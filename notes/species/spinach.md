@@ -26,6 +26,7 @@
 
 ## Raised beds and containers
 - Root depth: shallow [INRAE]
+- Minimum soil depth inches: 18 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
 - Raised bed: good [hand-entered]
 - Container friendly: 2 of 3 varieties say yes [PlantVarietyDB]
 - Soil profile depth: shallow (20-50 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
@@ -35,6 +36,10 @@
 - Rotation gap under cover years: 3 [INRAE]
 - Rotation gap in open ground years: 4 [INRAE]
 - Do not follow: Chenopodiaceae [INRAE]
+
+## Bolting
+- Cold is the main trigger: 32 to 53 F, best 41 to 46 F for 1 to 3 weeks vernalises this crop and it then runs to seed [MSU Extension]
+- Nothing reverses it once vernalised [MSU Extension]
 
 ## Harvest
 - Repeat harvest: outer leaves, 3 to 4 cuts [hand-entered]

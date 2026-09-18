@@ -34,6 +34,10 @@
 - Rotation gap in open ground years: 4 [INRAE]
 - Do not follow: Apiaceae [INRAE]
 
+## Bolting
+- Cold is the main trigger: 32 to 50 F, best 35 to 43 F for 5 to 8 weeks vernalises this crop and it then runs to seed [MSU Extension]
+- Nothing reverses it once vernalised [MSU Extension]
+
 ## Harvest
 - Repeat harvest: outer stalks, 10 to 12 months [hand-entered]
 
