@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+daily.log
+.last-run
+daily.sh
