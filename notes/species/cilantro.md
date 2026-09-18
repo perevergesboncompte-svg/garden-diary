@@ -1,0 +1,42 @@
+# Cilantro
+
+- Botanical name: Coriandrum sativum [EcoCrop]
+- Family: Umbelliferae [EcoCrop]
+
+## Sowing
+- Sowing depth mm: 13 [hand-entered]
+- Row spacing cm: 15 [OpenFarm]
+- Plant spacing cm: 10 [OpenFarm]
+- Days to germination: 7 [PlantVarietyDB, median of 2 varieties]
+- Germination window days: 7 to 14 [hand-entered]
+- Succession interval days: 18 [hand-entered]
+
+## Growing
+- Days to harvest: 16 [PlantVarietyDB, median of 2 varieties, disagrees with EcoCrop's 35 day floor, so this is probably a baby-leaf or early-pick figure]
+- Field cycle days: 35 to 140 [EcoCrop, whole-field cycle, longer than days to first pick]
+- Optimal temperature F: 59 to 77 [EcoCrop]
+- Absolute temperature F: 39 to 90 [EcoCrop]
+- Bolts above F: 75 [hand-entered]
+- Killed below F: 32 [EcoCrop]
+- Sun: Full Sun [OpenFarm]
+- Soil pH: 4 to 8, optimal 5.5 to 7.5 [EcoCrop]
+- Crop coefficient: 0.9 [hand-entered, FAO-56 class]
+
+## Raised beds and containers
+- Root depth: shallow [INRAE]
+- Raised bed: good [hand-entered]
+- Container friendly: 2 of 2 varieties say yes [PlantVarietyDB]
+- Soil profile depth: medium (50-150 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
+
+## Soil and rotation
+- Nutrient demand: moderate [INRAE]
+- Rotation gap under cover years: 3 [INRAE]
+- Rotation gap in open ground years: 4 [INRAE]
+- Do not follow: Apiaceae [INRAE]
+
+## Harvest
+- Repeat harvest: no, resow instead [hand-entered]
+
+## Companions
+- Grows well with: dill [powerplant]
+- Other pairings recorded: 5, all for crops outside this library [powerplant]

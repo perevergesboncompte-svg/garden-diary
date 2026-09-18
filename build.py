@@ -575,6 +575,12 @@ def export_notes():
     for name in ("plants.md", "journal.md"):
         shutil.copy(SKILL / name, NOTES / name)
 
+    sd = SKILL / "species"
+    if sd.is_dir():
+        (NOTES / "species").mkdir(exist_ok=True)
+        for f in sd.glob("*.md"):
+            shutil.copy(f, NOTES / "species" / f.name)
+
     kept = []
     for line in read("profile.md").splitlines():
         m = re.match(r"^- ([A-Za-z][A-Za-z0-9 _]*?):", line)

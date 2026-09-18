@@ -1,0 +1,41 @@
+# Spinach
+
+- Botanical name: Spinacia oleracea [EcoCrop]
+- Family: Chenopodiaceae [EcoCrop]
+
+## Sowing
+- Sowing depth mm: 13 [hand-entered]
+- Row spacing cm: 30 [OpenFarm]
+- Plant spacing cm: 20 [OpenFarm]
+- Days to germination: 7 [PlantVarietyDB, median of 3 varieties]
+- Germination window days: 7 to 14 [hand-entered]
+- Succession interval days: 21 [hand-entered]
+
+## Growing
+- Days to harvest: 25 [PlantVarietyDB, median of 3 varieties, disagrees with EcoCrop's 40 day floor, so this is probably a baby-leaf or early-pick figure]
+- Field cycle days: 40 to 120 [EcoCrop, whole-field cycle, longer than days to first pick]
+- Optimal temperature F: 55 to 68 [EcoCrop]
+- Absolute temperature F: 36 to 81 [EcoCrop]
+- Bolts above F: 75 [hand-entered]
+- Killed below F: 32 [EcoCrop]
+- Sun: Full Sun [OpenFarm]
+- Soil pH: 5.3 to 8.3, optimal 6 to 7.5 [EcoCrop]
+- Crop coefficient: 1.0 [hand-entered, FAO-56 class]
+
+## Raised beds and containers
+- Root depth: shallow [INRAE]
+- Raised bed: good [hand-entered]
+- Container friendly: 2 of 3 varieties say yes [PlantVarietyDB]
+- Soil profile depth: shallow (20-50 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
+
+## Soil and rotation
+- Nutrient demand: moderate [INRAE]
+- Rotation gap under cover years: 3 [INRAE]
+- Rotation gap in open ground years: 4 [INRAE]
+- Do not follow: Chenopodiaceae [INRAE]
+
+## Harvest
+- Repeat harvest: outer leaves, 3 to 4 cuts [hand-entered]
+
+## Companions
+- Other pairings recorded: 6, all for crops outside this library [powerplant]
