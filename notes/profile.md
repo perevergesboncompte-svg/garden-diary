@@ -60,6 +60,8 @@ by three or four hours, which matters for any bed that only gets morning light. 
 
 - Growing format: 3 raised beds plus 1 container
 - Bed size: 21 x 23 in each (0.31 m2 each, 0.94 m2 total)
+- Bed depth: 8 to 10 inches
+- Bed base: unknown, ask whether they sit open on soil or on a hard surface
 - Container: 8 in diameter (0.032 m2)
 - Sun window hours: 14-18
 - Sun needed by cool-season crops: 3 to 6 hours (Maryland Extension), so this site's

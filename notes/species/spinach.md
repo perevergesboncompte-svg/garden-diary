@@ -29,7 +29,7 @@
 - Root depth: shallow [INRAE]
 - Container depth inches: 4 to 8 [NC State 4 to 6, Maryland 8, Colorado State 8]
 - Minimum soil depth inches: 18 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
-- Raised bed: good [hand-entered]
+- Raised bed: fits, needs 4 to 8 inches against your 8 to 10 [hand-entered]
 - Container friendly: 2 of 3 varieties say yes [PlantVarietyDB]
 - Soil profile depth: shallow (20-50 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 

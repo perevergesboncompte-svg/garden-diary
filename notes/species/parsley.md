@@ -26,7 +26,7 @@
 ## Raised beds and containers
 - Root depth: shallow [INRAE]
 - Container depth inches: 8 [Maryland 8]
-- Raised bed: good [hand-entered]
+- Raised bed: fits at 8 inches despite the taproot [hand-entered]
 - Container friendly: 2 of 2 varieties say yes [PlantVarietyDB]
 - Soil profile depth: shallow (20-50 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 

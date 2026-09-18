@@ -26,7 +26,7 @@
 
 ## Raised beds and containers
 - Root depth: shallow [INRAE]
-- Raised bed: good [hand-entered]
+- Raised bed: fits, but it is a resow crop not a long-stay one [hand-entered]
 - Container friendly: 2 of 2 varieties say yes [PlantVarietyDB]
 - Soil profile depth: medium (50-150 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 

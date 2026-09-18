@@ -25,7 +25,7 @@
 - Crop coefficient: 0.9 [hand-entered, small-vegetable class after FAO-56 Table 12, cited not copied]
 
 ## Raised beds and containers
-- Raised bed: fair, needs 30 cm depth [hand-entered]
+- Raised bed: marginal, wants 12 inches for its taproot, so expect a smaller plant [hand-entered]
 - Container friendly: 5 of 6 varieties say yes [PlantVarietyDB]
 - Soil profile depth: shallow (20-50 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 

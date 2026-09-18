@@ -28,7 +28,7 @@
 - Root depth: intermediate [INRAE]
 - Container depth inches: 8 to 12 [Maryland 8, NC State 10, Colorado State 12]
 - Minimum soil depth inches: 12 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
-- Raised bed: needs 30 cm depth [hand-entered]
+- Raised bed: marginal, short or round varieties only (Paris Market, Thumbelina, Chantenay), full-length types need 12 [hand-entered]
 - Container friendly: 14 of 16 varieties say yes [PlantVarietyDB]
 - Soil profile depth: medium (50-150 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 

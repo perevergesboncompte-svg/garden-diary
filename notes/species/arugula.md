@@ -25,7 +25,7 @@
 
 ## Raised beds and containers
 - Root depth: shallow [INRAE]
-- Raised bed: good [hand-entered]
+- Raised bed: fits, shallow rooted [hand-entered]
 - Container friendly: 6 of 7 varieties say yes [PlantVarietyDB]
 - Soil profile depth: shallow (20-50 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 
