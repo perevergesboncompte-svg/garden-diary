@@ -23,7 +23,7 @@ import re
 import shutil
 import sys
 import urllib.parse
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 SKILL = Path(os.path.expanduser("~/.claude/skills/garden"))
@@ -328,6 +328,69 @@ def build_index(plants, entries, info):
     return page("Garden Diary", "".join(parts), "index")
 
 
+def sown_date(v):
+    m = re.match(r"^(\d{2})\.(\d{2})\.(\d{4})$", (v or "").strip())
+    if not m:
+        return None
+    d, mo, y = (int(x) for x in m.groups())
+    return date(y, mo, d)
+
+
+def progress_block(p, sp):
+    """Pair what the reference data predicted against what actually happened.
+
+    The point of a diary is that the second column eventually overrides the first.
+    A figure measured in this garden carries its soil and its marine layer; an
+    imported one does not.
+    """
+    start = sown_date(p["fields"].get("sown"))
+    if not sp or not start:
+        return ""
+    have = {k: v for _, items in sp["sections"] for k, v in items}
+
+    def span(key):
+        raw = (have.get(key) or "").split("[")[0]
+        n = re.findall(r"\d+", raw)
+        return (int(n[0]), int(n[1])) if len(n) >= 2 else None
+
+    rows = []
+    for label, key, actual_key in [
+        ("Germination", "Germination window days", "actual germination"),
+        ("First harvest", "Days to harvest from seed", "actual harvest"),
+    ]:
+        sp_range = span(key)
+        if not sp_range:
+            continue
+        lo = (start + timedelta(days=sp_range[0])).strftime("%d %b")
+        hi = (start + timedelta(days=sp_range[1])).strftime("%d %b")
+        actual = p["fields"].get(actual_key)
+        if actual:
+            a = sown_date(actual) or None
+            shown = pretty_date(actual)
+            note = ""
+            if a:
+                off = (a - start).days - sp_range[0]
+                if off > 1:
+                    note = f" &middot; {off} days later than predicted"
+                elif off < -1:
+                    note = f" &middot; {abs(off)} days earlier than predicted"
+                else:
+                    note = " &middot; as predicted"
+            cell = f"<strong>{esc(shown)}</strong>{note}"
+        else:
+            cell = "<span class='meta'>not recorded yet</span>"
+        rows.append(f"<tr><td>{esc(label)}</td><td>{esc(lo)} to {esc(hi)}</td>"
+                    f"<td>{cell}</td></tr>")
+    if not rows:
+        return ""
+    return ("<h2>Predicted against actual</h2>"
+            "<div class='scroll'><table><thead><tr><th>Stage</th>"
+            "<th>Reference data says</th><th>What happened</th></tr></thead>"
+            f"<tbody>{''.join(rows)}</tbody></table></div>"
+            "<p class='meta'>Once a few of these are filled in, your own dates beat "
+            "the imported ones, because they carry this soil and this aspect.</p>")
+
+
 def build_plant(p, entries):
     parts = [f"<h1>{esc(p['name'])} {badge(p['status'])}</h1>",
              f"<p class='meta'>{esc(p['section'])}</p>"]
@@ -343,6 +406,7 @@ def build_plant(p, entries):
         parts.append("<h2>Notes</h2><p>" + esc(p["fields"]["notes"]) + "</p>")
 
     sp = SPECIES.get(p["fields"].get("species", ""))
+    parts.append(progress_block(p, sp))
     if sp:
         parts.append(f"<h2>General {esc(sp['name'].lower())}</h2>")
         parts.append("<p class='meta'>What this crop needs in general, as opposed "

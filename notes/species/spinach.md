@@ -6,7 +6,8 @@
 ## Sowing
 - Sowing depth mm: 13 [NC State Extension gives quarter to half an inch, which this matches]
 - Row spacing cm: 30 [OpenFarm]
-- Plant spacing cm: 20 [OpenFarm]
+- Plant spacing cm: 20 [OpenFarm, for a full-size single-harvest plant]
+- Cut-and-come-again spacing: 10 cm (4 in) when cutting outer leaves [hand-entered]
 - Days to germination: 7 [PlantVarietyDB, median of 3 varieties]
 - Germination window days: 7 to 14 [openplantdb, median of 28 varieties, matches the hand-entered estimate]
 - Germination soil temperature F: 45 to 70 [openplantdb, median of 28 varieties]

@@ -6,7 +6,8 @@
 ## Sowing
 - Sowing depth mm: 6 [hand-entered]
 - Row spacing cm: 15 [OpenFarm]
-- Plant spacing cm: 20 [OpenFarm]
+- Plant spacing cm: 20 [OpenFarm, for a full-size single-harvest plant]
+- Cut-and-come-again spacing: 15 cm (6 in) for outer-leaf cutting [hand-entered]
 - Days to germination: 4 [PlantVarietyDB, median of 1 varieties]
 - Germination window days: 4 to 8 [openplantdb, median of 23 varieties, hand estimate was 5 to 10]
 - Germination soil temperature F: 50 to 80 [openplantdb, median of 23 varieties]

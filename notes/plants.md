@@ -61,13 +61,57 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   Soil was 21.8 C (71 F) at sowing, at the top of spinach's germination range, so
   expect some gaps and be ready to fill them. Afternoon-only sun is the bolting risk.
 
-### Raised bed 1 — remaining third
-- Status: empty
+### Lettuce
+- Species: lettuce
+- Area: 0.10 m2
+- Type: annual, cut-and-come-again, part sun suits it
+- Container: raised bed 1, remaining third
+- Sown: n/a
+- Status: planned
+- Plan: 4 plants at 15 cm (6 in) cutting spacing, not the 30 cm head spacing. Shear to
+  3 cm for 3 to 4 cuts. Compositae, so no family clash with the spinach already in this
+  bed, and a different pest set.
+- Learnings:
+- Notes: Sow now. October to February is the best window and part sun reduces bolting,
+  which makes this site better for lettuce than a full-sun one.
 
-### Raised bed 2
-- Status: empty
+### Chard
+- Species: chard
+- Area: 0.31 m2
+- Type: biennial grown as cut-and-come-again, the longest crop available here
+- Container: raised bed 2, whole bed
+- Sown: n/a
+- Status: planned
+- Plan: 6 plants at 20 cm (8 in). Pick outer stalks and leave the centre, for 12 to 18
+  months from one sowing. Needs its own bed because it shares Chenopodiaceae with the
+  spinach in bed 1.
+- Learnings:
+- Notes: The highest-value crop for this garden. It fits 8 inches exactly, tolerates
+  part sun, sows year round here, and does not bolt as readily as spinach.
 
-### Raised bed 3
-- Status: empty
+### Arugula
+- Species: arugula
+- Area: 0.20 m2
+- Type: annual, fast, cut-and-come-again
+- Container: raised bed 3, two thirds
+- Sown: n/a
+- Status: planned
+- Plan: broadcast and thin to 10 cm (4 in). Shear to 2.5 cm for 3 to 4 cuts, resow every
+  18 days. Kept with the bok choy so the brassica pests stay in one bed.
+- Learnings:
+- Notes: Fastest reward of anything planned, roughly 21 days to a first cut.
+
+### Bok choy
+- Species: bok choy
+- Area: 0.11 m2
+- Type: annual, outer-leaf harvest
+- Container: raised bed 3, one third
+- Sown: n/a
+- Status: planned
+- Plan: 3 plants at 15 cm (6 in) for outer-leaf cutting. August to October is its local
+  window, so it goes in now rather than later.
+- Learnings:
+- Notes: Watch the cold trigger. Seedlings bolt after a week near 40 F or two weeks near
+  50 F, and January nights here sit at 48 to 50 F, so this is a sow-now-not-December crop.
 
 ## Archived

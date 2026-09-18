@@ -61,7 +61,10 @@ by three or four hours, which matters for any bed that only gets morning light. 
 - Growing format: 3 raised beds plus 1 container
 - Bed size: 21 x 23 in each (0.31 m2 each, 0.94 m2 total)
 - Bed depth: 8 to 10 inches
-- Bed base: unknown, ask whether they sit open on soil or on a hard surface
+- Bed base: lined with landscape fabric or mesh, so water drains but roots stay in the
+  bed. The 8 to 10 inches is the entire root zone, which keeps carrots restricted to
+  short and round varieties and dill marginal. Drainage is not a concern here, so the
+  winter-wet warning in references/socal-frost-free.md applies to the pot, not the beds.
 - Container: 8 in diameter (0.032 m2)
 - Sun window hours: 14-18
 - Sun needed by cool-season crops: 3 to 6 hours (Maryland Extension), so this site's

@@ -6,7 +6,7 @@
 ## Sowing
 - Sowing depth mm: 6 [NC State Extension gives a quarter inch, it needs light to germinate, which this matches]
 - Row spacing cm: 30 [OpenFarm]
-- Plant spacing cm: 50 [OpenFarm]
+- Plant spacing cm: 50 [OpenFarm, for a full-size single-harvest plant]
 - Days to germination: 7 [PlantVarietyDB, median of 6 varieties]
 - Germination window days: 7 to 14 [openplantdb, median of 17 varieties, hand estimate was 10 to 14]
 - Germination soil temperature F: 60 to 70 [openplantdb, median of 17 varieties]
