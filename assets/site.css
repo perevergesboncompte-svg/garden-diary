@@ -1,10 +1,36 @@
 :root {
+  color-scheme: light dark;
   --ink: #21261f;
-  --soft: #6b7566;
+  --soft: #626c5d;
   --line: #dfe3da;
   --bg: #fbfcf9;
   --card: #fff;
   --leaf: #3d6b3a;
+  --measure: 66ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e7eae3;
+    --soft: #a3ad9c;
+    --line: #2f342b;
+    --bg: #131610;
+    --card: #1c201a;
+    --leaf: #8cba86;
+  }
+}
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 10;
+  background: var(--leaf); color: #fff; padding: .6rem 1rem;
+  border-radius: 0 0 7px 0; text-decoration: none; font-weight: 600;
+}
+.skip:focus { left: 0; }
+
+:where(a, button, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--leaf);
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 * { box-sizing: border-box; }
 body {
@@ -51,6 +77,8 @@ main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
 .note-form textarea { resize: vertical; line-height: 1.5; }
 .note-form button { border: 0; cursor: pointer; font: inherit; font-weight: 600;
   justify-self: start; padding: .55rem 1.2rem; }
+h1, h2, h3 { text-wrap: balance; }
+main p, dd { text-wrap: pretty; max-width: var(--measure); }
 h1 { font-size: 1.7rem; margin: 0 0 .3rem; letter-spacing: -.01em; }
 h2 { font-size: 1.05rem; margin: 2.2rem 0 .8rem; text-transform: uppercase;
      letter-spacing: .06em; color: var(--soft); font-weight: 600; }
@@ -71,12 +99,21 @@ p.meta { color: var(--soft); font-size: .87rem; margin: .35rem 0 0; }
   font-size: .74rem; text-transform: uppercase; letter-spacing: .05em;
   font-weight: 650; vertical-align: middle;
 }
-.s-plan { background: #eceff0; color: #5a6570; }
-.s-sown { background: #e6efdd; color: #406127; }
-.s-grow { background: #dcefe2; color: #226b3f; }
-.s-crop { background: #fdf0d2; color: #7d5a10; }
-.s-rest { background: #e9e7f2; color: #514a75; }
-.s-fail { background: #f8e0dd; color: #8a3227; }
+.s-plan { background: #e8eaec; color: #4d5661; }
+.s-sown { background: #dce7f2; color: #1f5480; }
+.s-grow { background: #d9edd5; color: #256b2c; }
+.s-crop { background: #fbeecd; color: #7a5610; }
+.s-rest { background: #e7e5f0; color: #4b446f; }
+.s-fail { background: #f6ddda; color: #8a3227; }
+
+@media (prefers-color-scheme: dark) {
+  .s-plan { background: #2b3038; color: #c3ccd6; }
+  .s-sown { background: #16303f; color: #98c9e8; }
+  .s-grow { background: #1f3a20; color: #a4dd9e; }
+  .s-crop { background: #3a3117; color: #e8cf8e; }
+  .s-rest { background: #2d2a3d; color: #c5bfe6; }
+  .s-fail { background: #3d211d; color: #eaa79e; }
+}
 
 dl { margin: .8rem 0; display: grid; grid-template-columns: 8.5rem 1fr; gap: .35rem .9rem; }
 dt { color: var(--soft); font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; }
@@ -90,11 +127,22 @@ dd { margin: 0; }
 .entry time { color: var(--soft); font-size: .82rem; font-weight: 400; white-space: nowrap; }
 .entry dl { margin: 0; }
 
-table { border-collapse: collapse; width: 100%; font-size: .87rem; margin: .5rem 0 1.5rem; }
-th, td { text-align: left; padding: .42rem .6rem; border-bottom: 1px solid var(--line); }
+.scroll {
+  overflow-x: auto; margin: .5rem 0 1.5rem;
+  border: 1px solid var(--line); border-radius: 9px; background: var(--card);
+}
+.scroll table { margin: 0; }
+.scroll:focus-visible { outline: 2px solid var(--leaf); }
+table { border-collapse: collapse; width: 100%; font-size: .87rem; margin: .5rem 0 1.5rem;
+        font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: .42rem .6rem; border-bottom: 1px solid var(--line);
+         white-space: nowrap; }
+tbody tr:last-child td { border-bottom: 0; }
 th { color: var(--soft); font-weight: 600; font-size: .8rem;
-     text-transform: uppercase; letter-spacing: .04em; }
-tbody tr:hover { background: #f4f7f1; }
+     text-transform: uppercase; letter-spacing: .04em;
+     position: sticky; top: 0; background: var(--card); }
+td + td, th + th { text-align: right; }
+tbody tr:hover { background: color-mix(in srgb, var(--leaf) 7%, transparent); }
 
 footer { border-top: 1px solid var(--line); padding: 1.2rem 1.5rem;
          color: var(--soft); font-size: .82rem; text-align: center; }

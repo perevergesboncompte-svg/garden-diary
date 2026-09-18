@@ -166,7 +166,8 @@ def md_table(rows):
     trs = "".join(
         "<tr>" + "".join(f"<td>{esc(c)}</td>" for c in r) + "</tr>"
         for r in body)
-    return f"<table><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table>"
+    return (f'<div class="scroll" tabindex="0"><table><thead><tr>{th}</tr>'
+            f"</thead><tbody>{trs}</tbody></table></div>")
 
 
 def entries_for(plant, entries):
@@ -204,8 +205,9 @@ def page(title, body, nav_here=""):
 <title>{esc(title)}</title>
 <link rel="stylesheet" href="{depth}site.css">
 </head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header><a class="brand" href="{depth}index.html">Garden Diary</a><nav>{nav}</nav>{add}</header>
-<main>{body}</main>
+<main id="main">{body}</main>
 <footer>Built {date.today().isoformat()} from the garden skill's notes.</footer>
 </body></html>
 """
