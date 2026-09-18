@@ -163,10 +163,19 @@ def parse_journal():
 def parse_profile():
     text = read("profile.md")
     info = {}
+    last = None
     for line in text.splitlines():
         m = re.match(r"^- ([A-Za-z][A-Za-z0-9 _]*?):\s*(.*)$", line)
-        if m and m.group(1).strip().lower() not in REDACT_KEYS:
-            info[m.group(1).strip()] = m.group(2).strip()
+        if m:
+            last = m.group(1).strip()
+            if last.lower() in REDACT_KEYS:
+                last = None
+            else:
+                info[last] = m.group(2).strip()
+        elif last and line.startswith("  ") and line.strip():
+            info[last] += " " + line.strip()
+        elif not line.strip():
+            last = None
     tables = []
     block = []
     for line in text.splitlines():
@@ -524,6 +533,9 @@ def build_conditions(info, tables):
             "Coldest temperature in the 10-year record",
             "Days at or below 32 F, 2015-2024",
             "Days at or below 36 F, 2015-2024",
+            "Chance of a night at or below 36 F",
+            "Chance of a night at or below 32 F",
+            "Hottest month",
             "Growing format", "Bed size", "Container"]
     rows = "".join(f"<dt>{esc(k)}</dt><dd>{esc(info[k])}</dd>"
                    for k in keep if info.get(k))
