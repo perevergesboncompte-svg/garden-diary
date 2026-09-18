@@ -36,6 +36,21 @@ nav a.here { color: var(--ink); font-weight: 600; }
   .add { flex: 1; text-align: center; }
 }
 main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+.note-form { display: grid; gap: 1rem; margin: 1.5rem 0; max-width: 30rem; }
+.note-form label { display: grid; gap: .3rem; font-size: .85rem;
+  color: var(--soft); text-transform: uppercase; letter-spacing: .04em; }
+.note-form select, .note-form textarea {
+  font: inherit; color: var(--ink); background: var(--card);
+  border: 1px solid var(--line); border-radius: 7px; padding: .55rem .7rem;
+  text-transform: none; letter-spacing: 0;
+}
+.note-form select:focus, .note-form textarea:focus {
+  outline: 2px solid var(--leaf); outline-offset: 1px; border-color: var(--leaf);
+}
+.note-form textarea { resize: vertical; line-height: 1.5; }
+.note-form button { border: 0; cursor: pointer; font: inherit; font-weight: 600;
+  justify-self: start; padding: .55rem 1.2rem; }
 h1 { font-size: 1.7rem; margin: 0 0 .3rem; letter-spacing: -.01em; }
 h2 { font-size: 1.05rem; margin: 2.2rem 0 .8rem; text-transform: uppercase;
      letter-spacing: .06em; color: var(--soft); font-weight: 600; }

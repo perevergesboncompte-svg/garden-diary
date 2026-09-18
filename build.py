@@ -193,7 +193,7 @@ def page(title, body, nav_here=""):
     add = ""
     if slug:
         add = (f'<span class="actions">'
-               f'<a class="add" href="{note_url(slug, PLANTS)}">Add a note</a>'
+               f'<a class="add" href="{depth}note.html">Add a note</a>'
                f'<a class="add alt" href="{photo_url(slug)}">Add photos</a>'
                f'</span>')
     return f"""<!doctype html>
@@ -294,6 +294,55 @@ def build_plant(p, entries):
     return page(p["name"], "".join(parts), "plant")
 
 
+def build_note(plants, slug):
+    """A compose form that writes the note here and hands GitHub one click.
+
+    The filename carries a click-time timestamp, so several notes on the same day
+    no longer collide on a single inbox/update.md.
+    """
+    opts = "".join(f"<option>{esc(p['name'])}</option>" for p in plants
+                   if p["status"] not in ("empty", "unknown"))
+    kinds = ["observation", "problem", "identify", "did-something"]
+    kopts = "".join(f"<option>{k}</option>" for k in kinds)
+    body = f"""<h1>Add a note</h1>
+<p class='lede'>Write it here. The button hands it to GitHub already filled in,
+so all that is left is Commit.</p>
+<form id="f" class="note-form">
+  <label>Plant
+    <select id="plant">{opts}<option>Something else</option>
+      <option>The whole garden</option></select></label>
+  <label>Kind
+    <select id="kind">{kopts}</select></label>
+  <label>What happened
+    <textarea id="detail" rows="7" placeholder="4 of the 6 spinach are up. Two have yellow leaf edges."></textarea></label>
+  <button type="submit" class="add">Save to the diary</button>
+  <p class="meta" id="hint"></p>
+</form>
+<p class="meta">Photos go through
+<a href="{photo_url(slug)}">Add photos</a>, which uploads straight into the
+inbox. A note is not required with them, though saying which plant helps.</p>
+<script>
+document.getElementById('f').addEventListener('submit', function (e) {{
+  e.preventDefault();
+  var d = document.getElementById('detail').value.trim();
+  if (!d) {{ document.getElementById('hint').textContent =
+      'Write something first.'; return; }}
+  var n = new Date();
+  var p = function (x) {{ return String(x).padStart(2, '0'); }};
+  var stamp = n.getFullYear() + '-' + p(n.getMonth() + 1) + '-' + p(n.getDate())
+            + '-' + p(n.getHours()) + p(n.getMinutes()) + p(n.getSeconds());
+  var content = 'plant: ' + document.getElementById('plant').value + '\\n'
+              + 'kind: ' + document.getElementById('kind').value + '\\n'
+              + 'logged: ' + n.toISOString() + '\\n\\n' + d + '\\n';
+  var url = 'https://github.com/{slug}/new/main'
+          + '?filename=' + encodeURIComponent('inbox/' + stamp + '.md')
+          + '&value=' + encodeURIComponent(content);
+  window.open(url, '_blank');
+}});
+</script>"""
+    return page("Add a note", body, "note")
+
+
 def build_today(plants):
     """Render notes/today.md, which daily.py regenerates from the forecast."""
     src = NOTES / "today.md"
@@ -382,25 +431,6 @@ def repo_slug():
     return m.group(1) if m else None
 
 
-def note_url(slug, plants):
-    """A GitHub "create new file" link, prefilled with an update template.
-
-    Committing into inbox/ is the write path rather than the issues API, because
-    anonymous API calls are capped at 60/hour per source IP and this machine
-    shares a heavily used corp address. A git pull cannot be rate limited, and it
-    needs no token.
-    """
-    names = ", ".join(p["name"] for p in plants
-                      if p["status"] not in ("empty", "unknown"))
-    body = (f"plant: \nkind: observation\n\n"
-            f"Replace plant with one of: {names}\n"
-            f"kind is one of: observation, problem, identify, did-something\n\n"
-            f"Then write what happened, in plain words. "
-            f"Counts, dates and measurements help.\n")
-    q = urllib.parse.urlencode({"filename": "inbox/update.md", "value": body})
-    return f"https://github.com/{slug}/new/main?{q}"
-
-
 def photo_url(slug):
     return f"https://github.com/{slug}/upload/main/inbox"
 
@@ -459,6 +489,8 @@ def main():
 
     (OUT / "index.html").write_text(build_index(plants, entries, info))
     (OUT / "today.html").write_text(build_today(plants))
+    if repo_slug():
+        (OUT / "note.html").write_text(build_note(plants, repo_slug()))
     (OUT / "diary.html").write_text(build_diary(entries))
     (OUT / "conditions.html").write_text(build_conditions(info, tables))
     for p in plants:
