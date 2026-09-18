@@ -246,11 +246,20 @@ def page(title, body, nav_here=""):
 <link rel="stylesheet" href="{depth}site.css">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
-<header><a class="brand" href="{depth}index.html">Garden Diary</a><nav>{nav}</nav>{add}</header>
+<header><div class="bar"><a class="brand" href="{depth}index.html">Garden Diary</a><nav>{nav}</nav>{add}</div></header>
 <main id="main">{body}</main>
-<footer>Built {date.today().isoformat()} from the garden skill's notes.</footer>
+<footer><div class="bar">Built {date.today().isoformat()} from the garden skill's notes.</div></footer>
 </body></html>
 """
+
+
+def pretty_date(v):
+    """Notes are written DD.MM.YYYY; the site shows one format everywhere."""
+    m = re.match(r"^(\d{2})\.(\d{2})\.(\d{4})$", (v or "").strip())
+    if not m:
+        return v
+    d, mo, y = (int(x) for x in m.groups())
+    return date(y, mo, d).strftime("%d %b %Y")
 
 
 def badge(status):
@@ -294,9 +303,16 @@ def build_index(plants, entries, info):
         for p in ps:
             when = last[p["slug"]]
             meta = []
-            if p["fields"].get("sown"):
-                meta.append("sown " + p["fields"]["sown"])
-            if when:
+            sown_raw = p["fields"].get("sown")
+            if sown_raw:
+                meta.append("sown " + pretty_date(sown_raw))
+                m = re.match(r"^(\d{2})\.(\d{2})\.(\d{4})$", sown_raw.strip())
+                if m:
+                    dd, mm, yy = (int(x) for x in m.groups())
+                    age = (date.today() - date(yy, mm, dd)).days
+                    if age >= 0:
+                        meta.append(f"day {age}")
+            elif when:
                 meta.append("updated " + when.strftime("%d %b %Y"))
             parts.append(
                 f"<a class='card' href='plants/{p['slug']}.html'>"
@@ -315,8 +331,11 @@ def build_index(plants, entries, info):
 def build_plant(p, entries):
     parts = [f"<h1>{esc(p['name'])} {badge(p['status'])}</h1>",
              f"<p class='meta'>{esc(p['section'])}</p>"]
-    parts.append(field_list(p["fields"], p["order"], skip=("status", "notes",
-                                                           "learnings")))
+    shown = dict(p["fields"])
+    if shown.get("sown"):
+        shown["sown"] = pretty_date(shown["sown"])
+    parts.append(field_list(shown, p["order"], skip=("status", "notes",
+                                                     "learnings")))
     if p["fields"].get("learnings"):
         parts.append("<h2>Learnings</h2><p>" +
                      esc(p["fields"]["learnings"]) + "</p>")
@@ -418,7 +437,8 @@ def species_rows(sp, limit=None):
         rows = []
         for k, v in items:
             val, src = cite(v)
-            rows.append(f"<dt>{esc(k)}</dt><dd>{val} {src}</dd>")
+            cls = ' class="dim"' if k in DEMOTE else ""
+            rows.append(f"<dt{cls}>{esc(k)}</dt><dd{cls}>{val} {src}</dd>")
         out.append(f"<dl>{''.join(rows)}</dl>")
         if limit and len(out) >= limit:
             break
@@ -449,6 +469,47 @@ def build_species_index(species):
     return page("Plant knowledge", "".join(parts), "species")
 
 
+ANSWERS = [
+    ("Fits your beds", "Raised bed"),
+    ("Sow in", "Local sowing months"),
+    ("Sow this deep", "Sowing depth mm"),
+    ("Space this far apart", "Plant spacing cm"),
+    ("Up in", "Germination window days"),
+    ("Pick after", "Days to harvest from seed"),
+    ("Runs to seed when", "Bolts above F"),
+    ("Cold makes it bolt at", "Cold is the main trigger"),
+]
+
+UNITS = {"Sowing depth mm": "mm", "Plant spacing cm": "cm",
+         "Row spacing cm": "cm", "Germination window days": "days",
+         "Days to harvest from seed": "days", "Bolts above F": "F",
+         "Container depth inches": "in", "Minimum soil depth inches": "in",
+         "Succession interval days": "days"}
+
+DEMOTE = frozenset({
+    "Minimum soil depth inches", "Soil profile depth", "Field cycle days",
+    "Absolute temperature F", "Days to germination", "Soil pH",
+    "Other pairings recorded", "Container friendly",
+})
+
+
+def answers_block(sp):
+    """Lead with the questions a gardener actually opens the page to ask."""
+    have = {k: v for _, items in sp["sections"] for k, v in items}
+    rows = []
+    for label, key in ANSWERS:
+        if key in have:
+            val, src = cite(have[key])
+            u = UNITS.get(key)
+            if u and re.match(r"^[\d.]+( to [\d.]+)?$", val.strip()):
+                val = f"{val} {u}"
+            rows.append(f"<dt>{esc(label)}</dt><dd>{val} {src}</dd>")
+    if not rows:
+        return ""
+    return ("<div class='answers'><h2>The short answer</h2>"
+            f"<dl>{''.join(rows)}</dl></div>")
+
+
 def build_species(sp, plants):
     mine = [p for p in plants if p["fields"].get("species") == sp["slug"]]
     parts = [f"<h1>{esc(sp['name'])}</h1>"]
@@ -458,6 +519,8 @@ def build_species(sp, plants):
         parts.append(f"<p class='lede'>Growing now: {links}</p>")
     else:
         parts.append("<p class='lede'>Not currently in the garden.</p>")
+    parts.append(answers_block(sp))
+    parts.append("<h2>Everything recorded</h2>")
     parts.append(species_rows(sp))
     return page(sp["name"], "".join(parts), "plant")
 
@@ -538,7 +601,9 @@ def build_conditions(info, tables):
             "Hottest month",
             "Sun needed by cool-season crops",
             "Growing format", "Bed size", "Bed depth", "Bed base", "Container"]
-    rows = "".join(f"<dt>{esc(k)}</dt><dd>{esc(info[k])}</dd>"
+    def human(x):
+        return x.replace("_", " ")
+    rows = "".join(f"<dt>{esc(human(k))}</dt><dd>{esc(human(info[k]))}</dd>"
                    for k in keep if info.get(k))
     parts.append(f"<dl>{rows}</dl>")
     titles = ["Monthly normals", "Measured sun exposure"]

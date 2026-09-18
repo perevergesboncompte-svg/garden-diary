@@ -227,8 +227,9 @@ def main():
             peak_t, peak_v = max(over, key=lambda x: x[1])
             L.append(f"- Heat watch: {len(over)} of the next {len(highs)} days "
                      f"clear this crop's {crop['bolt_f']:.0f} F bolting "
-                     f"threshold, peaking {peak_v:.0f} F on {peak_t}. Sustained "
-                     "heat is what triggers bolting, not one warm afternoon")
+                     f"threshold, peaking {peak_v:.0f} F on {peak_t}. Heat is one "
+                     "of two triggers, and accumulated winter cold is the other, "
+                     "so see the crop's bolting section")
         if wind and wind >= 30:
             L.append(f"- Wind: {wind:.0f} km/h dries containers and shreds "
                      "tender leaves. Check moisture twice today")
