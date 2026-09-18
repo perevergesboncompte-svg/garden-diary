@@ -32,6 +32,7 @@ OUT = ROOT
 NOTES = ROOT / "notes"
 INBOX = ROOT / "inbox"
 PLANTS = []
+SPECIES = {}
 
 REDACT_KEYS = {"latitude", "longitude", "elevation", "photos_path", "tasks_path"}
 
@@ -101,6 +102,35 @@ def parse_plants():
             "key": b["title"].split()[0].lower().strip(",."),
         })
     return plants
+
+
+def parse_species():
+    """Species-level knowledge, one file per crop, each figure carrying a source."""
+    d = SKILL / "species"
+    out = {}
+    if not d.is_dir():
+        return out
+    for f in sorted(d.glob("*.md")):
+        if f.name == "SOURCES.md":
+            continue
+        sections = []
+        cur = None
+        title = f.stem.replace("-", " ").title()
+        for line in f.read_text().splitlines():
+            if line.startswith("# "):
+                title = line[2:].strip()
+            elif line.startswith("## "):
+                cur = (line[3:].strip(), [])
+                sections.append(cur)
+            else:
+                m = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+                if m:
+                    if cur is None:
+                        cur = ("", [])
+                        sections.append(cur)
+                    cur[1].append((m.group(1).strip(), m.group(2).strip()))
+        out[f.stem] = {"slug": f.stem, "name": title, "sections": sections}
+    return out
 
 
 def parse_journal():
@@ -189,6 +219,7 @@ def page(title, body, nav_here=""):
         link(f"{depth}index.html", "Plants", "index"),
         link(f"{depth}diary.html", "Diary", "diary"),
         link(f"{depth}conditions.html", "Conditions", "conditions"),
+        link(f"{depth}knowledge.html", "Knowledge", "species"),
     ])
     slug = repo_slug()
     add = ""
@@ -283,8 +314,25 @@ def build_plant(p, entries):
     if p["fields"].get("notes"):
         parts.append("<h2>Notes</h2><p>" + esc(p["fields"]["notes"]) + "</p>")
 
+    sp = SPECIES.get(p["fields"].get("species", ""))
+    if sp:
+        parts.append(f"<h2>General {esc(sp['name'].lower())}</h2>")
+        parts.append("<p class='meta'>What this crop needs in general, as opposed "
+                     f"to how this planting is doing. "
+                     f"<a href='../species/{sp['slug']}.html'>Full record</a>.</p>")
+        rows = []
+        want = {"Root depth", "Raised bed", "Sowing depth mm", "Plant spacing cm",
+                "Days to germination", "Days to harvest", "Bolts above F",
+                "Repeat harvest", "Sun"}
+        for head, items in sp["sections"]:
+            for k, v in items:
+                if k in want:
+                    val, src = cite(v)
+                    rows.append(f"<dt>{esc(k)}</dt><dd>{val} {src}</dd>")
+        parts.append(f"<dl>{''.join(rows)}</dl>")
+
     es = sorted(entries_for(p, entries), key=lambda e: e["date"], reverse=True)
-    parts.append("<h2>Timeline</h2>")
+    parts.append("<h2>This planting</h2>")
     if not es:
         parts.append("<p class='meta'>No diary entries mention this yet.</p>")
     for e in es:
@@ -343,6 +391,66 @@ document.getElementById('f').addEventListener('submit', function (e) {{
 }});
 </script>"""
     return page("Add a note", body, "note")
+
+
+def cite(value):
+    """Split a trailing [source] marker off a value so it can be styled."""
+    m = re.match(r"^(.*?)\s*\[([^\]]+)\]\s*$", value)
+    if not m:
+        return esc(value), ""
+    return esc(m.group(1)), f'<span class="src">{esc(m.group(2))}</span>'
+
+
+def species_rows(sp, limit=None):
+    out = []
+    for head, items in sp["sections"]:
+        if head:
+            out.append(f"<h2>{esc(head)}</h2>")
+        rows = []
+        for k, v in items:
+            val, src = cite(v)
+            rows.append(f"<dt>{esc(k)}</dt><dd>{val} {src}</dd>")
+        out.append(f"<dl>{''.join(rows)}</dl>")
+        if limit and len(out) >= limit:
+            break
+    return "".join(out)
+
+
+def build_species_index(species):
+    parts = ["<h1>Plant knowledge</h1>",
+             "<p class='lede'>What each crop needs, separate from what is "
+             "currently growing. Every figure names its source.</p>",
+             "<div class='grid'>"]
+    for sp in species.values():
+        depth = next((v for h, its in sp["sections"] for k, v in its
+                      if k == "Root depth"), "")
+        bed = next((v for h, its in sp["sections"] for k, v in its
+                    if k == "Raised bed"), "")
+        meta = " &middot; ".join(x.split("[")[0].strip()
+                                for x in (depth, bed) if x)
+        parts.append(f"<a class='card' href='species/{sp['slug']}.html'>"
+                     f"<h3>{esc(sp['name'])}</h3>"
+                     f"<p class='meta'>{esc(meta)}</p></a>"
+                     .replace("&amp;middot;", "&middot;"))
+    parts.append("</div>")
+    parts.append("<p class='meta'>Figures come from EcoCrop, INRAE, OpenFarm, "
+                 "PlantVarietyDB and powerplant, plus hand-entered values where no "
+                 "open dataset carries the field. See "
+                 "<a href='sources.html'>sources</a>.</p>")
+    return page("Plant knowledge", "".join(parts), "species")
+
+
+def build_species(sp, plants):
+    mine = [p for p in plants if p["fields"].get("species") == sp["slug"]]
+    parts = [f"<h1>{esc(sp['name'])}</h1>"]
+    if mine:
+        links = ", ".join(f"<a href='../plants/{p['slug']}.html'>{esc(p['name'])}"
+                          f"</a>" for p in mine)
+        parts.append(f"<p class='lede'>Growing now: {links}</p>")
+    else:
+        parts.append("<p class='lede'>Not currently in the garden.</p>")
+    parts.append(species_rows(sp))
+    return page(sp["name"], "".join(parts), "plant")
 
 
 def build_today(plants):
@@ -477,9 +585,10 @@ def export_notes():
 
 
 def main():
-    global PLANTS
+    global PLANTS, SPECIES
     plants = parse_plants()
     PLANTS = plants
+    SPECIES = parse_species()
     entries = parse_journal()
     info, tables = parse_profile()
 
@@ -495,6 +604,24 @@ def main():
         (OUT / "note.html").write_text(build_note(plants, repo_slug()))
     (OUT / "diary.html").write_text(build_diary(entries))
     (OUT / "conditions.html").write_text(build_conditions(info, tables))
+    if SPECIES:
+        (OUT / "species").mkdir(exist_ok=True)
+        (OUT / "knowledge.html").write_text(build_species_index(SPECIES))
+        for sp in SPECIES.values():
+            (OUT / "species" / f"{sp['slug']}.html").write_text(
+                build_species(sp, plants))
+        src = SKILL / "species" / "SOURCES.md"
+        if src.exists():
+            body = ["<h1>Sources</h1>"]
+            for line in src.read_text().splitlines():
+                if line.startswith("# "):
+                    continue
+                if line.startswith("## "):
+                    body.append(f"<h2>{esc(line[3:])}</h2>")
+                elif line.strip():
+                    body.append(f"<p>{esc(line)}</p>")
+            merged = re.sub(r"</p><p>", " ", "".join(body))
+            (OUT / "sources.html").write_text(page("Sources", merged, "species"))
     for p in plants:
         if p["status"] == "empty":
             continue

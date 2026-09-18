@@ -28,21 +28,40 @@ STAGE_KC = {
 }
 SKIP = {"planned", "empty", "dormant", "done", "failed", "unknown"}
 
-CROPS = {
-    "spinach": {"kc": 1.00, "germ": (7, 14), "bolt_f": 75},
-    "lettuce": {"kc": 1.00, "germ": (7, 14), "bolt_f": 80},
-    "arugula": {"kc": 1.00, "germ": (5, 10), "bolt_f": 80},
-    "chard": {"kc": 1.00, "germ": (7, 14), "bolt_f": 90},
-    "kale": {"kc": 1.00, "germ": (7, 14), "bolt_f": 85},
-    "cilantro": {"kc": 0.90, "germ": (7, 14), "bolt_f": 75},
-    "parsley": {"kc": 0.90, "germ": (14, 28), "bolt_f": 85},
-    "dill": {"kc": 0.90, "germ": (10, 14), "bolt_f": 80},
-    "basil": {"kc": 1.00, "germ": (5, 10), "bolt_f": 95},
-    "radish": {"kc": 0.90, "germ": (4, 10), "bolt_f": 80},
-    "peas": {"kc": 1.05, "germ": (7, 14), "bolt_f": 80},
-    "tomato": {"kc": 1.10, "germ": (6, 12), "bolt_f": 95},
-}
 DEFAULT_CROP = {"kc": 0.95, "germ": (7, 21), "bolt_f": 85}
+
+
+def species_table():
+    """Read per-crop figures from the species files, the single source of truth.
+
+    Falls back to DEFAULT_CROP for a crop with no species file, and says so, since
+    silently using generic numbers is how a briefing becomes confidently wrong.
+    """
+    out = {}
+    d = SKILL / "species"
+    if not d.is_dir():
+        return out
+    for f in d.glob("*.md"):
+        if f.name == "SOURCES.md":
+            continue
+        rec = {}
+        for line in f.read_text().splitlines():
+            m = re.match(r"^- ([A-Za-z][A-Za-z ]*?):\s*(.*)$", line)
+            if not m:
+                continue
+            k, v = m.group(1).strip(), m.group(2).strip()
+            if k == "Crop coefficient":
+                rec["kc"] = float(re.search(r"[\d.]+", v).group())
+            elif k == "Germination window days":
+                n = re.findall(r"\d+", v)
+                if len(n) >= 2:
+                    rec["germ"] = (int(n[0]), int(n[1]))
+            elif k == "Bolts above F":
+                rec["bolt_f"] = float(re.search(r"[\d.]+", v).group())
+        if "kc" in rec and "germ" in rec:
+            rec.setdefault("bolt_f", 999)
+            out[f.stem] = rec
+    return out
 
 
 def get(url, **params):
@@ -83,6 +102,7 @@ def fmt_vol(ml):
 
 def main():
     p = profile()
+    crops = species_table()
     lat = float(p["latitude"])
     lon = float(p["longitude"])
     today = dt.date.today()
@@ -148,8 +168,11 @@ def main():
         status = f.get("status", "unknown").lower()
         if status in SKIP:
             continue
-        key = pl["name"].split()[0].lower().strip(",.")
-        crop = CROPS.get(key, DEFAULT_CROP)
+        key = (f.get("species") or pl["name"].split()[0]).lower().strip(",.")
+        crop = crops.get(key)
+        generic = crop is None
+        if generic:
+            crop = DEFAULT_CROP
         try:
             area = float(f.get("area", "0").split()[0])
         except ValueError:
@@ -161,6 +184,9 @@ def main():
                                                            else 1.0)
 
         L.append(f"## {pl['name']}")
+        if generic:
+            L.append("- Figures: generic defaults, this crop has no species file "
+                     "yet, so treat the numbers below as rough")
 
         cname = f.get("container", "").split(",")[0].strip().lower()
         group = shared.get(cname, [])

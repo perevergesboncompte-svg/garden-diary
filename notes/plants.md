@@ -6,6 +6,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 ## Containers — 8 in pot
 
 ### Cilantro
+- Species: cilantro
 - Area: 0.032 m2
 - Type: annual, taproot, bolts under heat
 - Container: 8 in pot, shared with parsley and dill
@@ -18,6 +19,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   bed. Germinates 7 to 14 days. Resents transplant, so resow rather than move.
 
 ### Parsley
+- Species: parsley
 - Area: 0.032 m2
 - Type: biennial, taproot
 - Container: 8 in pot, shared with cilantro and dill
@@ -30,6 +32,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   is normal and not a failure.
 
 ### Dill
+- Species: dill
 - Area: 0.032 m2
 - Type: annual, deep taproot, reaches 3 to 4 ft
 - Container: 8 in pot, shared with cilantro and parsley
@@ -44,6 +47,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 ## Open garden — Beds and perennials
 
 ### Spinach
+- Species: spinach
 - Area: 0.21 m2
 - Type: annual, cool season, most heat-sensitive of the common greens
 - Container: raised bed 1, two-thirds of the bed (about 0.21 m2)
