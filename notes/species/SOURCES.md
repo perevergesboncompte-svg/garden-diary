@@ -4,6 +4,32 @@ Every figure in the files beside this one ends with its source in square bracket
 so any number can be traced and corrected. These are the sources, and the licence
 terms this project has to honour.
 
+## The rule this whole file follows
+
+Individual facts about a plant are not copyrightable. A compilation earns protection
+through its original selection and arrangement, not through the effort of gathering it
+(Feist v. Rural Telephone, 499 U.S. 340). So a figure like "sow spinach a quarter inch
+deep" can be recorded here against a link. The table it came from, and the prose around
+it, cannot be copied.
+
+Two assumptions to avoid, both of which are wrong. Free to read is not licensed:
+extension services publish at no charge as a public service, and that is not a grant.
+And a missing copyright notice is not permission: material is protected whether or not
+it says so. Correct citation does not create a right to copy.
+
+That is why nothing in these files reproduces a source table, and why every figure is
+restated in this schema with its own units and its own wording.
+
+Only a few of the sources consulted would actually permit copying: USDA and USDA-NRCS
+as federal public domain, Virginia Cooperative Extension, Kansas State, Colorado State's
+CMG GardenNotes series (verbatim only and nonprofit only, which rules out folding it
+into a schema), Michigan State's Extension News articles, and individual CC BY journal
+papers. Everything else here, including the germination-temperature table in every
+version it circulates in, is cite-and-link. The NoDerivatives term on UC ANR and UF/IFAS
+material is worth understanding rather than shrugging at: it permits verbatim copies and
+forbids condensing or reshaping, which makes it unusable for a knowledge base whose
+purpose is reshaping.
+
 ## EcoCrop [EcoCrop]
 
 FAO EcoCrop, redistributed by OpenCLIM/UKCEH at
