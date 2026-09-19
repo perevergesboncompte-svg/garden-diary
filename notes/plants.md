@@ -75,6 +75,24 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Notes: Sow now. October to February is the best window and part sun reduces bolting,
   which makes this site better for lettuce than a full-sun one.
 
+### Peas — Wando
+- Species: pea
+- Area: 0.08 m2
+- Type: shell pea, climbing, cool season
+- Container: raised bed 2, trellised row along the northeast edge, shares with chard
+- Sown: n/a
+- Status: planned
+- Plan: single row 3 cm (1 in) apart against a 60 to 90 cm trellis or netting on the
+  bed's northeast edge, so the vines climb up and away rather than shading the chard.
+  Fabaceae, so no family clash with the Chenopodiaceae chard, and peas fix nitrogen the
+  chard uses.
+- Learnings:
+- Notes: Wando is a USDA 1943 shell variety bred for heat tolerance and also frost-hardy,
+  so it takes the warm end of the local October-to-February window better than most peas.
+  About 68 to 70 days to pods on 60 to 75 cm vines. Depth is the reason it goes in bed 2:
+  peas want the deep end of your 8 to 10 inches, and they need something to climb. Pick
+  pods often to keep the vine producing. [variety note]
+
 ### Chard
 - Species: chard
 - Area: 0.31 m2
