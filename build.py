@@ -622,7 +622,7 @@ LAYOUT = {
     "middle": {"x": 300, "label": "Middle bed (raised)", "raised": True,
                "plants": [("peas-wando", 1.0)]},
     "right":  {"x": 540, "label": "Right bed (sunniest)", "raised": False,
-               "plants": [("lettuce", 0.4), ("spinach", 0.6)]},
+               "plants": [("lettuce", 0.5), ("spinach", 0.5)]},
 }
 POT = {"cx": 150, "cy": 420, "r": 44, "plants": ["cilantro", "parsley", "dill"]}
 BEDW, BEDH, BEDY = 180, 210, 150

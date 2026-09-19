@@ -49,23 +49,23 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 
 ### Spinach
 - Species: spinach
-- Area: 0.21 m2
+- Area: 0.155 m2
 - Type: annual, cool season, most heat-sensitive of the common greens
-- Container: right bed (sunniest), right two-thirds, beside the lettuce
+- Container: right bed (sunniest), right half, beside the lettuce
 - Sown: 15.09.2026
 - Status: sown
 - Learnings: Read soil temperature before sowing spinach rather than going by the
   calendar. It went in at 21.8 C (71 F), the top of its germination range, so any gaps
   in the six trace back to that rather than to bad seed. October is the safer start
   here, and the afternoon-only exposure adds bolting risk on top.
-- Notes: 6 sets, roughly 7 in spacing. Shares the sunniest low bed with lettuce on the
-  left. Afternoon-only sun is the bolting risk.
+- Notes: 6 sets, roughly 7 in spacing. Shares the sunniest low bed evenly with
+  lettuce on the left. Afternoon-only sun is the bolting risk.
 
 ### Lettuce
 - Species: lettuce
-- Area: 0.10 m2
+- Area: 0.155 m2
 - Type: annual, cut-and-come-again, part sun suits it
-- Container: right bed (sunniest), left third, beside the spinach
+- Container: right bed (sunniest), left half, beside the spinach
 - Sown: n/a
 - Status: planned
 - Plan: 3 to 4 plants at 15 cm (6 in) cutting spacing, not the 30 cm head spacing. Shear
