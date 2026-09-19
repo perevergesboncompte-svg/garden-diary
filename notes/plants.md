@@ -41,8 +41,9 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Learnings: Check mature height and root depth against the container before sowing,
   not after. Dill reaches 3 to 4 ft on a deep taproot, so an 8 in pot was never going
   to hold it regardless of how well it germinated.
-- Notes: Wrong container. Needs 12 in minimum depth and will overshadow the other two
-  once it bolts upward. Move to a bed or a deep pot of its own.
+- Notes: The 8 in pot is 12 in deep, so depth is fine for the taproot. The problem is
+  three taproot herbs sharing one 8 in width, and dill overshadowing the other two once
+  it bolts upward. Give it its own pot or a bed corner.
 
 ## Open garden — Beds and perennials
 

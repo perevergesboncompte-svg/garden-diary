@@ -59,13 +59,14 @@ by three or four hours, which matters for any bed that only gets morning light. 
 ## Growing setup
 
 - Growing format: 3 raised beds plus 1 container
-- Bed size: 21 x 23 in each (0.31 m2 each, 0.94 m2 total)
-- Bed depth: 8 to 10 inches
+- Bed layout: three beds in a row on a southwest balcony, the middle one
+  raised higher than the left and right. Each 21 x 23 x 8 in (0.31 m2, 0.94 total)
+- Bed depth: 8 inches
 - Bed base: lined with landscape fabric or mesh, so water drains but roots stay in the
-  bed. The 8 to 10 inches is the entire root zone, which keeps carrots restricted to
-  short and round varieties and dill marginal. Drainage is not a concern here, so the
+  bed. The 8 inches is the entire root zone, which keeps carrots in the beds restricted
+  to short and round varieties. Drainage is not a concern here, so the
   winter-wet warning in references/socal-frost-free.md applies to the pot, not the beds.
-- Container: 8 in diameter (0.032 m2)
+- Container: 8 in diameter, 12 in deep (0.032 m2 footprint)
 - Sun window hours: 14-18
 - Sun needed by cool-season crops: 3 to 6 hours (Maryland Extension), so this site's
   measured 4 to 5 hours is inside the range for leafy greens and marginal for roots,
@@ -80,8 +81,8 @@ by three or four hours, which matters for any bed that only gets morning light. 
 
 ### Measured sun exposure
 
-Reported window: shaded all morning, direct sun from about 13:30 until roughly one
-hour before sunset. Everything shares this one exposure.
+Southwest balcony, so shaded all morning by the building behind it, then direct sun
+from about 13:30 until roughly one hour before sunset. Everything shares this exposure.
 
 | Period | Direct sun | Open sky | Shading cost | Class |
 |--------|-----------|----------|-------------|-------|

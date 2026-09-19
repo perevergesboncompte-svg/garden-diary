@@ -192,3 +192,26 @@ dd.dim { font-size: .84rem; }
 .gallery img { width: 100%; height: 10rem; object-fit: cover; display: block;
                border-radius: 8px; border: 1px solid var(--line); background: var(--card); }
 .gallery figcaption { color: var(--soft); font-size: .78rem; margin-top: .3rem; }
+
+.gardenmap { width: 100%; height: auto; margin: 1rem 0 1.5rem;
+             border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+.m-floor { fill: var(--bg); stroke: var(--line); }
+.m-wall { stroke: var(--line); stroke-width: 3; }
+.m-rail { stroke: var(--leaf); stroke-width: 3; stroke-dasharray: 6 5; }
+.m-edge { fill: var(--soft); font-size: 13px; }
+.m-bed { fill: var(--tint); stroke: var(--line); stroke-width: 1.5; }
+.m-lift { fill: none; stroke: var(--leaf); stroke-width: 1.5; opacity: .5; }
+.m-raised { stroke: var(--leaf); stroke-width: 2; }
+.m-plot { fill: var(--tint); stroke: var(--card); stroke-width: 2; }
+.m-plot.s-sown { fill: color-mix(in srgb, #1f5480 32%, var(--card)); }
+.m-plot.s-plan { fill: color-mix(in srgb, var(--soft) 26%, var(--card)); }
+.m-plot.s-grow { fill: color-mix(in srgb, #256b2c 32%, var(--card)); }
+.m-plant { fill: var(--ink); font-size: 14px; text-anchor: middle; dominant-baseline: middle; }
+.m-vert { font-size: 12px; }
+.m-label { fill: var(--soft); font-size: 13px; font-weight: 650; text-anchor: middle;
+           text-transform: uppercase; letter-spacing: .04em; }
+.m-pot { fill: var(--tint); stroke: var(--leaf); stroke-width: 2; }
+.m-sun circle { fill: color-mix(in srgb, #7a5610 40%, var(--card)); }
+.m-sun .m-ray { stroke: color-mix(in srgb, #7a5610 55%, var(--card)); stroke-width: 3; }
+.m-sun text { fill: var(--soft); font-size: 12px; text-anchor: middle; }
+.gardenmap a:hover .m-plot { stroke: var(--leaf); stroke-width: 2.5; }

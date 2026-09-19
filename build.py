@@ -231,6 +231,7 @@ def page(title, body, nav_here="", plant=None):
     depth = "../" if nav_here == "plant" else ""
     nav = " ".join([
         link(f"{depth}today.html", "Today", "today"),
+        link(f"{depth}map.html", "Map", "map"),
         link(f"{depth}index.html", "Plants", "index"),
         link(f"{depth}diary.html", "Diary", "diary"),
         link(f"{depth}conditions.html", "Conditions", "conditions"),
@@ -614,6 +615,93 @@ def build_species(sp, plants):
     return page(sp["name"], "".join(parts), "plant")
 
 
+
+LAYOUT = {
+    "left":   {"x": 60,  "label": "Left bed",   "raised": False,
+               "plants": [("spinach", 0.67), ("lettuce", 0.33)]},
+    "middle": {"x": 300, "label": "Middle bed (raised)", "raised": True,
+               "plants": [("chard", 1.0)], "edge": "pea"},
+    "right":  {"x": 540, "label": "Right bed",  "raised": False,
+               "plants": [("arugula", 0.67), ("bok-choy", 0.33)]},
+}
+POT = {"cx": 760, "cy": 250, "plants": ["cilantro", "parsley", "dill"]}
+BEDW, BEDH, BEDY = 180, 210, 150
+
+
+def _status_of(slug, plants):
+    for p in plants:
+        if p["slug"] == slug:
+            return p["status"], p["name"]
+    return "planned", slug.replace("-", " ").title()
+
+
+def build_map(plants):
+    """Top-down plan of the balcony. Inline SVG so it themes and needs no assets."""
+    parts = ['<svg viewBox="0 0 860 520" role="img" '
+             'aria-label="Top-down map of the garden beds on a southwest balcony" '
+             'class="gardenmap">']
+    parts.append('<rect x="8" y="8" width="844" height="504" rx="12" '
+                 'class="m-floor"/>')
+    # the open railing edge faces southwest, the wall (morning shade) is behind
+    parts.append('<text x="30" y="40" class="m-edge">Wall behind, morning shade</text>')
+    parts.append('<line x1="20" y1="52" x2="840" y2="52" class="m-wall"/>')
+    parts.append('<line x1="20" y1="470" x2="840" y2="470" class="m-rail"/>')
+    parts.append('<text x="30" y="494" class="m-edge">Open railing, southwest, '
+                 'afternoon sun this side</text>')
+    # sun arrow coming up from the SW (bottom-left) into the beds
+    parts.append('<g class="m-sun"><circle cx="70" cy="440" r="16"/>'
+                 '<path d="M86 424 L150 360" class="m-ray"/>'
+                 '<text x="96" y="452">sun</text></g>')
+
+    for key, bed in LAYOUT.items():
+        x = bed["x"]
+        cls = "m-bed m-raised" if bed["raised"] else "m-bed"
+        if bed["raised"]:
+            parts.append(f'<rect x="{x-6}" y="{BEDY-6}" width="{BEDW+12}" '
+                         f'height="{BEDH+12}" rx="8" class="m-lift"/>')
+        parts.append(f'<rect x="{x}" y="{BEDY}" width="{BEDW}" height="{BEDH}" '
+                     f'rx="6" class="{cls}"/>')
+        # split the bed by planting fraction, top to bottom
+        yy = BEDY
+        for slug, frac in bed["plants"]:
+            h = int(BEDH * frac)
+            st, name = _status_of(slug, plants)
+            parts.append(f'<a href="plants/{slug}.html">'
+                         f'<rect x="{x}" y="{yy}" width="{BEDW}" height="{h}" '
+                         f'class="m-plot s-{ {"sown":"sown","planned":"plan"}.get(st,"grow") }"/>'
+                         f'<text x="{x+BEDW//2}" y="{yy+h//2}" class="m-plant">'
+                         f'{esc(name)}</text></a>')
+            yy += h
+        if bed.get("edge"):
+            st, name = _status_of(bed["edge"], plants)
+            parts.append(f'<a href="plants/peas-wando.html">'
+                         f'<rect x="{x}" y="{BEDY}" width="16" height="{BEDH}" '
+                         f'class="m-plot s-plan"/>'
+                         f'<text x="{x+8}" y="{BEDY+BEDH//2}" class="m-plant m-vert" '
+                         f'transform="rotate(-90 {x+8} {BEDY+BEDH//2})">peas</text></a>')
+        parts.append(f'<text x="{x+BEDW//2}" y="{BEDY-16}" class="m-label">'
+                     f'{esc(bed["label"])}</text>')
+
+    # the pot
+    parts.append(f'<circle cx="{POT["cx"]}" cy="{POT["cy"]}" r="52" class="m-pot"/>')
+    parts.append(f'<text x="{POT["cx"]}" y="{POT["cy"]-58}" class="m-label">'
+                 f'Pot, 12 in deep</text>')
+    for i, slug in enumerate(POT["plants"]):
+        st, name = _status_of(slug, plants)
+        parts.append(f'<text x="{POT["cx"]}" y="{POT["cy"]-14+i*18}" '
+                     f'class="m-plant">{esc(name)}</text>')
+    parts.append("</svg>")
+
+    body = ["<h1>Garden map</h1>",
+            "<p class='lede'>Looking down on the southwest balcony. Sun crosses from the "
+            "open railing side in the afternoon; the wall behind shades the beds until "
+            "about 1:30. Tap a bed to open that planting.</p>",
+            "".join(parts),
+            "<p class='meta'>Left to right is my assumption for beds 1, 2 and 3. If the "
+            "middle raised bed is not the physical centre, tell me and I will swap them.</p>"]
+    return page("Garden map", "".join(body), "map")
+
+
 def build_today(plants):
     """Render notes/today.md, which daily.py regenerates from the forecast."""
     src = NOTES / "today.md"
@@ -779,6 +867,7 @@ def main():
 
     (OUT / "index.html").write_text(build_index(plants, entries, info))
     (OUT / "today.html").write_text(build_today(plants))
+    (OUT / "map.html").write_text(build_map(plants))
     if repo_slug():
         (OUT / "note.html").write_text(build_note(plants, repo_slug()))
     (OUT / "diary.html").write_text(build_diary(entries))
