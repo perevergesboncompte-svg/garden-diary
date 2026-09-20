@@ -70,7 +70,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Container: right bed (sunniest), left half, beside the spinach
 - Sown: n/a
 - Status: planned
-- Plan: 3 to 4 plants at 15 cm (6 in) cutting spacing, not the 30 cm head spacing. Shear
+- Plan: 6 plants at 15 cm (6 in) cutting spacing, not the 30 cm head spacing. Shear
   to 3 cm for 3 to 4 cuts. Compositae, so no family clash with the spinach beside it.
 - Learnings:
 - Notes: Sow now. October to February is the best window and part sun reduces bolting,

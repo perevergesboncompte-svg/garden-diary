@@ -238,3 +238,5 @@ dd.dim { font-size: .84rem; }
 .m-legend text { fill: var(--soft); font-size: 12px; dominant-baseline: middle; }
 .gardenmap a { cursor: pointer; }
 .gardenmap a:hover .m-soil, .gardenmap a:hover .m-plot { fill: var(--m-hover); }
+.m-spoke { stroke: var(--m-soilline); stroke-width: 1.5; }
+.m-potc { fill: var(--ink); font-size: 11px; text-anchor: middle; dominant-baseline: middle; font-weight: 600; }

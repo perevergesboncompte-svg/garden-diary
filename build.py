@@ -623,10 +623,10 @@ LAYOUT = {
     "middle": {"x": 330, "label": "Middle bed (raised)", "raised": True,
                "plots": [("peas-wando", 1.0, 7, 6)]},
     "right":  {"x": 590, "label": "Right bed (sunniest)", "raised": False,
-               "plots": [("lettuce", 0.5, 2, 2), ("spinach", 0.5, 2, 3)]},
+               "plots": [("lettuce", 0.5, 2, 3), ("spinach", 0.5, 2, 3)]},
 }
-POT = {"cx": 140, "cy": 448, "r": 40,
-       "plants": [("cilantro", -22), ("parsley", 0), ("dill", 22)]}
+POT = {"cx": 150, "cy": 448, "r": 48,
+       "plants": [("cilantro", 150), ("parsley", 30), ("dill", 270)]}
 BEDW, BEDH, BEDY = 200, 230, 150
 GROW = {"germinating", "seedling", "hardening", "establishing", "outdoor",
         "harvesting"}
@@ -707,15 +707,23 @@ def build_map(plants):
                      f'{esc(name)}</text></a>')
             xx += w
 
-    # pot
-    P.append(f'<circle cx="{POT["cx"]}" cy="{POT["cy"]}" r="{POT["r"]}" class="m-pot"/>')
-    P.append(f'<text x="{POT["cx"]}" y="{POT["cy"]-POT["r"]-10}" class="m-label">'
-             f'Pot, 12 in deep</text>')
-    for slug, dy in POT["plants"]:
+    # pot, divided into three wedges like a Mercedes star, one herb each
+    cx, cy, r = POT["cx"], POT["cy"], POT["r"]
+    P.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" class="m-pot"/>')
+    P.append(f'<text x="{cx}" y="{cy-r-10}" class="m-label">Pot, 12 in deep</text>')
+    for spoke in (90, 210, 330):
+        ex = cx + r * math.cos(math.radians(spoke))
+        ey = cy - r * math.sin(math.radians(spoke))
+        P.append(f'<line x1="{cx}" y1="{cy}" x2="{ex:.0f}" y2="{ey:.0f}" '
+                 f'class="m-spoke"/>')
+    for slug, ang in POT["plants"]:
         stt, name = _status_of(slug, plants)
-        cy = POT["cy"] + dy
-        P.append(f'<a href="plants/{slug}.html">{_marker(POT["cx"]-30, cy, stt, 5)}'
-                 f'<text x="{POT["cx"]-18}" y="{cy}" class="m-crop m-potc">'
+        mx = cx + 22 * math.cos(math.radians(ang))
+        my = cy - 22 * math.sin(math.radians(ang))
+        lx = cx + 30 * math.cos(math.radians(ang))
+        ly = cy - 30 * math.sin(math.radians(ang))
+        P.append(f'<a href="plants/{slug}.html">{_marker(mx, my, stt, 5)}'
+                 f'<text x="{lx:.0f}" y="{ly+4:.0f}" class="m-potc">'
                  f'{esc(name)}</text></a>')
 
     # legend
