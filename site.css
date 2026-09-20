@@ -10,7 +10,7 @@
   --leaf-hi: #2f5530;
   --leaf-wash: #f0f5ee;
   --link: #2b5c2f;
-  --tint: color-mix(in srgb, var(--leaf) 9%, transparent);
+  --tint: #eef3ec;
   --measure: 66ch;
   --wrap: 60rem;
 }
@@ -28,7 +28,7 @@
     --leaf-wash: #232b21;
     --link: #9ccd95;
     --soft: #8b9585;
-    --tint: color-mix(in srgb, var(--leaf) 16%, transparent);
+    --tint: #20281c;
   }
 }
 
@@ -203,34 +203,38 @@ dd.dim { font-size: .84rem; }
 .m-lift { fill: none; stroke: var(--leaf); stroke-width: 1.5; opacity: .5; }
 .m-raised { stroke: var(--leaf); stroke-width: 2; }
 .m-plot { fill: var(--tint); stroke: var(--card); stroke-width: 2; }
-.m-plot.s-sown { fill: color-mix(in srgb, #1f5480 32%, var(--card)); }
-.m-plot.s-plan { fill: color-mix(in srgb, var(--soft) 26%, var(--card)); }
-.m-plot.s-grow { fill: color-mix(in srgb, #256b2c 32%, var(--card)); }
 .m-plant { fill: var(--ink); font-size: 14px; text-anchor: middle; dominant-baseline: middle; }
 .m-vert { font-size: 12px; }
 .m-label { fill: var(--soft); font-size: 13px; font-weight: 650; text-anchor: middle;
            text-transform: uppercase; letter-spacing: .04em; }
 .m-pot { fill: var(--tint); stroke: var(--leaf); stroke-width: 2; }
-.m-sun circle { fill: color-mix(in srgb, #7a5610 40%, var(--card)); }
-.m-sun .m-ray { stroke: color-mix(in srgb, #7a5610 55%, var(--card)); stroke-width: 3; }
+.m-sun circle { fill: #d9a441; stroke: none; }
+.m-sun .m-ray { stroke: #d9a441; stroke-width: 3; }
+.m-beam { stroke: #d9a441; stroke-width: 3; opacity: .55; }
 .m-sun text { fill: var(--soft); font-size: 12px; text-anchor: middle; }
 .gardenmap a:hover .m-plot { stroke: var(--leaf); stroke-width: 2.5; }
 
-.m-soil { fill: color-mix(in srgb, #b08a5a 22%, var(--card)); stroke: color-mix(in srgb, #7a5610 40%, var(--line)); stroke-width: 1.5; }
+
+:root {
+  --m-soil: #ece3d3; --m-soilline: #cbb894; --m-plot: #f2ece0;
+  --m-sown: #8a6a2e; --m-up: #3f8f43; --m-halo: #bfe0c0; --m-hover: #e6f0e0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --m-soil: #3a2f20; --m-soilline: #5a4a30; --m-plot: #332a1c;
+    --m-sown: #c99a54; --m-up: #5fae63; --m-halo: #2c4a2e; --m-hover: #27311f;
+  }
+}
+.m-soil { fill: var(--m-soil); stroke: var(--m-soilline); stroke-width: 1.5; }
 .m-raised { stroke: var(--leaf); stroke-width: 2.5; }
 .m-lift { fill: none; stroke: var(--leaf); stroke-width: 1.5; opacity: .4; }
-.m-plot { fill: color-mix(in srgb, #b08a5a 10%, transparent); stroke: none; }
-.m-sown { fill: color-mix(in srgb, #7a5610 70%, var(--card)); stroke: none; }
-.m-up { fill: #3f8f43; stroke: none; }
-.m-halo { fill: color-mix(in srgb, #3f8f43 28%, transparent); stroke: none; }
+.m-plot { fill: var(--m-plot); stroke: none; }
+.m-sown { fill: var(--m-sown); stroke: none; }
+.m-up { fill: var(--m-up); stroke: none; }
+.m-halo { fill: var(--m-halo); stroke: none; }
 .m-todo { fill: none; stroke: var(--soft); stroke-width: 1.5; stroke-dasharray: 2 2; }
 .m-crop { fill: var(--ink); font-size: 14px; font-weight: 600; text-anchor: middle; }
 .m-potc { text-anchor: start; dominant-baseline: middle; font-weight: 400; font-size: 13px; }
 .m-legend text { fill: var(--soft); font-size: 12px; dominant-baseline: middle; }
 .gardenmap a { cursor: pointer; }
-.gardenmap a:hover .m-soil, .gardenmap a:hover .m-plot { fill: color-mix(in srgb, var(--leaf) 14%, var(--card)); }
-@media (prefers-color-scheme: dark) {
-  .m-soil { fill: color-mix(in srgb, #6b4f2e 30%, var(--card)); }
-  .m-up { fill: #5fae63; }
-  .m-sown { fill: color-mix(in srgb, #c99a54 60%, var(--card)); }
-}
+.gardenmap a:hover .m-soil, .gardenmap a:hover .m-plot { fill: var(--m-hover); }
