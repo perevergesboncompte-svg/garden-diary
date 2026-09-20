@@ -1,5 +1,16 @@
 # Garden Journal
 
+## 20.09.2026
+
+### Peas sown, dill and spinach up
+- Action: sowed, observed
+- Plants: peas, dill, spinach
+- Details: Sowed 42 Wando peas in a 6 by 7 grid across the middle raised bed. Dill
+  sprouted in the pot and all 6 spinach are up in the right bed, both on day 5, ahead
+  of their germination windows.
+- Note: Spinach came up with no gaps despite the 71 F sowing soil I had flagged as a
+  risk. Peas want a trellis before the vines run.
+
 ## 18.09.2026
 
 ### Sun exposure measured, setup recorded
