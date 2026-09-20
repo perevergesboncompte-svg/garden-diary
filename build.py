@@ -716,15 +716,16 @@ def build_map(plants):
         ey = cy - r * math.sin(math.radians(spoke))
         P.append(f'<line x1="{cx}" y1="{cy}" x2="{ex:.0f}" y2="{ey:.0f}" '
                  f'class="m-spoke"/>')
+    place = {150: (-(r + 9), -20, "end"), 30: (r + 9, -20, "start"),
+             270: (0, r - 12, "middle")}
     for slug, ang in POT["plants"]:
         stt, name = _status_of(slug, plants)
-        mx = cx + 22 * math.cos(math.radians(ang))
-        my = cy - 22 * math.sin(math.radians(ang))
-        lx = cx + 30 * math.cos(math.radians(ang))
-        ly = cy - 30 * math.sin(math.radians(ang))
+        mx = cx + 24 * math.cos(math.radians(ang))
+        my = cy - 24 * math.sin(math.radians(ang))
+        dx, dy, anchor = place[ang]
         P.append(f'<a href="plants/{slug}.html">{_marker(mx, my, stt, 5)}'
-                 f'<text x="{lx:.0f}" y="{ly+4:.0f}" class="m-potc">'
-                 f'{esc(name)}</text></a>')
+                 f'<text x="{cx+dx:.0f}" y="{cy+dy:.0f}" text-anchor="{anchor}" '
+                 f'class="m-potc">{esc(name)}</text></a>')
 
     # legend
     lx, ly = 470, 452
