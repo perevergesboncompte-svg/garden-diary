@@ -37,8 +37,9 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Type: annual, deep taproot, reaches 3 to 4 ft
 - Container: 8 in pot, shared with cilantro and parsley
 - Sown: 15.09.2026
-- Status: sown
-- Learnings: Check mature height and root depth against the container before sowing,
+- Status: germinating
+- Actual germination: 20.09.2026
+- Learnings: Sprouted on day 5, ahead of the 10 to 14 day window I had for it. Check mature height and root depth against the container before sowing,
   not after. Dill reaches 3 to 4 ft on a deep taproot, so an 8 in pot was never going
   to hold it regardless of how well it germinated.
 - Notes: The 8 in pot is 12 in deep, so depth is fine for the taproot. The problem is
@@ -53,8 +54,9 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Type: annual, cool season, most heat-sensitive of the common greens
 - Container: right bed (sunniest), right half, beside the lettuce
 - Sown: 15.09.2026
-- Status: sown
-- Learnings: Read soil temperature before sowing spinach rather than going by the
+- Status: germinating
+- Actual germination: 20.09.2026
+- Learnings: All 6 sprouted by day 5, ahead of the 7 to 14 day window and with no gaps, so the 71 F sowing soil did not hurt germination after all. Read soil temperature before sowing spinach rather than going by the
   calendar. It went in at 21.8 C (71 F), the top of its germination range, so any gaps
   in the six trace back to that rather than to bad seed. October is the safer start
   here, and the afternoon-only exposure adds bolting risk on top.
@@ -79,11 +81,10 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.31 m2
 - Type: shell pea, climbing, cool season
 - Container: middle raised bed, whole bed
-- Sown: n/a
-- Status: planned
-- Plan: two rows down the whole raised bed, 3 cm (1 in) apart in the row, against a 60 to
-  90 cm trellis or netting so the vines climb. The raised bed is the deepest root run you
-  have, which suits peas better than the 8 in low beds.
+- Sown: 20.09.2026
+- Status: sown
+- Plan: 42 peas in a 6 by 7 grid, evenly spaced across the whole raised bed. They will
+  want a trellis or netting to climb once the vines get going.
 - Learnings:
 - Notes: Wando is a USDA 1943 shell variety bred for heat tolerance and also frost-hardy,
   so it takes the warm end of the local October-to-February window better than most peas.
