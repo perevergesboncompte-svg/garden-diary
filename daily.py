@@ -198,8 +198,21 @@ def main():
                      f"{'plant' if len(group) == 2 else 'plants'}. One watering "
                      "serves them all, so do not repeat it per plant")
         elif status in ("sown", "germinating"):
-            L.append(f"- Water: {fmt_vol(ml)}, split into two light passes to "
-                     "keep the top 2 cm damp without washing seed")
+            sm = re.match(r"(\d{2})\.(\d{2})\.(\d{4})", f.get("sown", ""))
+            age = None
+            if sm:
+                dd, mm, yy = (int(x) for x in sm.groups())
+                age = (today - dt.date(yy, mm, dd)).days
+            if age == 0:
+                L.append("- Water: soak the bed now to settle the seed, more than a "
+                         f"daily amount. After that, {fmt_vol(ml)} a day replaces what "
+                         "it loses, but keep the top 2 cm damp and water again whenever "
+                         "the surface dries")
+            else:
+                L.append(f"- Water: about {fmt_vol(ml)} a day replaces the loss, but a "
+                         "germinating bed is limited by surface moisture, not that "
+                         "figure, so keep the top 2 cm damp and water whenever it dries "
+                         "rather than to a fixed volume")
         else:
             L.append(f"- Water: {fmt_vol(ml)}")
 

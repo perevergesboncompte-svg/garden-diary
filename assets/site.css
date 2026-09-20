@@ -215,3 +215,22 @@ dd.dim { font-size: .84rem; }
 .m-sun .m-ray { stroke: color-mix(in srgb, #7a5610 55%, var(--card)); stroke-width: 3; }
 .m-sun text { fill: var(--soft); font-size: 12px; text-anchor: middle; }
 .gardenmap a:hover .m-plot { stroke: var(--leaf); stroke-width: 2.5; }
+
+.m-soil { fill: color-mix(in srgb, #b08a5a 22%, var(--card)); stroke: color-mix(in srgb, #7a5610 40%, var(--line)); stroke-width: 1.5; }
+.m-raised { stroke: var(--leaf); stroke-width: 2.5; }
+.m-lift { fill: none; stroke: var(--leaf); stroke-width: 1.5; opacity: .4; }
+.m-plot { fill: color-mix(in srgb, #b08a5a 10%, transparent); stroke: none; }
+.m-sown { fill: color-mix(in srgb, #7a5610 70%, var(--card)); stroke: none; }
+.m-up { fill: #3f8f43; stroke: none; }
+.m-halo { fill: color-mix(in srgb, #3f8f43 28%, transparent); stroke: none; }
+.m-todo { fill: none; stroke: var(--soft); stroke-width: 1.5; stroke-dasharray: 2 2; }
+.m-crop { fill: var(--ink); font-size: 14px; font-weight: 600; text-anchor: middle; }
+.m-potc { text-anchor: start; dominant-baseline: middle; font-weight: 400; font-size: 13px; }
+.m-legend text { fill: var(--soft); font-size: 12px; dominant-baseline: middle; }
+.gardenmap a { cursor: pointer; }
+.gardenmap a:hover .m-soil, .gardenmap a:hover .m-plot { fill: color-mix(in srgb, var(--leaf) 14%, var(--card)); }
+@media (prefers-color-scheme: dark) {
+  .m-soil { fill: color-mix(in srgb, #6b4f2e 30%, var(--card)); }
+  .m-up { fill: #5fae63; }
+  .m-sown { fill: color-mix(in srgb, #c99a54 60%, var(--card)); }
+}

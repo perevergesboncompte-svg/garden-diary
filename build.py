@@ -18,6 +18,7 @@ REDACT_KEYS below never reach the generated HTML.
 """
 
 import html
+import math
 import os
 import re
 import shutil
@@ -617,15 +618,18 @@ def build_species(sp, plants):
 
 
 LAYOUT = {
-    "left":   {"x": 60,  "label": "Left bed",  "raised": False,
-               "plants": [("carrots", 1.0)]},
-    "middle": {"x": 300, "label": "Middle bed (raised)", "raised": True,
-               "plants": [("peas-wando", 1.0)]},
-    "right":  {"x": 540, "label": "Right bed (sunniest)", "raised": False,
-               "plants": [("lettuce", 0.5), ("spinach", 0.5)]},
+    "left":   {"x": 70,  "label": "Left bed", "raised": False,
+               "plots": [("carrots", 1.0, 8, 7)]},
+    "middle": {"x": 330, "label": "Middle bed (raised)", "raised": True,
+               "plots": [("peas-wando", 1.0, 7, 6)]},
+    "right":  {"x": 590, "label": "Right bed (sunniest)", "raised": False,
+               "plots": [("lettuce", 0.5, 2, 2), ("spinach", 0.5, 2, 3)]},
 }
-POT = {"cx": 150, "cy": 420, "r": 44, "plants": ["cilantro", "parsley", "dill"]}
-BEDW, BEDH, BEDY = 180, 210, 150
+POT = {"cx": 140, "cy": 448, "r": 40,
+       "plants": [("cilantro", -22), ("parsley", 0), ("dill", 22)]}
+BEDW, BEDH, BEDY = 200, 230, 150
+GROW = {"germinating", "seedling", "hardening", "establishing", "outdoor",
+        "harvesting"}
 
 
 def _status_of(slug, plants):
@@ -635,69 +639,103 @@ def _status_of(slug, plants):
     return "planned", slug.replace("-", " ").title()
 
 
+def _marker(cx, cy, status, r=5):
+    if status == "sown":
+        return f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="{r}" class="m-sown"/>'
+    if status in GROW:
+        return (f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="{r+2}" class="m-halo"/>'
+                f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="{r}" class="m-up"/>')
+    return f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="{r}" class="m-todo"/>'
+
+
+def _grid(x, y, w, h, cols, rows, status):
+    out = []
+    r = 4 if cols * rows > 40 else 6
+    for i in range(rows):
+        for j in range(cols):
+            cx = x + w * (j + 1) / (cols + 1)
+            cy = y + h * (i + 1) / (rows + 1)
+            out.append(_marker(cx, cy, status, r))
+    return "".join(out)
+
+
 def build_map(plants):
-    """Top-down plan of the balcony. Inline SVG so it themes and needs no assets.
+    """Top-down plan of the balcony, drawing each seed at its approximate spot.
 
-    Sun sweeps in from the right (southwest, afternoon), so the right bed is the
-    sunniest. The wall behind shades the beds until about 1:30.
+    Inline SVG so it themes and needs no assets. Sun sweeps in from the right
+    (southwest, afternoon); the wall behind shades the beds until about 1:30.
     """
-    st_cls = {"sown": "s-sown", "planned": "s-plan"}
-    parts = ['<svg viewBox="0 0 860 520" role="img" '
-             'aria-label="Top-down map of the garden beds on a southwest balcony" '
-             'class="gardenmap">']
-    parts.append('<rect x="8" y="8" width="844" height="504" rx="12" class="m-floor"/>')
-    parts.append('<text x="30" y="40" class="m-edge">Wall behind, morning shade</text>')
-    parts.append('<line x1="20" y1="52" x2="840" y2="52" class="m-wall"/>')
-    parts.append('<line x1="20" y1="470" x2="840" y2="470" class="m-rail"/>')
-    parts.append('<text x="30" y="494" class="m-edge">Open railing, southwest, '
-                 'afternoon sun</text>')
-    # sun on the right, the sunniest end, ray reaching into the right bed
-    parts.append('<g class="m-sun"><circle cx="800" cy="440" r="16"/>'
-                 '<path d="M786 426 L710 362" class="m-ray"/>'
-                 '<text x="800" y="452">sun</text></g>')
+    P = ['<svg viewBox="0 0 900 560" role="img" '
+         'aria-label="Garden map with seed positions" class="gardenmap">']
+    P.append('<rect x="10" y="10" width="880" height="540" rx="14" class="m-floor"/>')
+    P.append('<text x="34" y="42" class="m-edge">Wall behind, morning shade</text>')
+    P.append('<line x1="24" y1="54" x2="876" y2="54" class="m-wall"/>')
+    P.append('<line x1="24" y1="506" x2="876" y2="506" class="m-rail"/>')
+    P.append('<text x="34" y="530" class="m-edge">Open railing, southwest, '
+             'afternoon sun</text>')
+    # sun with rays, on the sunny right end
+    rays = "".join(
+        f'<line x1="{13*math.cos(math.radians(d)):.0f}" '
+        f'y1="{13*math.sin(math.radians(d)):.0f}" '
+        f'x2="{22*math.cos(math.radians(d)):.0f}" '
+        f'y2="{22*math.sin(math.radians(d)):.0f}" class="m-ray"/>'
+        for d in range(0, 360, 45))
+    P.append(f'<g class="m-sun" transform="translate(838,470)">{rays}'
+             '<circle r="14"/></g>')
+    P.append('<path d="M824 456 L735 396" class="m-beam"/>')
 
-    for key, bed in LAYOUT.items():
+    for bed in LAYOUT.values():
         x = bed["x"]
-        cls = "m-bed m-raised" if bed["raised"] else "m-bed"
         if bed["raised"]:
-            parts.append(f'<rect x="{x-6}" y="{BEDY-6}" width="{BEDW+12}" '
-                         f'height="{BEDH+12}" rx="8" class="m-lift"/>')
-        parts.append(f'<rect x="{x}" y="{BEDY}" width="{BEDW}" height="{BEDH}" '
-                     f'rx="6" class="{cls}"/>')
-        # split the bed left to right by planting fraction
+            P.append(f'<rect x="{x-7}" y="{BEDY-7}" width="{BEDW+14}" '
+                     f'height="{BEDH+14}" rx="12" class="m-lift"/>')
+        P.append(f'<rect x="{x}" y="{BEDY}" width="{BEDW}" height="{BEDH}" rx="10" '
+                 f'class="m-soil {"m-raised" if bed["raised"] else ""}"/>')
+        P.append(f'<text x="{x+BEDW//2}" y="{BEDY-18}" class="m-label">'
+                 f'{esc(bed["label"])}</text>')
         xx = x
-        for slug, frac in bed["plants"]:
-            w = int(BEDW * frac)
+        for slug, frac, cols, rows in bed["plots"]:
+            w = BEDW * frac
             stt, name = _status_of(slug, plants)
-            link = "peas-wando" if slug == "peas-wando" else slug
-            parts.append(f'<a href="plants/{link}.html">'
-                         f'<rect x="{xx}" y="{BEDY}" width="{w}" height="{BEDH}" '
-                         f'class="m-plot {st_cls.get(stt, "s-grow")}"/>'
-                         f'<text x="{xx+w//2}" y="{BEDY+BEDH//2}" class="m-plant">'
-                         f'{esc(name)}</text></a>')
+            link = slug
+            P.append(f'<a href="plants/{link}.html">')
+            if len(bed["plots"]) > 1:
+                P.append(f'<rect x="{xx:.0f}" y="{BEDY}" width="{w:.0f}" '
+                         f'height="{BEDH}" rx="8" class="m-plot"/>')
+            P.append(_grid(xx, BEDY, w, BEDH, cols, rows, stt))
+            P.append(f'<text x="{xx+w/2:.0f}" y="{BEDY+BEDH-14}" class="m-crop">'
+                     f'{esc(name)}</text></a>')
             xx += w
-        parts.append(f'<text x="{x+BEDW//2}" y="{BEDY-16}" class="m-label">'
-                     f'{esc(bed["label"])}</text>')
 
-    # the pot, off to the left of the beds
-    parts.append(f'<circle cx="{POT["cx"]}" cy="{POT["cy"]}" r="{POT["r"]}" class="m-pot"/>')
-    parts.append(f'<text x="{POT["cx"]}" y="{POT["cy"]-52}" class="m-label">'
-                 f'Pot, 12 in deep</text>')
-    for i, slug in enumerate(POT["plants"]):
+    # pot
+    P.append(f'<circle cx="{POT["cx"]}" cy="{POT["cy"]}" r="{POT["r"]}" class="m-pot"/>')
+    P.append(f'<text x="{POT["cx"]}" y="{POT["cy"]-POT["r"]-10}" class="m-label">'
+             f'Pot, 12 in deep</text>')
+    for slug, dy in POT["plants"]:
         stt, name = _status_of(slug, plants)
-        parts.append(f'<text x="{POT["cx"]}" y="{POT["cy"]-12+i*16}" '
-                     f'class="m-plant">{esc(name)}</text>')
-    parts.append("</svg>")
+        cy = POT["cy"] + dy
+        P.append(f'<a href="plants/{slug}.html">{_marker(POT["cx"]-30, cy, stt, 5)}'
+                 f'<text x="{POT["cx"]-18}" y="{cy}" class="m-crop m-potc">'
+                 f'{esc(name)}</text></a>')
+
+    # legend
+    lx, ly = 470, 452
+    P.append(f'<g class="m-legend">'
+             f'{_marker(lx, ly, "planned", 5)}<text x="{lx+12}" y="{ly}">planned</text>'
+             f'{_marker(lx+95, ly, "sown", 5)}<text x="{lx+107}" y="{ly}">sown</text>'
+             f'{_marker(lx+180, ly, "germinating", 5)}'
+             f'<text x="{lx+194}" y="{ly}">up</text></g>')
+    P.append("</svg>")
 
     body = ["<h1>Garden map</h1>",
-            "<p class='lede'>Looking down on the southwest balcony. The afternoon sun "
-            "reaches the right bed first, and the wall behind shades all three until "
-            "about 1:30. Tap a bed to open that planting.</p>",
-            "".join(parts),
-            "<p class='meta'>Beds run left to right: carrots in the left low bed, Wando "
-            "peas in the raised middle, spinach and lettuce in the sunniest right bed. "
-            "The pot sits to the left. Tell me if the arrangement on the balcony differs "
-            "and I will redraw it.</p>"]
+            "<p class='lede'>Looking down on the southwest balcony, each mark a seed "
+            "at roughly where it sits. The afternoon sun reaches the right bed first, "
+            "and the wall behind shades all three until about 1:30. Tap a bed to open "
+            "that planting.</p>",
+            "".join(P),
+            "<p class='meta'>Beds run left to right: carrots in the left low bed, 42 "
+            "Wando peas in the raised middle, spinach and lettuce in the sunniest right "
+            "bed. The pot sits to the left. Tell me if the arrangement differs.</p>"]
     return page("Garden map", "".join(body), "map")
 
 
