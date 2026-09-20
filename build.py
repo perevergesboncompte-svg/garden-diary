@@ -34,6 +34,7 @@ NOTES = ROOT / "notes"
 INBOX = ROOT / "inbox"
 PLANTS = []
 SPECIES = {}
+CSSVER = ""
 
 REDACT_KEYS = {"latitude", "longitude", "elevation", "photos_path", "tasks_path"}
 
@@ -252,7 +253,7 @@ def page(title, body, nav_here="", plant=None):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
 <title>{esc(title)}</title>
-<link rel="stylesheet" href="{depth}site.css">
+<link rel="stylesheet" href="{depth}site.css?v={CSSVER}">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header><div class="bar"><a class="brand" href="{depth}index.html">Garden Diary</a><nav>{nav}</nav>{add}</div></header>
@@ -902,6 +903,9 @@ def main():
     plants = parse_plants()
     PLANTS = plants
     SPECIES = parse_species()
+    global CSSVER
+    import hashlib
+    CSSVER = hashlib.md5((ROOT / 'assets' / 'site.css').read_bytes()).hexdigest()[:8]
     entries = parse_journal()
     info, tables = parse_profile()
 
