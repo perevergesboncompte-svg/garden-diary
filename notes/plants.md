@@ -11,8 +11,10 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Type: annual, taproot, bolts under heat
 - Container: 8 in pot, shared with parsley and dill
 - Sown: 15.09.2026
-- Status: sown
-- Learnings: Cilantro is a succession crop, not a repeat-harvest one. Cutting it does
+- Status: germinating
+- Actual germination: 22.09.2026
+- Learnings: Sprouted on day 7, the first day of its 7 to 14 window, so the window held.
+  Cilantro is a succession crop, not a repeat-harvest one. Cutting it does
   not reset the bolt clock, so the supply comes from resowing every 2 to 3 weeks
   rather than from any one plant lasting.
 - Notes: Overcrowded. Three taproot herbs in one 8 in pot. Needs its own space or a

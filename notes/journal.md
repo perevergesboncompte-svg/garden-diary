@@ -1,5 +1,15 @@
 # Garden Journal
 
+## 22.09.2026
+
+### Cilantro up
+- Action: observed
+- Plants: cilantro
+- Details: Cilantro sprouted in the pot on day 7, the first day of its 7 to 14 day
+  window. Two of the three pot wedges are now up, with parsley still to come.
+- Note: Parsley is the slow one at 14 to 28 days, so nothing showing there until about
+  29 September is normal.
+
 ## 20.09.2026
 
 ### Peas sown, dill and spinach up
