@@ -11,7 +11,7 @@
 - Days to germination: 4 [PlantVarietyDB, median of 1 varieties]
 - Germination window days: 4 to 8 [openplantdb, median of 23 varieties, hand estimate was 5 to 10]
 - Germination soil temperature F: 50 to 80 [openplantdb, median of 23 varieties]
-- Local sowing months: August to October [UC Master Gardeners Orange County]
+- Local sowing months: August to October [UC ANR California Master Gardener Handbook Table 14.2, South Coast column, where this crop is listed as cabbage Chinese. It is absent from the Orange County chart, which an earlier revision of this file wrongly credited]
 - Succession interval days: 18 [hand-entered]
 
 ## Growing

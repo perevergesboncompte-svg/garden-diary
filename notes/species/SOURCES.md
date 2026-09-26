@@ -127,8 +127,36 @@ non-commercial, and the seed vendors and university extension services, all of w
 assert copyright with no reuse grant. Individual figures taken from them are facts.
 Their tables are not.
 
-Arugula, cilantro, dill and basil are absent from the UC chart, so their files say so
-rather than borrowing a month range from somewhere less local.
+Arugula, cilantro, dill, basil, bok choy, green onion, oregano and sweet marjoram are all
+absent from this chart, so their files say so rather than borrowing a month range from
+somewhere less local.
+
+Two of those were previously miscredited to this chart. Bok choy's August-to-October and
+green onion's all-year both came from UC's statewide Table 14.2 instead, and were corrected
+once an independent extraction of the chart's 44 crop rows found neither crop on it. The
+lesson generalises: two documents from the same institution are not interchangeable, and a
+figure attributed to the wrong one of them is as wrong as a figure with no source.
+
+## UC ANR California Master Gardener Handbook, Table 14.2 [UC ANR Table 14.2]
+
+"Vegetable gardening at a glance: How to plant and store", pages 351 to 352.
+
+Statewide rather than county, and split by region, so Costa Mesa reads its South Coast
+column. Footnote a defines that region as San Luis Obispo County south. It covers crops the
+Orange County chart omits, which is why it is the source for bok choy and green onion.
+
+Where it disagrees with the Orange County chart about October, both are recorded rather than
+one being chosen. They conflict for Brussels sprouts, celery, endive, kohlrabi, leeks,
+parsnips, peas and parsley, which is a wide enough disagreement that neither document should
+be treated as settling a month on its own.
+
+Its footnote h is the most directly useful line in it for this garden, because it describes
+this exact bed geometry: crops grown in beds take two rows per bed with bed tops 18 in wide.
+Whether a crop carries that footnote is a cleaner test of whether it suits an 18 in bed than
+any mature-width figure.
+
+Same CC BY-NC-ND licence as the rest of UC ANR, so figures are facts against a citation and
+no table is reproduced.
 
 ## Mid-Atlantic Commercial Vegetable Recommendations [Mid-Atlantic Commercial Vegetable Recommendations]
 

@@ -10,7 +10,7 @@
 - Days to germination: 7 [PlantVarietyDB, median of 1 varieties]
 - Germination window days: 7 to 14 [openplantdb, median of 17 varieties, matches the hand-entered estimate]
 - Germination soil temperature F: 50 to 75 [openplantdb, median of 17 varieties]
-- Local sowing months: all year [UC Master Gardeners Orange County]
+- Local sowing months: all year [UC ANR California Master Gardener Handbook Table 14.2, South Coast column, where this crop is listed as onions green. It is absent from the Orange County chart, which an earlier revision of this file wrongly credited]
 - Succession interval days: 21 [hand-entered]
 
 ## Growing
