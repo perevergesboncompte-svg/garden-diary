@@ -84,10 +84,15 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Type: shell pea, climbing, cool season
 - Container: middle raised bed, whole bed
 - Sown: 20.09.2026
-- Status: sown
+- Status: germinating
+- Actual germination: 23.09.2026
 - Plan: 42 peas in a 6 by 7 grid, evenly spaced across the whole raised bed. They will
   want a trellis or netting to climb once the vines get going.
-- Learnings:
+- Learnings: Up on day 3, less than half the 7 to 14 day window. That makes three of the
+  four crops sown here that beat their reference window, after spinach and dill at day 5,
+  so these germination figures run slow for warm September soil on this balcony. Read them
+  as an outer bound rather than a forecast. The trellis is now the next job, not a later
+  one, because the vines run fast once the shoots are up.
 - Notes: Wando is a USDA 1943 shell variety bred for heat tolerance and also frost-hardy,
   so it takes the warm end of the local October-to-February window better than most peas.
   About 68 to 70 days to pods on 60 to 75 cm vines. Pick pods often to keep the vine

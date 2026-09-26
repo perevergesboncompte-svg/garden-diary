@@ -2,6 +2,15 @@
 
 ## 25.09.2026
 
+### Peas up on day 3
+- Action: observed
+- Plants: peas
+- Details: Wando peas first showed on 23 September, three days after sowing and third day
+  standing. The window I had was 7 to 14 days, so they beat its early edge by four days.
+- Note: Third crop to come up ahead of its reference window, after spinach and dill on day
+  5. The species-file germination ranges are running slow for this site. Trellis or netting
+  now moves to the top of the list.
+
 ### Carrot variety and layout set
 - Action: planned
 - Plants: carrots
