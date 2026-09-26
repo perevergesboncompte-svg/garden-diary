@@ -826,7 +826,9 @@ def build_conditions(info, tables):
             "Chance of a night at or below 32 F",
             "Hottest month",
             "Sun needed by cool-season crops",
-            "Growing format", "Bed size", "Bed depth", "Bed base", "Container"]
+            "Growing format", "Bed layout", "Second balcony bed",
+            "Total growing area", "Bed depth", "Bed base", "Container",
+            "Exposures"]
     def human(x):
         return x.replace("_", " ")
     rows = "".join(f"<dt>{esc(human(k))}</dt><dd>{esc(human(info[k]))}</dd>"
