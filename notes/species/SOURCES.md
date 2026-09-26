@@ -265,6 +265,45 @@ Match on binomial and take a median, never a single row. A name search for "lett
 in this file returns Canada Wild Lettuce and Lettuce Leaf Basil, and the first of
 those reports 90 to 150 days to maturity.
 
+## University of Illinois Extension [University of Illinois Extension]
+
+https://extension.illinois.edu/blogs/good-growing/2020-04-20-how-grow-carrots
+
+The one extension service found that names the Paris Market class rather than treating
+carrots as a single crop, and gives that class a root length and an endorsement for
+heavy clay and containers. A land-grant extension service, so it outranks the seed
+vendors on the same question.
+
+Read alongside Clemson HGIC and UMass Extension, which both state the general rule that
+clay soil roots carrots poorly. The two are only consistent if the round types are the
+exception, which is exactly what Illinois says. Recorded that way rather than as a flat
+"carrots like clay", which is what several vendor pages imply.
+
+No reuse licence granted, so the figures are cited against the link and no prose copied.
+
+## Seed packets and vendor variety pages [Botanical Interests, Fedco, Seed Savers Exchange, Johnny's Selected Seeds]
+
+Variety-level figures, which the species files deliberately do not carry. A cultivar can
+differ from its species on days to harvest, root size and germination window, so those
+numbers live on the planting that uses them rather than in the shared species layer.
+
+Used for Tonda di Parigi carrot. Botanical Interests is the source whose sowing figures
+match the packet on hand exactly, quarter inch deep, 1 in apart, 6 in rows, thinned to
+one every 2 in at 1 in tall, and no other vendor checked prints that combination.
+
+Treat vendor figures as weaker than extension data and expect them to disagree. Across
+sellers of this one round type, days to harvest ranges 50 to 80 and mature diameter 2 to
+5 cm. Two vendors using the identical variety name give 55 and 65 days. Where they
+conflict, both numbers are recorded with their source rather than averaged, and the
+breeder behind this variety, Franchi Sementi, declines to state a day count at all.
+
+Johnny's carries the one behavioural claim worth propagating: even moisture is needed for
+a round root, because drought stress elongates it. That is specific to this root type
+rather than to carrots generally.
+
+Commercial catalogue pages, no reuse licence, so figures are cited against the vendor
+name and no description is reproduced.
+
 ## hand-entered [hand-entered]
 
 Sowing depth, bolting threshold, raised-bed verdict, succession interval and

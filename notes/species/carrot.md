@@ -29,6 +29,8 @@
 - Container depth inches: 8 to 12 [Maryland 8, NC State 10, Colorado State 12]
 - Minimum soil depth inches: 12 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
 - Raised bed: marginal, short or round varieties only (Paris Market, Thumbelina, Chantenay), full-length types need 12 [hand-entered]
+- Round and miniature types for shallow ground: miniature, oxheart and Paris Market types carry roots only 2 to 3 in long and are the ones suited to heavy clay or containers [University of Illinois Extension]
+- Clay is the general exception not the rule: carrots grown in heavy clay root poorly and fork, and short-rooted types are the documented exception rather than a sign clay suits the crop [Clemson HGIC and UMass Extension for the rule, University of Illinois Extension for the exception]
 - Container friendly: 14 of 16 varieties say yes [PlantVarietyDB]
 - Soil profile depth: medium (50-150 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 

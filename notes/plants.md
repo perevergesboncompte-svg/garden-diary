@@ -103,13 +103,19 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Plan: 4 rows running left to right across the 21 in width, 6 in apart, the first row
   2.5 in in from the back edge. Sow 1/4 in (6 mm) deep with seeds 1 in apart, which is
   20 seeds a row and 80 in the bed. At 1 in tall thin to one every 2 in, leaving 10 a
-  row and 40 carrots. [seed packet]
+  row and 40 carrots. [seed packet, matching Botanical Interests' figures for this
+  variety exactly]
 - Learnings:
 - Notes: The 2 by 6 in final grid gives each carrot 12 sq in, and 40 of those is 480 sq
-  in against the bed's 483, so the bed holds exactly this stand and no more. Being a
-  round type it tops out near 1.5 in, so the 8 in of soil is not the constraint it
-  would be for a full-length carrot. Sow in place, carrots resent transplanting.
-  Keep the surface damp for the full 10 to 21 days it takes to germinate, longer than
-  anything else planned here.
+  in against the bed's 483, so the bed holds exactly this stand and no more. Roots run
+  1 to 2 in and the variety is sold for shallow beds and containers, so the 8 in of soil
+  is not the constraint it would be for a full-length carrot [Botanical Interests, Seed
+  Savers Exchange]. About 65 days to harvest [Botanical Interests], though other sellers
+  of the same variety say 55 [Fedco], and either figure assumes full sun rather than the
+  4 to 5 h this balcony gets, so expect longer. Germination runs 10 to 25 days
+  [Botanical Interests], so a bare bed at three weeks is still normal and not a failure.
+  Keep moisture even rather than merely present: drought stress makes the root grow long
+  instead of round [Johnny's Selected Seeds, on this same Paris Market type]. Sow in
+  place, carrots resent transplanting.
 
 ## Archived
