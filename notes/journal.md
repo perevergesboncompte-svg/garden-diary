@@ -1,6 +1,6 @@
 # Garden Journal
 
-## 26.09.2026
+## 25.09.2026
 
 ### Carrot variety and layout set
 - Action: planned
