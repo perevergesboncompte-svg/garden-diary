@@ -72,11 +72,18 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Container: right bed (sunniest), left half, beside the spinach
 - Sown: n/a
 - Status: planned
-- Plan: 6 plants at 15 cm (6 in) cutting spacing, not the 30 cm head spacing. Shear
-  to 3 cm for 3 to 4 cuts. Compositae, so no family clash with the spinach beside it.
+- Plan: 6 plants in 2 columns of 3 across the left half, which is 10.5 in wide by 23 in
+  deep. Columns 6 in apart, rows about 7 in apart, which is the 15 cm cutting spacing
+  rather than the 30 cm spacing a full head needs. Sow 1/4 in deep, a few seeds a station,
+  and thin to the strongest at 3 to 4 true leaves. Shear to 3 cm for 3 to 4 cuts.
+  Compositae, so no family clash with the spinach beside it.
 - Learnings:
-- Notes: Sow now. October to February is the best window and part sun reduces bolting,
-  which makes this site better for lettuce than a full-sun one.
+- Notes: October to February is the best window and part sun reduces bolting, which makes
+  this site better for lettuce than a full-sun one. The constraint is heat at both ends:
+  germination is best at 55 to 65 F and drops off above 80 F [Utah State Extension], and
+  the crop bolts above 70 to 80 F with dry soil triggering it too [NC State Extension].
+  Sowing into low 70s soil works but is not the optimum, so keep it damp through any spike
+  and expect a later sowing to establish faster than an earlier one here.
 
 ### Peas — Wando
 - Species: pea

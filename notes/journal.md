@@ -2,6 +2,17 @@
 
 ## 25.09.2026
 
+### Lettuce sowing plan set for tomorrow
+- Action: planned
+- Plants: lettuce
+- Details: 6 plants in 2 columns of 3 across the left half of the right bed, columns 6 in
+  apart and rows about 7 in, sown 1/4 in deep and thinned to the strongest at 3 to 4 true
+  leaves. Lettuce and carrots both go in on 26 September.
+- Note: Soil is 70.3 F at 6 cm. Lettuce germinates best at 55 to 65 F and germination drops
+  off above 80 F, so this is workable but not the optimum. The 4 October heat is the risk
+  for both sowings, and it will land on seedlings rather than on seed given how fast
+  everything here has come up so far.
+
 ### Peas up on day 3
 - Action: observed
 - Plants: peas

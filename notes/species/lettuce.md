@@ -11,6 +11,8 @@
 - Days to germination: 4 [PlantVarietyDB, median of 2 varieties]
 - Germination window days: 5 to 10 [openplantdb, median of 115 varieties, hand estimate was 7 to 14]
 - Germination soil temperature F: 40 to 75 [openplantdb, median of 115 varieties]
+- Germination optimum F: 55 to 65, emerging in 7 to 10 days at that temperature [Utah State Extension]
+- Germination reduced above F: 80 [Utah State Extension]
 - Local sowing months: October to February best, March still works [UC Master Gardeners Orange County]
 - Succession interval days: 18 [hand-entered]
 
