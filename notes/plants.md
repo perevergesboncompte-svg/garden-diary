@@ -93,18 +93,23 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   About 68 to 70 days to pods on 60 to 75 cm vines. Pick pods often to keep the vine
   producing. [variety note]
 
-### Carrots
+### Carrots — Tonda di Parigi
 - Species: carrot
 - Area: 0.31 m2
-- Type: root, short bulky variety for a shallow bed
+- Type: round Paris Market carrot, short and bulky, sized for a shallow bed
 - Container: left bed, whole bed
 - Sown: n/a
 - Status: planned
-- Plan: sow direct, thin to 5 cm (2 in). Short stout varieties only, Chantenay or Paris
-  Market, because the bed is 8 in and a full-length carrot needs 12. Sow in place, carrots
-  resent transplanting.
+- Plan: 4 rows running left to right across the 21 in width, 6 in apart, the first row
+  2.5 in in from the back edge. Sow 1/4 in (6 mm) deep with seeds 1 in apart, which is
+  20 seeds a row and 80 in the bed. At 1 in tall thin to one every 2 in, leaving 10 a
+  row and 40 carrots. [seed packet]
 - Learnings:
-- Notes: Year round is workable here, October is a good start. Keep the surface damp until
-  they are up, which can take 2 to 3 weeks, longer than anything else planned.
+- Notes: The 2 by 6 in final grid gives each carrot 12 sq in, and 40 of those is 480 sq
+  in against the bed's 483, so the bed holds exactly this stand and no more. Being a
+  round type it tops out near 1.5 in, so the 8 in of soil is not the constraint it
+  would be for a full-length carrot. Sow in place, carrots resent transplanting.
+  Keep the surface damp for the full 10 to 21 days it takes to germinate, longer than
+  anything else planned here.
 
 ## Archived

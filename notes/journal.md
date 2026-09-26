@@ -1,5 +1,18 @@
 # Garden Journal
 
+## 26.09.2026
+
+### Carrot variety and layout set
+- Action: planned
+- Plants: carrots
+- Details: The carrots are Tonda di Parigi, the round Paris Market type. Packet calls for
+  1/4 in depth, 1 in between seeds, 6 in between rows, thinned to one every 2 in once they
+  are an inch tall. That lays out as 4 rows across the 21 in width, 80 seeds sown and 40
+  carrots kept.
+- Note: Soil is 71.6 F at 6 cm, inside the 45 to 75 F germination range, so the bed can go
+  in now. 4 October is forecast at 92 F with 29 mph wind, landing about a week into a 10 to
+  21 day germination. Cover the bed through that day or wait until it passes.
+
 ## 22.09.2026
 
 ### Cilantro up

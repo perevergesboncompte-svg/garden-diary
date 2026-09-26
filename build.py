@@ -620,7 +620,7 @@ def build_species(sp, plants):
 
 LAYOUT = {
     "left":   {"x": 70,  "label": "Left bed", "raised": False,
-               "plots": [("carrots", 1.0, 8, 7)]},
+               "plots": [("carrots-tonda-di-parigi", 1.0, 10, 4)]},
     "middle": {"x": 330, "label": "Middle bed (raised)", "raised": True,
                "plots": [("peas-wando", 1.0, 7, 6)]},
     "right":  {"x": 590, "label": "Right bed (sunniest)", "raised": False,
@@ -651,7 +651,7 @@ def _marker(cx, cy, status, r=5):
 
 def _grid(x, y, w, h, cols, rows, status):
     out = []
-    r = 4 if cols * rows > 40 else 6
+    r = 4 if cols * rows > 35 else 6
     for i in range(rows):
         for j in range(cols):
             cx = x + w * (j + 1) / (cols + 1)
@@ -705,7 +705,7 @@ def build_map(plants):
                          f'height="{BEDH}" rx="8" class="m-plot"/>')
             P.append(_grid(xx, BEDY, w, BEDH, cols, rows, stt))
             P.append(f'<text x="{xx+w/2:.0f}" y="{BEDY+BEDH-14}" class="m-crop">'
-                     f'{esc(name)}</text></a>')
+                     f'{esc(name.split("—")[0].strip())}</text></a>')
             xx += w
 
     # pot, divided into three wedges like a Mercedes star, one herb each
@@ -743,9 +743,11 @@ def build_map(plants):
             "and the wall behind shades all three until about 1:30. Tap a bed to open "
             "that planting.</p>",
             "".join(P),
-            "<p class='meta'>Beds run left to right: carrots in the left low bed, 42 "
-            "Wando peas in the raised middle, spinach and lettuce in the sunniest right "
-            "bed. The pot sits to the left. Tell me if the arrangement differs.</p>"]
+            "<p class='meta'>Beds run left to right: 40 Tonda di Parigi carrots in the "
+            "left low bed, 42 Wando peas in the raised middle, spinach and lettuce in "
+            "the sunniest right bed. The pot sits to the left. Carrot marks show the "
+            "stand after thinning, not the 80 seeds that go in. Tell me if the "
+            "arrangement differs.</p>"]
     return page("Garden map", "".join(body), "map")
 
 
@@ -838,7 +840,17 @@ def build_conditions(info, tables):
 
 
 def repo_slug():
-    cfg = ROOT / ".git" / "config"
+    """Read the GitHub owner/repo from git config, in a worktree or the main checkout.
+
+    In a linked worktree .git is a pointer file and the config lives in the common dir.
+    """
+    git = ROOT / ".git"
+    if git.is_file():
+        git = Path(git.read_text().split(":", 1)[1].strip())
+        common = git / "commondir"
+        if common.exists():
+            git = (git / common.read_text().strip()).resolve()
+    cfg = git / "config"
     m = re.search(r"github\.com[:/]([\w.-]+/[\w.-]+?)(?:\.git)?\s", cfg.read_text())
     return m.group(1) if m else None
 
