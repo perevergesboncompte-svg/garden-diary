@@ -115,7 +115,10 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   4 to 5 h this balcony gets, so expect longer. Germination runs 10 to 25 days
   [Botanical Interests], so a bare bed at three weeks is still normal and not a failure.
   Keep moisture even rather than merely present: drought stress makes the root grow long
-  instead of round [Johnny's Selected Seeds, on this same Paris Market type]. Sow in
-  place, carrots resent transplanting.
+  instead of round [Johnny's Selected Seeds, on this same Paris Market type]. Other
+  sellers of this variety put rows 16 to 24 in apart, one of them 50 cm [Seed Savers
+  Exchange, Johnny's Selected Seeds, OSC Seeds]. Those are field figures that leave room
+  to walk and hoe between rows rather than what the plant needs, so the packet's 6 in is
+  the one to follow in a bed this size. Sow in place, carrots resent transplanting.
 
 ## Archived

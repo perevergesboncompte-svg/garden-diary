@@ -292,10 +292,17 @@ match the packet on hand exactly, quarter inch deep, 1 in apart, 6 in rows, thin
 one every 2 in at 1 in tall, and no other vendor checked prints that combination.
 
 Treat vendor figures as weaker than extension data and expect them to disagree. Across
-sellers of this one round type, days to harvest ranges 50 to 80 and mature diameter 2 to
-5 cm. Two vendors using the identical variety name give 55 and 65 days. Where they
+17 sellers of this one round type, days to harvest ranges 48 to 78 and mature diameter
+2 to 5 cm. Two vendors using the identical variety name give 55 and 65 days. Where they
 conflict, both numbers are recorded with their source rather than averaged, and the
 breeder behind this variety, Franchi Sementi, declines to state a day count at all.
+
+Row spacing is the figure most likely to mislead. Sellers of this same carrot range from
+6 in to 50 cm, an eightfold spread, and the wide end is not a disagreement about the
+plant. Those are single-row field figures that reserve room to walk and cultivate between
+rows. In a bed worked from the edge, space to what the root needs instead, which is what
+the narrow figures describe. Read any row spacing here against the growing method it
+assumes before applying it to a raised bed.
 
 Johnny's carries the one behavioural claim worth propagating: even moisture is needed for
 a round root, because drought stress elongates it. That is specific to this root type
