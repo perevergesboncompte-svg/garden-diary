@@ -95,15 +95,23 @@ Southwest balcony, holding the three 8 in beds and the pot: shaded all morning b
 building behind it, then direct sun from about 13:30 until roughly one hour before
 sunset. The table below measures this balcony only.
 
-South-east balcony, holding the 12 in bed: reported as morning sun plus a little
-afternoon. Not yet measured, so it has no row in the table. Being the inverted exposure
-it takes its light while the air is still cool, which is the better half of the day for
-cool-season crops and cuts the bolting pressure the southwest beds are under.
+South-east balcony, holding the 12 in bed: light in the morning plus a little afternoon,
+measured over a 07:00 to 14:00 window. It takes its sun while the air is still cool,
+which is the better half of the day for cool-season crops. Two results are worth keeping
+in mind. It beats the southwest balcony through winter, 3.7 h against 2.5 h in December,
+so it is the better winter bed despite the shorter clock window. But its mornings lose
+sun to coastal low cloud, so it never reaches the 6 h that full-sun crops are specified
+for, in any month of the cool season.
 
 | Period | Direct sun | Open sky | Shading cost | Class |
 |--------|-----------|----------|-------------|-------|
-| Mid-September (measured 09-18 Sep) | 4.0 to 4.9 h | 9.0 h | 45 to 56% | part sun |
-| December (measured over Dec 2025, window 13:00 to 16:00) | 2.5 h | 7.5 h | 67% | part shade |
+| Southwest, mid-September (measured 09-18 Sep) | 4.0 to 4.9 h | 9.0 h | 45 to 56% | part sun |
+| Southwest, December (over Dec 2025, window 13:00 to 16:00) | 2.5 h | 7.5 h | 67% | part shade |
+| South-east, October (over Oct 2025, window 07:00 to 14:00) | 5.1 h | 10.0 h | 49% | part sun |
+| South-east, November (over Nov 2025, same window) | 3.9 h | 7.7 h | 49% | part shade |
+| South-east, December (over Dec 2025, same window) | 3.7 h | 7.5 h | 51% | part shade |
+| South-east, January (over Jan 2026, same window) | 4.0 h | 8.1 h | 51% | part shade |
+| South-east, February (over Feb 2026, same window) | 4.4 h | 9.1 h | 52% | part sun |
 
 Two things follow, and both matter more than the raw hour count.
 
