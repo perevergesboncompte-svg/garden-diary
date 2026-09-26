@@ -58,10 +58,15 @@ by three or four hours, which matters for any bed that only gets morning light. 
 
 ## Growing setup
 
-- Growing format: 3 raised beds plus 1 container
+- Growing format: 4 raised beds plus 1 container, across two balconies
 - Bed layout: three beds in a row on a southwest balcony, the middle one
   raised higher than the left and right. Each 21 x 23 x 8 in (0.31 m2, 0.94 total)
-- Bed depth: 8 inches
+- Second balcony bed: 46 x 18 x 12 in (0.534 m2) on a south-east balcony, added
+  September 2026. Larger than all three southwest beds put together are deep, and the
+  only bed here with more than 8 in of root room, so it is the one place a deep-rooted
+  or long-season crop can go
+- Total growing area: 1.51 m2
+- Bed depth: 8 inches on the southwest balcony, 12 inches on the south-east one
 - Bed base: lined with landscape fabric or mesh, so water drains but roots stay in the
   bed. The 8 inches is the entire root zone, which keeps carrots in the beds restricted
   to short and round varieties. Drainage is not a concern here, so the
@@ -81,8 +86,16 @@ by three or four hours, which matters for any bed that only gets morning light. 
 
 ### Measured sun exposure
 
-Southwest balcony, so shaded all morning by the building behind it, then direct sun
-from about 13:30 until roughly one hour before sunset. Everything shares this exposure.
+Two exposures, opposite each other, so do not apply one bed's figures to the other.
+
+Southwest balcony, holding the three 8 in beds and the pot: shaded all morning by the
+building behind it, then direct sun from about 13:30 until roughly one hour before
+sunset. The table below measures this balcony only.
+
+South-east balcony, holding the 12 in bed: reported as morning sun plus a little
+afternoon. Not yet measured, so it has no row in the table. Being the inverted exposure
+it takes its light while the air is still cool, which is the better half of the day for
+cool-season crops and cuts the bolting pressure the southwest beds are under.
 
 | Period | Direct sun | Open sky | Shading cost | Class |
 |--------|-----------|----------|-------------|-------|
