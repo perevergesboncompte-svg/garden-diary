@@ -311,6 +311,94 @@ rather than to carrots generally.
 Commercial catalogue pages, no reuse licence, so figures are cited against the vendor
 name and no description is reproduced.
 
+## WUCOLS IV [WUCOLS]
+
+UC Davis and UC ANR's plant water-use database, https://wucols-frontend.ucdavis.edu
+
+The most site-specific tool in this collection, because it rates water use by region and
+Costa Mesa falls in Region 3, South Coastal. Those are this garden's ratings rather than a
+state average.
+
+It answers one question nothing else here could: whether a perennial can share a bed with
+vegetables. A plant rated Very Low will rot on a vegetable watering schedule, one rated
+Moderate will tolerate it. That is why rosemary, rated Very Low for this region, is a poor
+bed companion and sage, rated Moderate, is a tolerable one, and it is a cleaner test than
+reading a dozen prose warnings about drainage.
+
+It also supplies Sunset zones, which is the California system and often disagrees with the
+USDA zone caps that out-of-state vendors print. Where a vendor caps a herb at zone 8 or 9
+with no reason given and WUCOLS puts its Sunset range across zone 24, the split is recorded
+rather than resolved.
+
+Consult it before adding any perennial to a bed that is watered for annuals.
+
+## UC ANR publications and county Master Gardener programs [UC ANR Publication 7211, UC Davis Vegetable Research and Information Center, UC EHN 70, and the named county programs]
+
+UC ANR's crop publications plus Master Gardener documents from Orange, Sacramento, Santa
+Clara, San Luis Obispo, Napa, Sonoma, Marin, and Tulare and Kings counties.
+
+The highest authority available for anything local, since this is a California garden, and
+worth preferring over any vendor on planting months, water and climate fit. Two of these
+documents carry figures found nowhere else: UC Tulare and Kings gives minimum soil depths
+per herb, and UC San Luis Obispo names which herbs tolerate partial shade.
+
+Licence: CC BY-NC-ND. So figures are recorded as facts against deep links and none of their
+tables or prose is reproduced. The Orange County Seed Planting Chart encodes months as
+coloured cells rather than text, so its months were decoded from the cell fills and the
+decoder was validated against crops already in this collection before its output was
+trusted.
+
+Two known defects. The Orange County herb handout prints sweet marjoram's row spacing as
+"18 ft", which is a misprint against every other row being in inches, and it carries
+several binomial typos, so treat its Latin as unreliable and its spacing columns as sound.
+And UC Davis's home-garden broccoli page contradicts the primary literature by blaming
+bolting on heat.
+
+## Extension services outside California [Utah State Extension, University of Wisconsin-Madison Extension, Illinois Extension, Clemson HGIC, University of Maryland Extension, University of Minnesota Extension]
+
+Land-grant services used where UC is silent, which is often the case for herbs and for
+germination figures.
+
+Ranked below UC for anything climate-dependent, because a Wisconsin or Minnesota winter is
+not this one. Their zone caps in particular should not be read as statements about a
+frost-free site, since none of them explains its upper limit. Utah State earns the most
+weight here for carrying the figures that actually decide things, including the statement
+that crowding broccoli suppresses side shoots and that chives want soil near field capacity.
+
+No reuse licence granted by any of them, so figures are cited against links and no prose is
+copied.
+
+## Peer-reviewed literature [named by author, year and journal]
+
+Used where extension services disagree with each other or repeat something the primary work
+contradicts. Every entry is cited by author, year, journal and DOI so it can be checked.
+
+It earned its place by overturning a widely repeated claim. Extension pages and garden
+writing say broccoli bolts from heat. Farnham and Bjorkman 2011 states the opposite outright,
+that premature bolting is cold-induced, and traces the mechanism to Miller 1985. A garden
+source being numerous is not the same as it being right.
+
+Where the primary literature itself splits, both figures are recorded. Broccoli's cold
+induction threshold and oregano's germination optimum are each unresolved between two
+peer-reviewed papers, and neither is averaged away.
+
+Paywalled abstracts were read from publisher deposits or authors' own archived pages. Nothing
+behind a paywall is quoted beyond its abstract.
+
+## Cal-IPC Inventory [Cal-IPC Inventory]
+
+The California Invasive Plant Council inventory, https://www.cal-ipc.org/plants/inventory/
+
+Checked before recommending any perennial, because a plant that escapes is a problem this
+climate makes worse rather than better. Used as negative evidence: no culinary herb
+considered here is listed, while Mentha pulegium and Foeniculum vulgare are, so the absence
+is meaningful rather than a gap in coverage.
+
+A caution on counting it. Three independent extractions of this inventory returned 226, 331
+and 773 entries, because each counted a different thing: assessed taxa with Plant Assessment
+Forms, species profile links, and binomials in the full table. Cite what was counted, not a
+bare total.
+
 ## hand-entered [hand-entered]
 
 Sowing depth, bolting threshold, raised-bed verdict, succession interval and
