@@ -15,7 +15,9 @@
 - Seed strain matters: generic seed gives variable leaf texture and size, so buy a named culinary type [Illinois Extension]
 
 ## Growing
-- Days to harvest from seed: 60, or 30 from a transplant [Utah State Extension]
+- Days to harvest from seed: disputed across a very wide range, 60 to a full year, and the slow end is the more likely one on a part-shade site [Utah State Extension 60, University of Arkansas Extension about 90, UC Marin and Cornell both say seedlings may not be big enough to cut in the first year]
+- Days to harvest from a transplant or clump: 30 to 60, which sidesteps the dispute above entirely [Utah State Extension 30, University of Arkansas Extension within two months]
+- Seed or plants: either works, so buy a nursery clump instead of seed when leaves are wanted in the first season [University of Arkansas Extension]
 - Harvest can start at height: 6 in [NC State Extension]
 - Mature size: 12 to 20 in tall and wide [UC Master Gardeners of Sacramento County]
 - Sun: full sun to part shade, where the partial shade band is 2 to 6 h of direct sun a day [NC State Extension]
@@ -39,7 +41,9 @@
 - Flowering rather than bolting is the thing to prevent: deadhead before the flowers fade or it self-seeds across the bed [University of Wisconsin-Madison Extension, Illinois Extension, UC Master Gardeners of Sacramento County]
 - Invasive listing: absent from the Cal-IPC inventory despite those self-seeding warnings [Cal-IPC Inventory]
 - Chilling requirement: none stated by any source reached
-- Winter foliage: evergreen in mild climates rather than dying back, though one UC county source says it goes dormant in fall [University of Wisconsin-Madison Extension and NC State Extension for evergreen, UC Master Gardeners of Napa County for dormancy]
+- Winter foliage: evergreen, continuing to develop leaves through winter although slowly, established by peer review rather than by garden prose alone [Xiao et al. 2010, Journal of the Japanese Society for Horticultural Science 79:282, with University of Wisconsin-Madison Extension and NC State Extension agreeing]
+- Dormancy claims concern a different plant: the rest-breaking literature for this species is about the botanical variety asatsuki, Allium schoenoprasum var. foliosum, and commercial growers break that rest with heat rather than cold, so a frost-free winter is no obstacle to ordinary chives [Xiao et al. 2010]
+- Dissent on the evergreen finding: one UC county source reports fall dormancy instead [UC Master Gardeners of Napa County]
 
 ## Harvest
 - Repeat harvest: yes, cut back to within 1 to 2 in of the soil, 3 to 4 times in the first year and monthly after that [Utah State Extension]
