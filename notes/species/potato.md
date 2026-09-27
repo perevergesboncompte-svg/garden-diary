@@ -16,7 +16,7 @@
 - The nearest state to say it outright: fall plantings are not recommended at all, because of increased pest and disease risk [Clemson HGIC]
 - A zone-matched refusal: Texas gives 1 October for its zone 9A region and marks its warmest region, zone 9B, not recommended, and this site is warmer still at 10b [Texas A&M AgriLife EHT-056, with the last step being inference]
 - Why rules from other states do not transfer: their fall dates are anchored to a first-freeze date, which is undefined at a site with no freeze [Texas A&M AgriLife EHT-077 gives 14 to 16 weeks before first freeze]
-- The only October endorsements: two land-grant sources, both subtropical [UF/IFAS for South Florida, University of Hawaii CTAHR for low elevations]
+- The only October endorsements: two land-grant sources, both subtropical [UF/IFAS for South Florida, University of Hawaii CTAHR for its lowland zone]
 - Seed supply is the binding constraint: good seed potatoes are impossible to find for fall planting [Mississippi State Extension]
 - The extension workaround is to buy in spring and hold: keep spring-bought seed in a cool humid spot, and for no more than a year [Texas A&M AgriLife EHT-068]
 - Dormancy has to be broken first: seed for a fall or winter planting must be aged 6 to 16 weeks depending on cultivar, stored near 55 F, then pre-sprouted for 2 to 3 weeks [Potato Association of America, Texas A&M AgriLife EHT-068]
