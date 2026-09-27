@@ -11,7 +11,10 @@
 - Germination window days: 7 to 14 [openplantdb, median of 12 varieties, matches the hand-entered estimate]
 - Germination soil temperature F: 55 to 75 [openplantdb, median of 12 varieties]
 - Local sowing months: not covered by the local UC chart, so follow the temperature anchors instead [UC Master Gardeners Orange County]
-- Succession interval days: 18 [hand-entered]
+- Succession interval days: 21 to 28, to keep a continuous supply of leaves [Illinois Extension]
+- Succession interval days by earlier estimate: 18 [hand-entered]
+- Transplanting: difficult because of the taproot, so sow it direct where it is to grow [Illinois Extension]
+- Container sowing: sow direct into the container rather than moving a seedling in, and a cultivar bred for pot culture exists [Illinois Extension]
 
 ## Growing
 - Days to harvest from seed: 45 to 62 [openplantdb, median of 12 varieties sown direct, not transplanted]

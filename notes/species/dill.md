@@ -12,6 +12,8 @@
 - Germination soil temperature F: 60 to 70 [openplantdb, median of 17 varieties]
 - Local sowing months: not covered by the local UC chart, so follow the temperature anchors instead [UC Master Gardeners Orange County]
 - Succession interval days: 21 [hand-entered]
+- Transplanting: does best sown direct, because the taproot system makes it difficult to transplant successfully [Illinois Extension]
+- Compact cultivars exist for containers: Ella and Monia are named as short or compact types suited to pots, against Mammoth as the tall standard [Illinois Extension]
 
 ## Growing
 - Days to harvest from seed: 40 to 60 [openplantdb, median of 17 varieties sown direct, not transplanted]
