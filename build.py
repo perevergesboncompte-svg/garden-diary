@@ -763,7 +763,7 @@ def build_map(plants):
 
 
 SE_BED = {"x": 40, "y": 112, "w": 368, "h": 144,
-          "plots": [("fava-windsor", 0.72, 9, 2), ("rocket-astro", 0.28, 7, 1)]}
+          "plots": [("fava-windsor", 0.72, 9, 2), ("rocket-wild", 0.28, 7, 1)]}
 SE_SMALL = [("chives", "Chives"), ("oregano-true-greek", "Oregano"),
             ("thyme", "Thyme"), ("cilantro-pot-2", "Cilantro"),
             ("dill-pot-2", "Dill"), ("parsley-pot-2", "Parsley")]

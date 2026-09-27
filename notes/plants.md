@@ -153,24 +153,26 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   packet's 18 to 36 in, which the 18 in bed width forces, and upright favas lean on each
   other so staking should not be needed out of high wind.
 
-### Rocket — Astro
-- Species: arugula
+### Rocket — Wild
+- Species: wild-rocket
 - Area: 0.148 m2
 - Type: fast cut-and-come-again leaf
 - Container: south-east bed, front 5 in strip on the railing side
 - Sown: n/a
 - Status: planned
-- Plan: Astro cultivar. 7 stations along the row 6 in apart, 3 seeds each at 1/4 in deep,
-  thinned to one per station once they are half an inch tall. Shear to 2.5 cm for 3 to 4
-  cuts. [seed packet]
+- Type: perennial cutting green, a different genus from salad arugula
+- Plan: 7 stations along the front strip 6 in apart, 6 seeds each at 1/4 in deep, thinned
+  to one per station once they are half an inch tall. Pick leaves individually or cut the
+  whole plant at ground level. [seed packet]
 - Learnings:
-- Notes: Astro chosen over plain arugula on two counts, both from the packet: it is the
-  milder of the two where the standard type is described as peppery, mustardy and hot, and
-  it is slower to bolt with wider leaves. That matters because arugula was ruled out
-  earlier on flavour, so this is a trial of the mild end of the crop rather than a repeat.
-  32 to 55 days against 20 to 45 for the standard type, so milder costs about ten days.
-  Germination 10 to 15 days. The packet's own advice that afternoon shade prolongs the
-  harvest describes this balcony exactly.
+- Notes: Diplotaxis tenuifolia, not the Eruca that salad arugula is, so it has its own
+  species page rather than borrowing arugula's figures. Being perennial it holds this front
+  strip between seasons instead of clearing out, which makes the strip permanent and leaves
+  the back two thirds free to rotate. That suits a crop meant to keep producing, but it is
+  the opposite of the mild flavour direction: the packet calls it slightly stronger and
+  more complex than other rocket, and slower growing. 30 to 50 days, germination 10 to 15.
+  One packet holds about 1,600 seeds and sows 280 ft against the 3.8 ft needed here, so it
+  will last years.
 
 ## Containers — 10 in herb pots
 
