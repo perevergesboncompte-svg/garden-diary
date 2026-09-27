@@ -406,6 +406,38 @@ several binomial typos, so treat its Latin as unreliable and its spacing columns
 And UC Davis's home-garden broccoli page contradicts the primary literature by blaming
 bolting on heat.
 
+## Two UC rules worth applying before any crop decision here
+
+**UC's own root-depth classes**, from the Master Gardener Handbook's irrigation section, are the
+cleanest test of whether a crop fits a shallow bed, and UC states outright that the rule applies
+to raised beds:
+
+Shallow rooted, main roots in the top 6 to 12 in: cabbage, cauliflower, lettuce, celery, sweet
+corn, onion, white potato, radish. Moderately deep, top 1 to 2 ft: snap bean, carrot, cucumber,
+eggplant, peas, pepper, summer squash. Deep, top 2 to 4 ft: asparagus, globe artichoke,
+cantaloupe, pumpkin, tomato, watermelon.
+
+So the 12 in beds here suit the shallow class outright, sit at the floor of the moderately deep
+class, and cannot serve the deep class at all. That single sentence rules out asparagus and globe
+artichoke on depth without needing to consider light or calendar.
+
+**UC's light requirement is not one number, it is a factor-of-two spread**, and quoting any single
+UC figure as "what UC says" is therefore wrong:
+
+At least 8 hours with "avoid shaded locations" in the flagship handbook, Publication 3382 chapter
+13. Six to 8 hours with root and leafy crops tolerating some shade in Publication 8059. Six to 8
+in the Contra Costa and Los Angeles county guidance, with onions, carrots and beets allowed
+partial shade. Three hours leafy, about 4 for roots, 6 to 10 for fruiting in the container
+handout. Four hours worth trying for roots in Placer County. At least 4 to 6 on the UC IPM
+cultural-tips pages.
+
+Treat the UC IPM figure with care: it appears verbatim on the artichoke, asparagus, onion and
+potato pages, so it is a site-wide default rather than a per-crop finding.
+
+The practical consequence for this garden, whose sunniest cool-season month measures 5.1 h: every
+substantial crop considered here is being grown below the light its own documentation asks for,
+and the choice is between degrees of shortfall rather than between adequate and inadequate.
+
 ## Extension services outside California [Utah State Extension, University of Wisconsin-Madison Extension, Illinois Extension, Clemson HGIC, University of Maryland Extension, University of Minnesota Extension]
 
 Land-grant services used where UC is silent, which is often the case for herbs and for
