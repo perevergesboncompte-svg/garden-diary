@@ -104,14 +104,30 @@ It is a French market-garden dataset, calibrated to the oceanic climate of
 north-west France, so read its rotation advice as sound and its timing as foreign.
 It omits the perennial culinary herbs, which is why dill has no entry.
 
-## UC Master Gardeners Orange County [UC Master Gardeners Orange County]
+## SoCal planting chart [SoCal planting chart, third-party, republished by UC Master Gardeners]
 
 Seed Planting Chart, revision U08/2016, at
 https://ucanr.edu/sites/default/files/2025-07/Seed_Planting_Chart_2507_0.pdf
 
-Supplies the local sowing months, and it is the most locally correct source that
-exists for this garden: it is written for Sunset zones 22, 23 and 24 rather than for
-a national average, and it marks each month optimal or merely acceptable.
+Supplies the local sowing months. It is written for Sunset zones 22, 23 and 24 rather
+than for a national average, and it marks each month optimal or merely acceptable, which
+makes it genuinely useful for this garden.
+
+**It is not UC research, and an earlier revision of this file wrongly said it was.** The
+same chart is published by UC Master Gardeners of Ventura County with a source credit
+reading "Source Digital Gardener". The Orange County version carries the identical footer
+sentence with the zone list widened to 22, 23 and 24 and the credit removed. So this is a
+third-party planting chart republished by two UC Master Gardener programs, attributed by one
+of them and not by the other.
+
+That demotes it below UC's own dataset rather than discrediting it. Where it agrees with UC
+Table 13.2 or UC IPM, the month stands on UC's authority. Where it is the only source for a
+month, the month rests on a third party, and the files now say so.
+
+Crops whose October window survives without it, on two UC sources each: turnip, cabbage,
+cauliflower, daikon and rutabaga. Crops whose October window rests on this chart alone:
+Brussels sprouts, kohlrabi, leek, parsnip, pea and fava. That distinction matters and was
+invisible while the chart was miscredited as UC.
 
 **Cited, not copied.** UC ANR licenses its material CC BY-NC-ND 4.0, and the
 NoDerivatives term means reformatting their chart into this schema would be a

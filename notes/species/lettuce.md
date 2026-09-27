@@ -13,7 +13,7 @@
 - Germination soil temperature F: 40 to 75 [openplantdb, median of 115 varieties]
 - Germination optimum F: 55 to 65, emerging in 7 to 10 days at that temperature [Utah State Extension]
 - Germination reduced above F: 80 [Utah State Extension]
-- Local sowing months: October to February best, March still works [UC Master Gardeners Orange County]
+- Local sowing months: October to February best, March still works [SoCal planting chart, third-party, republished by UC Master Gardeners]
 - Succession interval days: 18 [hand-entered]
 
 ## Growing

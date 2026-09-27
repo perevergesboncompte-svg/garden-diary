@@ -19,7 +19,10 @@
 ## Sowing
 - Local sowing months once split by variety class: October from seed for short day types, November to December for short day transplants, February to March for intermediate day types [UC Master Gardeners of San Diego County]
 - Why the UC sources appear to conflict: each gives one window per region without splitting by variety class, so the October, the November to December and the February to March windows are describing different variety and propagation combinations rather than disagreeing [hand-entered, following the San Diego source that does split them]
-- Sowing months by other UC readings: February to March for the South Coast, February to October on UC's live reproduction of that same table, October south of Bakersfield for a June harvest, and January, February, November and December on the county chart [UC ANR Table 14.2, UC's time-of-planting page, UC Davis VRIC, UC Master Gardeners of Orange County]
+- Why UC appears to contradict itself: it is an edition revision rather than a conflict, the 2002 first edition giving the South Coast February to March and the 2015 second edition revising that same cell to February to October [UC ANR Master Gardener Handbook Table 14.2 against Table 13.2]
+- Current UC position: includes October, being the newer edition and the one the live page reproduces [UC ANR Master Gardener Handbook Table 13.2]
+- Sowing months on the third-party chart: January, February, November and December, with October blank, which is now the outlier against three UC sources [SoCal planting chart, third-party, republished by UC Master Gardeners]
+- Corroborating October: south of Bakersfield, seeded or transplanted in October for a June harvest [UC Davis VRIC]
 - Sets: ruled out by two UC sources, because they tend to bolt rather than make a large bulb [UC Davis VRIC, UC IPM]
 - Planting depth: set so the bulb is barely covered, because deeper planting gives shoots rather than bulbs [UC Master Gardeners of Orange County]
 - Plant spacing inches: 3 in the printed table, against 4 to 5 for transplants and 4 to 6 as a final spacing elsewhere [UC ANR Table 14.2, UC IPM, UC Master Gardeners of San Diego County]

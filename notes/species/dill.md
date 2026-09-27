@@ -10,7 +10,7 @@
 - Days to germination: 7 [PlantVarietyDB, median of 6 varieties]
 - Germination window days: 7 to 14 [openplantdb, median of 17 varieties, hand estimate was 10 to 14]
 - Germination soil temperature F: 60 to 70 [openplantdb, median of 17 varieties]
-- Local sowing months: not covered by the local UC chart, so follow the temperature anchors instead [UC Master Gardeners Orange County]
+- Local sowing months: not covered by the local UC chart, so follow the temperature anchors instead [SoCal planting chart, third-party, republished by UC Master Gardeners]
 - Succession interval days: 21 [hand-entered]
 - Transplanting: does best sown direct, because the taproot system makes it difficult to transplant successfully [Illinois Extension]
 - Compact cultivars exist for containers: Ella and Monia are named as short or compact types suited to pots, against Mammoth as the tall standard [Illinois Extension]

@@ -10,7 +10,7 @@
 - Days to germination: 14 [PlantVarietyDB, median of 2 varieties]
 - Germination window days: 14 to 28 [openplantdb, median of 12 varieties, matches the hand-entered estimate]
 - Germination soil temperature F: 50 to 70 [openplantdb, median of 12 varieties]
-- Local sowing months: October to March [UC Master Gardeners Orange County]
+- Local sowing months: October to March [SoCal planting chart, third-party, republished by UC Master Gardeners]
 
 ## Growing
 - Days to harvest from seed: 70 to 90 [openplantdb, median of 11 varieties sown direct, not transplanted]

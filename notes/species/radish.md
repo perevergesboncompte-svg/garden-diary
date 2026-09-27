@@ -10,7 +10,7 @@
 - Days to germination: 4 [PlantVarietyDB, median of 14 varieties]
 - Germination window days: 4 to 7 [openplantdb, median of 54 varieties, hand estimate was 4 to 10]
 - Germination soil temperature F: 45 to 80 [openplantdb, median of 54 varieties]
-- Local sowing months: year round, June to September second best [UC Master Gardeners Orange County]
+- Local sowing months: year round, June to September second best [SoCal planting chart, third-party, republished by UC Master Gardeners]
 - Succession interval days: 12 [hand-entered]
 
 ## Growing

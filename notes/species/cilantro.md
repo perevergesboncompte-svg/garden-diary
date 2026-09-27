@@ -10,7 +10,7 @@
 - Days to germination: 7 [PlantVarietyDB, median of 2 varieties]
 - Germination window days: 7 to 14 [openplantdb, median of 12 varieties, matches the hand-entered estimate]
 - Germination soil temperature F: 55 to 75 [openplantdb, median of 12 varieties]
-- Local sowing months: not covered by the local UC chart, so follow the temperature anchors instead [UC Master Gardeners Orange County]
+- Local sowing months: not covered by the local UC chart, so follow the temperature anchors instead [SoCal planting chart, third-party, republished by UC Master Gardeners]
 - Succession interval days: 21 to 28, to keep a continuous supply of leaves [Illinois Extension]
 - Succession interval days by earlier estimate: 18 [hand-entered]
 - Transplanting: difficult because of the taproot, so sow it direct where it is to grow [Illinois Extension]
