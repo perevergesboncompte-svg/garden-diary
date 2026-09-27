@@ -151,9 +151,33 @@ parsnips, peas and parsley, which is a wide enough disagreement that neither doc
 be treated as settling a month on its own.
 
 Its footnote h is the most directly useful line in it for this garden, because it describes
-this exact bed geometry: crops grown in beds take two rows per bed with bed tops 18 in wide.
-Whether a crop carries that footnote is a cleaner test of whether it suits an 18 in bed than
-any mature-width figure.
+this exact bed geometry: two rows per bed with bed tops 18 in wide. The south-east bed is
+18 in wide, so whether a crop carries that footnote is a sharper test of whether it suits
+that bed than any mature-width figure, and it works as a whitelist.
+
+Carrying footnote h, with the row spacing it attaches to: turnip 18, bulb onion 18, beet 18,
+spinach 18, rutabaga 6, radish 6, carrot 24, parsnip 24, celeriac 24, celery 24, endive 24,
+mustard 24, Chinese cabbage 30, Florence fennel 30, snap bean 30.
+
+Not carrying it: pea, cabbage, cauliflower, Brussels sprouts, kohlrabi, leek, artichoke,
+asparagus, potato, broccoli, kale, lettuce. Fava is not in the table at all, so UC publishes
+no bed geometry for it.
+
+Read footnote h against footnote c, which licenses tightening: planting distances given are
+standards and many crops can go closer for intensive production. So a crop without h is not
+excluded from a narrow bed, it just has no UC dimension behind it there.
+
+A caution on reading this table at all: rows wrap onto two printed lines and the wrapped
+fragments sit visually under the wrong headers, so a figure read by eye can come from the
+wrong region's column. The figures here were taken by x-coordinate position rather than by
+eye. One printing defect to know about: the turnip row gives in-row spacing as "2 (2.5)",
+where 2 in should be 5 cm, so the metric value is a carry-over misprint from the radish row
+above it.
+
+UC also contradicts itself between the printed table and its own live reproduction of the
+same table, most sharply on bulb onion, where the print gives the South Coast February to
+March and the live page gives February to October. Where that happens, neither is treated as
+settling the question.
 
 Same CC BY-NC-ND licence as the rest of UC ANR, so figures are facts against a citation and
 no table is reproduced.
