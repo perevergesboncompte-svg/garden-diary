@@ -23,6 +23,20 @@
 - Sun: full sun [Utah State Extension]
 - Target soil pH: 5.5 to 7.5 [Utah State Extension]
 
+## Whether shallots suit this garden at all, which is the first question
+- Day-length sensitivity: all shallots have it, and should be planted as you would a long-day onion [Johnny's Selected Seeds]
+- Adapted range: a band running from 36 to 55 degrees north, which begins well north of this garden at 33.6 [Territorial Seed]
+- Best regions: intermediate and long day areas [Dixondale Farms]
+- Per-cultivar range floors: the lowest found for any cultivar starts at 37 degrees north, and no cultivar reached is rated for a site this far south [Conservor at 37 to 60, with Ambition, Creme Brulee, Innovator and Matador all 40 to 60]
+- Hardiness: zones 2 to 9, which excludes this site's 10b [Cornell]
+- Local UC coverage: none, being absent from the statewide table entirely, with every UC source carrying shallots written for northern California [UC ANR Table 14.2 and county programs]
+- Mild-winter failure mode: a fall planting through a long mild winter gives a long period where growth starts and stops, producing many growing points and smaller bulbs than a spring planting would [Oregon State Extension]
+- The only UC sun figure for the crop: at least 8 hours of direct sun, roughly double this site's best cool-season month [UC Master Gardeners of Santa Clara County]
+- Verdict: ruled out by day-length adaptation rather than by calendar, so the earlier idea of sourcing a short-day shallot does not work, because no short-day shallot was found to exist [hand-entered]
+- Mother bulb size if tried anyway: use small ones, since bolting rose from 12.5 percent at 20 to 30 mm bulb diameter to 45.8 percent at 51 to 60 mm [Acta Agrobotanica 2013, on Ambition F1 and Matador F1]
+- Do not bury the bulbs: shallot bulbs develop on top of the ground and should not be covered with soil [Clemson HGIC, Virginia Tech]
+- Yield if tried: 5 to 10 bulbs per bulb planted, at about 90 to 120 days [UC Master Gardeners of Sonoma County]
+
 ## Day length, which decides whether a variety works at all
 - Bulbing is photoperiod controlled: onions and their relatives are classed long or short day by the hours of daylight needed to form a bulb [Clemson HGIC]
 - Short day types: bulb at about 12 hours of daylight and suit gardens in the south [Clemson HGIC]
