@@ -133,4 +133,138 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   to walk and hoe between rows rather than what the plant needs, so the packet's 6 in is
   the one to follow in a bed this size. Sow in place, carrots resent transplanting.
 
+## South-east balcony bed — 46 x 18 x 12 in
+
+### Fava — Windsor
+- Species: fava-bean
+- Area: 0.386 m2
+- Type: cool-season legume, upright to 24 to 48 in
+- Container: south-east bed, back two thirds against the wall
+- Sown: n/a
+- Status: planned
+- Plan: 18 plants in 2 rows 9 in apart, seeds 5 in apart and 2 in deep. One packet is
+  about 18 seeds, so the bed takes exactly one. Back of the bed because it shades
+  whatever sits in front of it. [seed packet]
+- Learnings:
+- Notes: 75 days on the packet against four to five months in the generic extension data,
+  a conflict worth watching since it decides whether this is a December or a March
+  harvest. Grows best below 75 F and the local winter high of 63 F suits it. Direct sow
+  only, the seedlings resent root disturbance. Two rows at 9 in is tighter than the
+  packet's 18 to 36 in, which the 18 in bed width forces, and upright favas lean on each
+  other so staking should not be needed out of high wind.
+
+### Rocket
+- Species: arugula
+- Area: 0.148 m2
+- Type: fast cut-and-come-again leaf
+- Container: south-east bed, front 5 in strip on the railing side
+- Sown: n/a
+- Status: planned
+- Plan: 11 plants in one row, 4 in apart at cutting spacing, 1/4 in deep. Shear to 2.5 cm
+  for 3 to 4 cuts.
+- Learnings:
+- Notes: 23 to 40 days makes it the fastest thing in the garden, so it should give several
+  cuts before the fava behind it is tall enough to shade it. Bolts above 80 F. Same plant
+  as arugula, which was ruled out earlier on flavour, so treat this as a trial.
+
+## Containers — 10 in herb pots
+
+### Chives
+- Species: chives
+- Area: 0.051 m2
+- Type: perennial allium, evergreen in this climate
+- Container: 10 in pot, 12 in deep
+- Sown: n/a
+- Status: planned
+- Plan: buy a nursery clump rather than seed. Cut individual leaves to within 1 to 2 in of
+  the soil rather than shearing the whole clump, and deadhead every flower.
+- Learnings:
+- Notes: the one herb here that wants the same watering as a vegetable, so it would have
+  tolerated a shared bed. Seed may not be cuttable for a year on a part-shade site, where
+  a clump cuts in 30 to 60 days. Divide every 2 to 5 years.
+
+### Oregano — True Greek
+- Species: oregano
+- Area: 0.051 m2
+- Type: perennial, compact at the Greek subspecies size
+- Container: 10 in pot, 12 in deep
+- Sown: n/a
+- Status: planned
+- Plan: buy Origanum vulgare subsp. hirtum by name, not plain Origanum vulgare. Surface
+  sow without covering, because the seed has an absolute light requirement.
+- Learnings:
+- Notes: rated for 2 to 6 h of sun, which is why it beats sweet marjoram on this site.
+  Its own pot solves the water problem a shared bed would create. Rich soil costs it
+  pungency, so do not over-enrich the mix. Replace about every 4 years.
+
+### Thyme
+- Species: thyme
+- Area: 0.051 m2
+- Type: woody perennial, Mediterranean
+- Container: 10 in pot, 12 in deep
+- Sown: n/a
+- Status: planned
+- Plan: buy a plant, not seed. Water sparingly and let it dry between waterings.
+- Learnings:
+- Notes: from seed it gives almost nothing in its first year, and UC lists only stem
+  cuttings as its propagation method. Wet soil is what kills it here rather than cold, and
+  in a wet climate most selections last only a season or two, so the separate pot and a
+  drier schedule are the whole point.
+
+### Cilantro — pot 2
+- Species: cilantro
+- Area: 0.051 m2
+- Type: annual, taproot, bolts under heat
+- Container: 10 in pot, 12 in deep
+- Sown: n/a
+- Status: planned
+- Plan: sow direct into the pot. Resow every 3 to 4 weeks for a continuous supply.
+- Learnings:
+- Notes: difficult to transplant because of the taproot, so this is a fresh sowing rather
+  than a move of the seedlings already up in the 8 in pot. Those stay where they are and
+  become the first of the succession.
+
+### Dill — pot 2
+- Species: dill
+- Area: 0.051 m2
+- Type: annual, deep taproot
+- Container: 10 in pot, 12 in deep
+- Sown: n/a
+- Status: planned
+- Plan: sow direct, and buy a compact cultivar such as Ella, Monia, Fernleaf or Bouquet.
+- Learnings:
+- Notes: standard dill reaches 3 to 4 ft and would topple a 10 in pot, which is why the
+  cultivar choice matters more than the pot size here. The 12 in depth suits the taproot.
+  Sown direct because the taproot makes transplanting difficult.
+
+### Parsley — pot 2
+- Species: parsley
+- Area: 0.051 m2
+- Type: biennial, taproot
+- Container: 10 in pot, 12 in deep
+- Sown: n/a
+- Status: planned
+- Plan: sow direct. Slow, at 70 to 90 days to harvest.
+- Learnings:
+- Notes: a second sowing rather than a move, because the one in the 8 in pot has not
+  germinated yet and is not due until about 13 October. Disturbing an ungerminated sowing
+  gains nothing.
+
+## Containers — 12 in pots
+
+### Basil
+- Species: basil
+- Area: 0.073 m2
+- Type: tender annual, warm season
+- Container: 12 in pot, 12 in deep, portable
+- Sown: n/a
+- Status: planned
+- Plan: sow 1/4 in deep. Keep it outdoors through October, then move it to a sunny indoor
+  window. Pinch stem tips and remove flower buds as they appear. Resow every 2 weeks.
+- Learnings:
+- Notes: this is the one crop fighting the calendar. Cold stunts it and blackens the leaves
+  at 50 F, and the local mean low is 60 F in October, 53 F in November, then 49 F from
+  December through March. So it works outdoors for about a month and then has to come
+  inside, which is only possible because the pot is portable.
+
 ## Archived

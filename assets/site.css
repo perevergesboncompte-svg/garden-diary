@@ -240,3 +240,8 @@ dd.dim { font-size: .84rem; }
 .gardenmap a:hover .m-soil, .gardenmap a:hover .m-plot { fill: var(--m-hover); }
 .m-spoke { stroke: var(--m-soilline); stroke-width: 1.5; }
 .m-potc { fill: var(--ink); font-size: 11px; text-anchor: middle; dominant-baseline: middle; font-weight: 600; }
+
+.m-potlabel { fill: var(--ink); font-size: 12px; font-weight: 600; text-anchor: middle; }
+.m-dim { fill: var(--soft); font-weight: 400; }
+.m-left { text-anchor: start; }
+.m-side { text-anchor: start; dominant-baseline: middle; }

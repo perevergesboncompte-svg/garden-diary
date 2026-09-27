@@ -738,17 +738,113 @@ def build_map(plants):
     P.append("</svg>")
 
     body = ["<h1>Garden map</h1>",
-            "<p class='lede'>Looking down on the southwest balcony, each mark a seed "
-            "at roughly where it sits. The afternoon sun reaches the right bed first, "
-            "and the wall behind shades all three until about 1:30. Tap a bed to open "
-            "that planting.</p>",
+            "<p class='lede'>Two balconies facing opposite ways, so each gets its own "
+            "plan below. Marks in the beds are seeds at roughly where they sit; each pot "
+            "carries one crop and one mark. Tap anything to open that planting.</p>",
+            "<h2>Southwest balcony</h2>",
+            "<p class='meta'>Shaded until about 1:30, then sun until an hour before "
+            "sunset. 4 to 5 h in September, 2.5 h in December.</p>",
             "".join(P),
-            "<p class='meta'>Beds run left to right: 40 Tonda di Parigi carrots in the "
-            "left low bed, 42 Wando peas in the raised middle, spinach and lettuce in "
-            "the sunniest right bed. The pot sits to the left. Carrot marks show the "
-            "stand after thinning, not the 80 seeds that go in. Tell me if the "
-            "arrangement differs.</p>"]
+            "<p class='meta'>Left to right: 40 Tonda di Parigi carrots in the left low "
+            "bed, 42 Wando peas in the raised middle, spinach and lettuce in the right. "
+            "Carrot marks show the stand after thinning, not the 80 seeds that go in.</p>",
+            "<h2>South-east balcony</h2>",
+            "<p class='meta'>Morning sun, measured at 5.1 h in October falling to 3.7 h "
+            "in December. Better than the southwest balcony in winter, but it never "
+            "reaches the 6 h a full-sun crop is specified for.</p>",
+            build_map_se(plants),
+            "<p class='meta'>Pots move between balconies freely, so these positions are "
+            "a plan rather than a fixture. Thyme and oregano sit here because it is the "
+            "sunnier of the two in winter. Basil comes indoors in November. The nine "
+            "unlabelled pots are spare, and the suggestion for them is a succession of "
+            "lettuce, green onion and radish sown two pots at a time every fortnight, "
+            "plus one pot of garlic as a trial.</p>"]
     return page("Garden map", "".join(body), "map")
+
+
+SE_BED = {"x": 40, "y": 112, "w": 368, "h": 144,
+          "plots": [("fava-windsor", 0.72, 9, 2), ("rocket", 0.28, 11, 1)]}
+SE_SMALL = [("chives", "Chives"), ("oregano-true-greek", "Oregano"),
+            ("thyme", "Thyme"), ("cilantro-pot-2", "Cilantro"),
+            ("dill-pot-2", "Dill"), ("parsley-pot-2", "Parsley")]
+SE_LARGE = [("basil", "Basil")]
+SE_SPARE = ["Lettuce", "Lettuce", "Green onion", "Radish", "Lettuce",
+            "Green onion", "Radish", "Spinach", "Garlic trial"]
+
+
+def _pot(cx, cy, r, label, slug, plants):
+    """One pot: rim, a single state mark, and the crop name below the rim."""
+    out = [f'<circle cx="{cx}" cy="{cy}" r="{r}" class="m-pot"/>']
+    ty = cy + r + 15
+    if slug:
+        stt, _ = _status_of(slug, plants)
+        out.append(f'<a href="plants/{slug}.html">{_marker(cx, cy, stt, 5)}'
+                   f'<text x="{cx}" y="{ty}" class="m-potlabel">{esc(label)}</text></a>')
+    else:
+        out.append(f'{_marker(cx, cy, "planned", 5)}'
+                   f'<text x="{cx}" y="{ty}" class="m-potlabel m-dim">'
+                   f'{esc(label)}</text>')
+    return "".join(out)
+
+
+def build_map_se(plants):
+    """Plan of the south-east balcony: the 12 in bed plus the sixteen new pots.
+
+    Drawn at a smaller scale than the southwest panel so sixteen pots fit, and the
+    sun sits upper left because this balcony takes its light in the morning.
+    """
+    P = ['<svg viewBox="0 0 900 880" role="img" '
+         'aria-label="South-east balcony plan with the new bed and pots" '
+         'class="gardenmap">']
+    P.append('<rect x="10" y="10" width="880" height="860" rx="14" class="m-floor"/>')
+    P.append('<text x="34" y="42" class="m-edge">Wall behind</text>')
+    P.append('<line x1="24" y1="54" x2="876" y2="54" class="m-wall"/>')
+    P.append('<line x1="24" y1="826" x2="876" y2="826" class="m-rail"/>')
+    P.append('<text x="34" y="852" class="m-edge">Open railing, south-east, '
+             'morning sun</text>')
+    rays = "".join(
+        f'<line x1="{13*math.cos(math.radians(d)):.0f}" '
+        f'y1="{13*math.sin(math.radians(d)):.0f}" '
+        f'x2="{22*math.cos(math.radians(d)):.0f}" '
+        f'y2="{22*math.sin(math.radians(d)):.0f}" class="m-ray"/>'
+        for d in range(0, 360, 45))
+    P.append(f'<g class="m-sun" transform="translate(832,196)">{rays}'
+             '<circle r="14"/></g>')
+    P.append('<path d="M812 212 L536 244" class="m-beam"/>')
+
+    b = SE_BED
+    P.append(f'<rect x="{b["x"]-7}" y="{b["y"]-7}" width="{b["w"]+14}" '
+             f'height="{b["h"]+14}" rx="12" class="m-lift"/>')
+    P.append(f'<rect x="{b["x"]}" y="{b["y"]}" width="{b["w"]}" height="{b["h"]}" '
+             f'rx="10" class="m-soil m-raised"/>')
+    P.append(f'<text x="{b["x"]+b["w"]//2}" y="{b["y"]-18}" class="m-label">'
+             f'New bed, 46 by 18 by 12 in</text>')
+    yy = b["y"]
+    for slug, frac, cols, rows in b["plots"]:
+        h = b["h"] * frac
+        stt, name = _status_of(slug, plants)
+        P.append(f'<a href="plants/{slug}.html">')
+        P.append(f'<rect x="{b["x"]}" y="{yy:.0f}" width="{b["w"]}" '
+                 f'height="{h:.0f}" rx="8" class="m-plot"/>')
+        P.append(_grid(b["x"], yy, b["w"], h, cols, rows, stt))
+        P.append(f'<text x="{b["x"]+b["w"]+12}" y="{yy+h/2:.0f}" '
+                 f'class="m-crop m-side">{esc(name.split("—")[0].strip())}</text></a>')
+        yy += h
+
+    P.append('<text x="40" y="330" class="m-label m-left">Six 10 in pots, '
+             '12 in deep, one herb each</text>')
+    for i, (slug, label) in enumerate(SE_SMALL):
+        P.append(_pot(78 + i * 138, 392, 40, label, slug, plants))
+
+    P.append('<text x="40" y="500" class="m-label m-left">Ten 12 in pots, '
+             '12 in deep</text>')
+    filled = [(s, lab) for s, lab in SE_LARGE] + [(None, lab) for lab in SE_SPARE]
+    for i, (slug, label) in enumerate(filled):
+        cx = 86 + (i % 5) * 160
+        cy = 568 + (i // 5) * 150
+        P.append(_pot(cx, cy, 48, label, slug, plants))
+    P.append("</svg>")
+    return "".join(P)
 
 
 def build_today(plants):
