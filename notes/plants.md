@@ -153,19 +153,24 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
   packet's 18 to 36 in, which the 18 in bed width forces, and upright favas lean on each
   other so staking should not be needed out of high wind.
 
-### Rocket
+### Rocket — Astro
 - Species: arugula
 - Area: 0.148 m2
 - Type: fast cut-and-come-again leaf
 - Container: south-east bed, front 5 in strip on the railing side
 - Sown: n/a
 - Status: planned
-- Plan: 11 plants in one row, 4 in apart at cutting spacing, 1/4 in deep. Shear to 2.5 cm
-  for 3 to 4 cuts.
+- Plan: Astro cultivar. 7 stations along the row 6 in apart, 3 seeds each at 1/4 in deep,
+  thinned to one per station once they are half an inch tall. Shear to 2.5 cm for 3 to 4
+  cuts. [seed packet]
 - Learnings:
-- Notes: 23 to 40 days makes it the fastest thing in the garden, so it should give several
-  cuts before the fava behind it is tall enough to shade it. Bolts above 80 F. Same plant
-  as arugula, which was ruled out earlier on flavour, so treat this as a trial.
+- Notes: Astro chosen over plain arugula on two counts, both from the packet: it is the
+  milder of the two where the standard type is described as peppery, mustardy and hot, and
+  it is slower to bolt with wider leaves. That matters because arugula was ruled out
+  earlier on flavour, so this is a trial of the mild end of the crop rather than a repeat.
+  32 to 55 days against 20 to 45 for the standard type, so milder costs about ten days.
+  Germination 10 to 15 days. The packet's own advice that afternoon shade prolongs the
+  harvest describes this balcony exactly.
 
 ## Containers — 10 in herb pots
 
