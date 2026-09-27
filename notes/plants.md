@@ -70,8 +70,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.155 m2
 - Type: annual, cut-and-come-again, part sun suits it
 - Container: right bed (sunniest), left half, beside the spinach
-- Sown: n/a
-- Status: planned
+- Sown: 26.09.2026
+- Status: sown
 - Plan: 6 plants in 2 columns of 3 across the left half, which is 10.5 in wide by 23 in
   deep. Columns 6 in apart, rows about 7 in apart, which is the 15 cm cutting spacing
   rather than the 30 cm spacing a full head needs. Sow 1/4 in deep, a few seeds a station,
@@ -110,8 +110,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.31 m2
 - Type: round Paris Market carrot, short and bulky, sized for a shallow bed
 - Container: left bed, whole bed
-- Sown: n/a
-- Status: planned
+- Sown: 26.09.2026
+- Status: sown
 - Plan: 4 rows running left to right across the 21 in width, 6 in apart, the first row
   2.5 in in from the back edge. Sow 1/4 in (6 mm) deep with seeds 1 in apart, which is
   20 seeds a row and 80 in the bed. At 1 in tall thin to one every 2 in, leaving 10 a

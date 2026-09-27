@@ -1,5 +1,19 @@
 # Garden Journal
 
+## 26.09.2026
+
+### Carrots and lettuce sown
+- Action: sowed
+- Plants: carrots, lettuce
+- Details: Tonda di Parigi carrots into the left bed, 4 rows across the 21 in width at
+  1/4 in deep, thinning to 40 once they are an inch tall. Lettuce into the left half of
+  the right bed beside the spinach, 6 plants in 2 columns of 3.
+- Note: Soil was 71.4 F at 6 cm, inside carrot's 45 to 75 F range and under the 80 F
+  ceiling above which lettuce germination drops off. Both beds need covering through the
+  4 October heat, which is forecast at 92 F with 29 mph wind. Every crop here so far has
+  come up ahead of its window, so that heat will most likely land on seedlings rather
+  than on seed, which is the worse case of the two.
+
 ## 25.09.2026
 
 ### Lettuce sowing plan set for tomorrow

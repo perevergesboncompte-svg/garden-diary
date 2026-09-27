@@ -75,7 +75,7 @@ by three or four hours, which matters for any bed that only gets morning light. 
 - Exposures: two, facing opposite ways. The southwest balcony holds the three 8 in beds
   and the pot, and is the one the sun table below measures. The south-east balcony holds
   the 12 in bed, takes its light in the morning, and has not been measured yet
-- Sun window hours: 14-18 on the southwest balcony
+- Sun window hours: 14-18
 - Sun needed by cool-season crops: 3 to 6 hours (Maryland Extension), so this site's
   measured 4 to 5 hours is inside the range for leafy greens and marginal for roots,
   which Colorado State puts at 8 hours
