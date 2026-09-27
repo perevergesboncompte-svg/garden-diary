@@ -40,6 +40,7 @@
 - Rotation gap in open ground years: 2 out of crucifers, to control clubroot [UC Davis Vegetable Research and Information Center]
 - Do not follow: Brassicaceae [UC Davis Vegetable Research and Information Center]
 - Density needs nitrogen to pay: total yield rises with plant density but head weight falls linearly, and the highest yields came only at the highest nitrogen rate tested [Dufault and Waters 1985, HortScience 20:127]
+- Density disagreement: a Cornell trial found the higher of two populations worse rather than better, giving lighter heads and a dragged-out harvest for the same yield, and lower density also reduced hollow stem and blind plants [Bjorkman and Shail 2011, Eastern Broccoli Project]
 
 ## Bolting
 - Cold is the trigger and not heat: premature bolting happens when cold induces small plants to start flowering, and the widespread belief that heat causes it is backwards [Farnham and Bjorkman 2011, HortScience 46:1093]
@@ -52,8 +53,14 @@
 
 ## Harvest
 - Repeat harvest: yes, from axillary side shoots after the main head is cut, and one planting may produce for as long as 3 months in late fall or winter [UC Davis Vegetable Research and Information Center]
+- Documented ceiling against that three month figure: only secondary and tertiary shoots are worth cutting, giving a harvest of 2 to 5 weeks rather than months, and tertiary shoots run tough [Johnny's Selected Seeds Tech Sheet 8299, corroborated independently by Martin and Sideman 2012, HortTechnology 22:345]
+- Cut the central head early to protect the side shoots: cut the first central floret as soon as it forms, because letting it grow on may greatly diminish total side-shoot yield [Johnny's Selected Seeds Tech Sheet 8299]
+- Picking interval: check for new side shoots every 2 to 3 days in warm weather, every 5 to 7 in cool [Johnny's Selected Seeds Tech Sheet 8304]
 - Side shoot size: 3 to 6 in long, given extra water and fertiliser [Utah State Extension]
-- Side shoot yield weight: not published by any extension source reached
+- Side shoot count per plant: measured by cultivar and it varies enormously, from 2.0 down to zero, so side shoots are a cultivar trait rather than a general property of heading broccoli [Guan 2020, Purdue Midwest Vegetable Trial Reports Paper 11: Green Magic 2.0, Blue Wind 1.80, Bay Meadows 1.20, Gypsy 0.46, Arcadia 0.13, Belstar 0]
+- Catalogue copy is not a guide to side shoots: one cultivar measured at zero secondary heads in that trial is marketed by its own seller for good side-shoot production, so buy on trial data where it exists [Guan 2020 against Johnny's Selected Seeds on Belstar]
+- Best documented cultivar for side shoots: Green Magic, measured as both the top side-shoot producer and the top total yielder in the same trial [Guan 2020]
+- Side shoot yield weight alone: still not separated from main-head weight by any source reached, because the trial reporting counts separately reports weight only as a combined total
 - Crowding suppresses side shoots: spacing as close as 1 by 1 ft reduces head size and inhibits side shoot development, which is the trade-off that matters most in a small bed [Utah State Extension]
 - Feed after the main cut: side-dress once the central head is taken, to push the side shoots [University of Maryland Extension, Utah State Extension]
 - Harvest indicator: cut when the main head is 3 to 6 in across, the beads are still tightly closed and dark or bright green, and the head is firm to hand pressure [Clemson HGIC, UC ANR Publication 7211]
