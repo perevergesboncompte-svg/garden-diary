@@ -19,7 +19,12 @@
 
 ## Growing
 - Days to harvest: 75 [Botanical Interests, Windsor]
-- Days to harvest by a generic figure: four to five months, which conflicts sharply with the cultivar figure above and is recorded rather than reconciled [NC State Extension]
+- Days to harvest by a generic figure: four to five months [NC State Extension]
+- Days to harvest from an autumn sowing: about 210, because a packet day count assumes active warm-season growth and a winter sowing stretches it [Oregon State Extension]
+- Reading the three figures together: the 75 day packet number is a spring-sowing figure, so an October sowing here should be expected to hold the ground until May rather than to crop in December [hand-entered]
+- October may be cover-crop timing rather than vegetable timing: UC's statewide fava page gives February and March for vegetable use, against the Orange County chart's October [UC Small Farms against UC Master Gardeners of Orange County]
+- Staking: most broad beans need staking to stay upright, and the plant reaches 2 to 7 ft [Oregon State Extension]
+- Cultivar for wind: Coles Dwarf Prolific is described as suited to windy areas where plants may be blown over [Oregon State Extension]
 - Plant height inches: 24 to 48 [Botanical Interests, Windsor]
 - Staking: needed only in high wind areas, because the stems are sturdy [Botanical Interests, Windsor]
 - Grows best below F: 75, and it is exceptionally cold tolerant down to 10 F [Botanical Interests, Windsor]
@@ -30,7 +35,9 @@
 - Crop coefficient: 1.15 [hand-entered, dry bean class after FAO-56 Table 12, cited not copied]
 
 ## Raised beds and containers
-- Minimum soil depth inches: not stated by any source reached
+- Root depth: a taproot from 1 to 3 ft long [Oregon State Extension]
+- Minimum soil depth by a container rule of thumb: 16 to 40 in, being 4 in deeper than the mature root length, which a 12 in bed does not meet [UC Master Gardeners of Contra Costa County applied to the root depth above]
+- Shade tolerance: the one publication with a field for it prints No information, and NC State tags the crop full sun only in the same database that grants peas partial shade [Oregon State Extension, NC State Extension]
 - Space to plant: 12 inches to 3 feet [NC State Extension]
 - Bed width note: at the stated 18 to 36 in row spacing an 18 in bed holds one row, and two rows only if that spacing is halved [hand-entered, arithmetic from the figures above]
 
