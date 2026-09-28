@@ -30,6 +30,9 @@
 - Container depth inches: 6 to 12 [Maryland 6, Colorado State 8, NC State 12]
 - Minimum soil depth inches: 12 [USDA NRCS, minimum effective rooting depth on restricted soils, which is an irrigation figure rather than a recommended box depth]
 - Raised bed: fits at the low end, and it needs support [hand-entered]
+- Vine height inches for Wando: 24 to 30 on the packet, but two growers on that same page report 4 ft and 6 ft, so size a support for 4 ft rather than 30 in [Botanical Interests, Wando, and its own customer reports]
+- Support requirement: not stated on the packet at all, appearing only in customer reports, which is a gap worth knowing before buying a support [Botanical Interests, Wando]
+- What peas grip: tendrils need something thin, so netting or string works where a half inch cane is too thick to climb [hand-entered]
 - Container friendly: 5 of 5 varieties say yes [PlantVarietyDB]
 - Soil profile depth: medium (50-150 cm) [EcoCrop, field soil depth class, NOT rooting depth, do not read as a pot size]
 
