@@ -1,5 +1,19 @@
 # Garden Journal
 
+## 03.10.2026
+
+### Lettuce and carrots both up on day 7
+- Action: observed
+- Plants: lettuce, carrots
+- Details: First sprouts on both, seven days after the 26 September sowing. Lettuce landed
+  inside its predicted 1 to 6 October window. Carrots beat theirs by three days, that
+  window not opening until 6 October.
+- Note: The heat spike has worsened sharply since it was first flagged. The forecast now
+  reads 100 F today, 99 F tomorrow and 99 F on the 5th, three consecutive days rather than
+  the single 92 F day originally expected. Both beds hold day-one seedlings, which is the
+  worst possible timing. Lettuce germination falls off above 80 F and carrot's absolute
+  maximum is 86 F, so shade over both beds has stopped being precautionary.
+
 ## 26.09.2026
 
 ### Carrots and lettuce sown

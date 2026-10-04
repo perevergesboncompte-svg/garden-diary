@@ -51,7 +51,9 @@ def species_table():
                 continue
             k, v = m.group(1).strip(), m.group(2).strip()
             if k == "Crop coefficient":
-                rec["kc"] = float(re.search(r"[\d.]+", v).group())
+                n = re.search(r"[\d.]+", v)
+                if n:
+                    rec["kc"] = float(n.group())
             elif k == "Germination window days":
                 n = re.findall(r"\d+", v)
                 if len(n) >= 2:
