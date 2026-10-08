@@ -141,12 +141,12 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.386 m2
 - Type: cool-season legume, upright to 24 to 48 in
 - Container: south-east bed, back two thirds against the wall
-- Sown: n/a
-- Status: planned
+- Sown: 07.10.2026
+- Status: sown
 - Plan: 18 plants in 2 rows 9 in apart, seeds 5 in apart and 2 in deep. One packet is
   about 18 seeds, so the bed takes exactly one. Back of the bed because it shades
   whatever sits in front of it. [seed packet]
-- Learnings:
+- Learnings: Packet held 22 seeds against the stated 18, so 4 are spare after the 18-plant stand.
 - Notes: 75 days on the packet against four to five months in the generic extension data,
   a conflict worth watching since it decides whether this is a December or a March
   harvest. Grows best below 75 F and the local winter high of 63 F suits it. Direct sow
@@ -159,8 +159,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.148 m2
 - Type: fast cut-and-come-again leaf
 - Container: south-east bed, front 5 in strip on the railing side
-- Sown: n/a
-- Status: planned
+- Sown: 07.10.2026
+- Status: sown
 - Type: perennial cutting green, a different genus from salad arugula
 - Plan: 7 stations along the front strip 6 in apart, 6 seeds each at 1/4 in deep, thinned
   to one per station once they are half an inch tall. Pick leaves individually or cut the

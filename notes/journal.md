@@ -1,5 +1,20 @@
 # Garden Journal
 
+## 07.10.2026
+
+### Fava and wild rocket sown in the south-east bed
+- Action: sowed
+- Plants: fava, rocket
+- Details: Windsor fava, 18 plants in 2 rows 9 in apart along the back of the bed against
+  the wall, seeds 5 in apart and 2 in deep. Wild rocket in the front 5 in strip, 7 stations
+  6 in apart at a quarter inch deep, to be thinned to one per station.
+- Note: The packet held 22 seeds where Botanical Interests states about 18, leaving 4 spare.
+  Both crops are listed at 10 to 15 days to germinate, so first sprouts are due 17 to 22
+  October. Fava goes at the back because it reaches 24 to 48 in on the packet and 2 to 7 ft
+  by Oregon State's figure, so it would shade the rocket otherwise. Staking is the open
+  question: the packet asks for it only in high wind, Oregon State says most broad beans
+  need it, and this balcony is exposed.
+
 ## 03.10.2026
 
 ### Lettuce and carrots both up on day 7
