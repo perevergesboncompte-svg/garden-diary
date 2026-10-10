@@ -196,8 +196,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.051 m2
 - Type: perennial, compact at the Greek subspecies size
 - Container: 10 in pot, 12 in deep
-- Sown: n/a
-- Status: planned
+- Sown: 10.10.2026
+- Status: sown
 - Plan: buy Origanum vulgare subsp. hirtum by name, not plain Origanum vulgare. Surface
   sow without covering, because the seed has an absolute light requirement.
 - Learnings:
@@ -224,8 +224,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.051 m2
 - Type: annual, taproot, bolts under heat
 - Container: 10 in pot, 12 in deep
-- Sown: n/a
-- Status: planned
+- Sown: 10.10.2026
+- Status: sown
 - Plan: sow direct into the pot. Resow every 3 to 4 weeks for a continuous supply.
 - Learnings:
 - Notes: difficult to transplant because of the taproot, so this is a fresh sowing rather
@@ -250,8 +250,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.051 m2
 - Type: biennial, taproot
 - Container: 10 in pot, 12 in deep
-- Sown: n/a
-- Status: planned
+- Sown: 10.10.2026
+- Status: sown
 - Plan: sow direct. Slow, at 70 to 90 days to harvest.
 - Learnings:
 - Notes: a second sowing rather than a move, because the one in the 8 in pot has not
@@ -265,8 +265,8 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Area: 0.073 m2
 - Type: tender annual, warm season
 - Container: 12 in pot, 12 in deep, portable
-- Sown: n/a
-- Status: planned
+- Sown: 10.10.2026
+- Status: sown
 - Plan: sow 1/4 in deep. Keep it outdoors through October, then move it to a sunny indoor
   window. Pinch stem tips and remove flower buds as they appear. Resow every 2 weeks.
 - Learnings:

@@ -1,5 +1,31 @@
 # Garden Journal
 
+## 10.10.2026
+
+### Four herbs sown into their own pots
+- Action: sowed
+- Plants: basil, oregano, parsley, cilantro
+- Details: Basil, True Greek oregano, parsley and cilantro each into an individual pot.
+- Note: Oregano went in as seed rather than as a bought plant. Two things decide whether it
+  works. The seed has an absolute light requirement, so it must sit pressed onto the surface
+  and not be covered, and seed-grown oregano is variable in flavour where a nursery plant is
+  not. If nothing germinates in 7 to 14 days, burial is the first thing to suspect.
+
+### What the six photos show
+- Action: observed
+- Plants: carrots, spinach, peas, cilantro, dill, lettuce
+- Details: Carrots up in all 4 rows at thread stage, clumped rather than evenly spaced, not
+  yet an inch tall. Cilantro and dill in the shared pot both healthy and deep green, with
+  cardboard dividers between the sections. No parsley showing in its section of that pot.
+  Lettuce at cotyledon stage. Peas sprawling with tendrils already reaching for something
+  to climb.
+- Learnings: The growing medium reads as a bark-heavy mulch in every photo rather than a
+  garden or potting mix. Bark immobilises nitrogen as it breaks down, which is the most
+  likely reason the spinach is pale yellow-green at 25 days while the cilantro and dill in a
+  different pot are deep green. That makes feeding the beds more useful than treating the
+  leafminer.
+- Note: Pea support is now overdue, the tendrils having nothing to hold.
+
 ## 07.10.2026
 
 ### Fava and wild rocket sown in the south-east bed
