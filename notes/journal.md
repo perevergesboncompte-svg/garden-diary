@@ -20,10 +20,13 @@
   Lettuce at cotyledon stage. Peas sprawling with tendrils already reaching for something
   to climb.
 - Learnings: The growing medium reads as a bark-heavy mulch in every photo rather than a
-  garden or potting mix. Bark immobilises nitrogen as it breaks down, which is the most
-  likely reason the spinach is pale yellow-green at 25 days while the cilantro and dill in a
-  different pot are deep green. That makes feeding the beds more useful than treating the
-  leafminer.
+  garden or potting mix, which is worth knowing but is not currently causing a symptom.
+  Measuring leaf colour in the photos puts spinach at hue 79.6 degrees against dill at 78 to
+  80, with near-identical RGB on the lit patches, so the two are the same green. An earlier
+  reading of the spinach as pale and nitrogen-short came from comparing a shaded spinach leaf
+  against a lit dill leaf, lightness in that one photo running from 36 to 57 percent. Colour
+  judgements from a photo need a lit-to-lit comparison or a measurement, not an eyeball
+  across two frames.
 - Note: Pea support is now overdue, the tendrils having nothing to hold.
 
 ## 07.10.2026
