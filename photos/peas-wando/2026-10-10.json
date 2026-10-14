@@ -5,6 +5,18 @@
   "blob_count": 8,
   "blob_area_median": 1973,
   "blob_area_largest": 305412,
+  "holes_worst_plant": 51,
+  "hole_area_pct_worst": 0.461,
+  "holes_per_plant": [
+    51,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
   "hue_circular_mean": 99.27,
   "hue_circular_sd": 19.23,
   "light_dependent": {

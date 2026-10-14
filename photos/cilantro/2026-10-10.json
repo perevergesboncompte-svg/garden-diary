@@ -1,19 +1,29 @@
 {
   "colour_method": "uncorrected",
   "pixels": 1470000,
-  "cover_pct": 10.57,
+  "cover_pct": 10.551,
   "blob_count": 6,
   "blob_area_median": 227,
-  "blob_area_largest": 104799,
-  "hue_circular_mean": 73.89,
-  "hue_circular_sd": 6.09,
+  "blob_area_largest": 104534,
+  "holes_worst_plant": 84,
+  "hole_area_pct_worst": 8.872,
+  "holes_per_plant": [
+    84,
+    48,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hue_circular_mean": 73.86,
+  "hue_circular_sd": 6.05,
   "light_dependent": {
-    "dgci": 0.3297,
-    "saturation": 0.5421,
-    "value": 0.7003,
-    "g_minus_b": 94.69,
-    "lab_a": -21.86,
-    "lab_b": 44.72
+    "dgci": 0.3293,
+    "saturation": 0.5417,
+    "value": 0.7014,
+    "g_minus_b": 94.82,
+    "lab_a": -21.88,
+    "lab_b": 44.79
   },
   "date": "2026-10-10"
 }

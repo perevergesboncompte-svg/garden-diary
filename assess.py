@@ -19,6 +19,8 @@ MIN_BLOB_PX = 40
 LONG_EDGE = 1400
 MERGE_PX = 9
 HUE_SHIFT_FLOOR_DEG = 4.0
+MIN_VALUE = 30
+HOLE_PX = (4, 300)
 
 
 def load(path):
@@ -54,9 +56,50 @@ def correct_colour(path_img):
 
 
 def vegetation_mask(bgr):
-    """Mask green foliage by thresholding the LAB green-red opponent channel."""
+    """Mask green foliage by LAB green-red opponent, above a brightness floor."""
     lab = cv2.cvtColor(bgr, cv2.COLOR_BGR2LAB).astype(np.float32)
-    return ((lab[:, :, 1] - 128.0) < A_STAR_MAX)
+    return ((lab[:, :, 1] - 128.0) < A_STAR_MAX) & (bgr.max(axis=2) >= MIN_VALUE)
+
+
+def plant_labels(mask):
+    """Label foliage into plants, returning the label image and kept label ids."""
+    grouped = cv2.dilate(mask.astype(np.uint8), np.ones((MERGE_PX, MERGE_PX), np.uint8))
+    n, labelled, _, _ = cv2.connectedComponentsWithStats(grouped, 8)
+    if n < 2:
+        return labelled, []
+    area = np.bincount(labelled[mask].ravel(), minlength=n)
+    return labelled, [i for i in range(1, n) if area[i] >= MIN_BLOB_PX]
+
+
+def holes_per_plant(mask, labelled, ids):
+    """Count enclosed gaps within each plant and their share of its leaf area.
+
+    Returns:
+        List of per-plant (hole count, hole area percent), worst first, which is
+        only comparable between plants of one crop because finely divided
+        foliage encloses gaps of its own.
+    """
+    lo, hi = HOLE_PX
+    out = []
+    for i in ids:
+        sel = mask & (labelled == i)
+        ys, xs = np.nonzero(labelled == i)
+        if not len(ys):
+            continue
+        sub = sel[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+        pad = np.pad(sub, 1, constant_values=False)
+        n, _, stats, _ = cv2.connectedComponentsWithStats((~pad).astype(np.uint8), 4)
+        px = count = 0
+        for j in range(1, n):
+            x, y, bw, bh, area = stats[j]
+            if x == 0 or y == 0 or x + bw >= pad.shape[1] or y + bh >= pad.shape[0]:
+                continue
+            if lo <= area <= hi:
+                count += 1
+                px += int(area)
+        leaf = int(sub.sum())
+        out.append((count, round(100.0 * px / leaf, 3) if leaf else 0.0))
+    return sorted(out, reverse=True)
 
 
 def blobs(mask):
@@ -127,6 +170,8 @@ def assess(path):
     bgr, method = correct_colour(load(path))
     mask = vegetation_mask(bgr)
     areas = blobs(mask)
+    labelled, ids = plant_labels(mask)
+    dmg = holes_per_plant(mask, labelled, ids)
     rec = {
         "colour_method": method,
         "pixels": int(mask.size),
@@ -134,6 +179,9 @@ def assess(path):
         "blob_count": len(areas),
         "blob_area_median": int(np.median(areas)) if areas else 0,
         "blob_area_largest": areas[0] if areas else 0,
+        "holes_worst_plant": dmg[0][0] if dmg else 0,
+        "hole_area_pct_worst": dmg[0][1] if dmg else 0.0,
+        "holes_per_plant": [c for c, _ in dmg],
     }
     rec.update(colour_metrics(bgr, mask))
     return rec
