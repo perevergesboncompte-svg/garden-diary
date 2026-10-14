@@ -5,14 +5,15 @@
   "blob_count": 5,
   "blob_area_median": 3379,
   "blob_area_largest": 177766,
-  "dgci": 0.3833,
-  "hue_deg": 79.93,
-  "saturation": 0.496,
-  "value": 0.6861,
-  "ikaw": 0.255,
-  "g_minus_b": 86.54,
-  "lab_a": -23.01,
-  "lab_b": 40.33,
-  "yellow_fraction": 0.0384,
+  "hue_circular_mean": 79.9,
+  "hue_circular_sd": 7.21,
+  "light_dependent": {
+    "dgci": 0.3833,
+    "saturation": 0.496,
+    "value": 0.6861,
+    "g_minus_b": 86.54,
+    "lab_a": -23.01,
+    "lab_b": 40.33
+  },
   "date": "2026-10-10"
 }

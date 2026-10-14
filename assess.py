@@ -17,9 +17,8 @@ PHOTOS = ROOT / "photos"
 A_STAR_MAX = -8.0
 MIN_BLOB_PX = 40
 LONG_EDGE = 1400
-DEG_PERCEPTIBLE = 5.0
-YELLOW_HUE_MAX = 70.0
 MERGE_PX = 9
+HUE_SHIFT_FLOOR_DEG = 4.0
 
 
 def load(path):
@@ -77,11 +76,27 @@ def blobs(mask):
     return sorted(areas, reverse=True)
 
 
+def circular_hue(hue_deg):
+    """Return the circular mean and standard deviation of hue angles in degrees.
+
+    Arguments:
+        hue_deg: Hue angles on the 0-360 scale, which wrap and so cannot be
+            averaged arithmetically.
+    """
+    rad = np.deg2rad(hue_deg.astype(np.float64))
+    c, s = np.cos(rad).mean(), np.sin(rad).mean()
+    mean = np.rad2deg(np.arctan2(s, c)) % 360.0
+    r = min(1.0, (c * c + s * s) ** 0.5)
+    sd = np.rad2deg((-2.0 * np.log(r)) ** 0.5) if r > 0 else 180.0
+    return float(mean), float(sd)
+
+
 def colour_metrics(bgr, mask):
-    """Compute foliage colour indices over the masked pixels.
+    """Measure foliage colour, separating the light-robust hue from the rest.
 
     Returns:
-        Mapping of index name to value, empty when the mask holds no pixels.
+        Mapping with hue at the top level and light-dependent indices nested
+        under light_dependent, empty when the mask holds no pixels.
     """
     if not mask.any():
         return {}
@@ -89,20 +104,21 @@ def colour_metrics(bgr, mask):
     hue = hsv[:, :, 0][mask].astype(np.float32) * 2.0
     sat = hsv[:, :, 1][mask].astype(np.float32) / 255.0
     val = hsv[:, :, 2][mask].astype(np.float32) / 255.0
+    hue_mean, hue_sd = circular_hue(hue)
     dgci = (((hue - 60.0) / 60.0) + (1.0 - sat) + (1.0 - val)) / 3.0
     b, g, r = [bgr[:, :, i][mask].astype(np.float32) for i in range(3)]
-    ikaw = np.divide(r - b, r + b, out=np.zeros_like(r), where=(r + b) > 0)
     lab = cv2.cvtColor(bgr, cv2.COLOR_BGR2LAB).astype(np.float32)
     return {
-        "dgci": round(float(dgci.mean()), 4),
-        "hue_deg": round(float(hue.mean()), 2),
-        "saturation": round(float(sat.mean()), 4),
-        "value": round(float(val.mean()), 4),
-        "ikaw": round(float(ikaw.mean()), 4),
-        "g_minus_b": round(float((g - b).mean()), 2),
-        "lab_a": round(float((lab[:, :, 1][mask] - 128.0).mean()), 2),
-        "lab_b": round(float((lab[:, :, 2][mask] - 128.0).mean()), 2),
-        "yellow_fraction": round(float((hue < YELLOW_HUE_MAX).mean()), 4),
+        "hue_circular_mean": round(hue_mean, 2),
+        "hue_circular_sd": round(hue_sd, 2),
+        "light_dependent": {
+            "dgci": round(float(dgci.mean()), 4),
+            "saturation": round(float(sat.mean()), 4),
+            "value": round(float(val.mean()), 4),
+            "g_minus_b": round(float((g - b).mean()), 2),
+            "lab_a": round(float((lab[:, :, 1][mask] - 128.0).mean()), 2),
+            "lab_b": round(float((lab[:, :, 2][mask] - 128.0).mean()), 2),
+        },
     }
 
 
@@ -137,22 +153,17 @@ def prior(slug):
 
 
 def deltas(rec, was):
-    """Compare a record with its predecessor, flagging changes above the floor."""
+    """Compare a record with its predecessor, gating hue on the illumination floor."""
     if not was:
         return {}
     out = {}
     for k in ("cover_pct", "blob_count", "blob_area_median"):
         if k in rec and k in was:
             out[f"d_{k}"] = round(rec[k] - was[k], 3)
-    if rec.get("colour_method") != was.get("colour_method"):
-        out["colour_comparable"] = False
-        return out
-    if all(k in rec and k in was for k in ("lab_a", "lab_b", "value")):
-        dist = ((rec["lab_a"] - was["lab_a"]) ** 2
-                + (rec["lab_b"] - was["lab_b"]) ** 2
-                + ((rec["value"] - was["value"]) * 100.0) ** 2) ** 0.5
-        out["colour_distance"] = round(dist, 2)
-        out["colour_changed"] = dist >= DEG_PERCEPTIBLE
+    if "hue_circular_mean" in rec and "hue_circular_mean" in was:
+        d = (rec["hue_circular_mean"] - was["hue_circular_mean"] + 180.0) % 360.0 - 180.0
+        out["d_hue_deg"] = round(d, 2)
+        out["hue_changed"] = abs(d) >= HUE_SHIFT_FLOOR_DEG
     return out
 
 
@@ -186,7 +197,8 @@ def main():
             dst.with_suffix(".json").write_text(json.dumps(rec, indent=2) + "\n")
             found += 1
             print(f"{sub.name}/{dst.name}  cover {rec['cover_pct']}%  "
-                  f"blobs {rec['blob_count']}  dgci {rec.get('dgci', '-')}  "
+                  f"plants {rec['blob_count']}  "
+                  f"hue {rec.get('hue_circular_mean', '-')}  "
                   f"[{rec['colour_method']}]")
     print(f"{found} photo(s) assessed" if found else "inbox empty")
 
