@@ -1,0 +1,18 @@
+{
+  "colour_method": "uncorrected",
+  "pixels": 1470000,
+  "cover_pct": 10.57,
+  "blob_count": 6,
+  "blob_area_median": 227,
+  "blob_area_largest": 104799,
+  "dgci": 0.3297,
+  "hue_deg": 73.89,
+  "saturation": 0.5421,
+  "value": 0.7003,
+  "ikaw": 0.3223,
+  "g_minus_b": 94.69,
+  "lab_a": -21.86,
+  "lab_b": 44.72,
+  "yellow_fraction": 0.1838,
+  "date": "2026-10-10"
+}

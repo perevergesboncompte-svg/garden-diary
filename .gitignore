@@ -4,3 +4,4 @@ __pycache__/
 daily.log
 .last-run
 daily.sh
+.scratch/
