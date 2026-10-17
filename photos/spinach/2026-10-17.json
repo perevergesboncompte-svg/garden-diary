@@ -1,0 +1,43 @@
+{
+  "colour_method": "uncorrected",
+  "pixels": 1101800,
+  "cover_pct": 6.528,
+  "blob_count": 15,
+  "blob_area_median": 901,
+  "blob_area_largest": 21889,
+  "holes_worst_plant": 15,
+  "hole_area_pct_worst": 1.427,
+  "holes_per_plant": [
+    15,
+    8,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hue_circular_mean": 84.32,
+  "hue_circular_sd": 14.53,
+  "light_dependent": {
+    "dgci": 0.3268,
+    "saturation": 0.539,
+    "value": 0.8878,
+    "g_minus_b": 121.17,
+    "lab_a": -34.86,
+    "lab_b": 51.76
+  },
+  "date": "2026-10-17",
+  "d_cover_pct": 0.131,
+  "d_blob_count": 9,
+  "d_blob_area_median": -14517,
+  "d_hue_deg": 4.66,
+  "hue_changed": true
+}

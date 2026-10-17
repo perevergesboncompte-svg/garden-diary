@@ -1,5 +1,44 @@
 # Garden Journal
 
+## 17.10.2026
+
+### Caterpillar found on the peas and spinach, and it is not the leafminer
+- Action: observed
+- Plants: peas, spinach, lettuce
+- Details: Pea leaflets skeletonised to lace with the veins left standing, several stripped
+  to bare petioles, and one spinach plant of six reduced to bare midribs while its five
+  neighbours stay untouched. Discrete dark pellets sit on the upper surface of a pea
+  leaflet. No slime anywhere in the frames.
+- Learnings: Last week's white serpentine mines were leafminer and that identification
+  still holds, but it is not what is doing this. Tissue removed through the full leaf
+  thickness, plus frass on the leaf surface, is a chewing larva. Damage concentrated on one
+  plant while its neighbours are clean reads as a single large larva rather than a
+  population. The small fly the gardener saw is the leafminer adult and a separate, minor
+  problem.
+- Note: Measured cover on the spinach frame fell from 6.405 to 4.815 percent while the
+  plants visibly grew, which only happens if foliage was removed. The pea bed is otherwise
+  dense and thriving, and the stakes are now in.
+
+### Rocket and fava up on day 10
+- Action: observed
+- Plants: fava, rocket
+- Details: Both reported sprouted, on the first day of the predicted 17 to 22 October
+  window for each.
+- Note: No photographs of either yet, so this rests on the gardener's eye rather than a
+  measurement.
+
+### Carrots approaching the thinning threshold
+- Action: observed
+- Plants: carrots
+- Details: Feathery true leaves now, rather than the single threads of a week ago. Median
+  leaf spread scaled against the known 21 in bed width was 1.02 in on 10 October.
+- Learnings: An overhead photograph measures leaf spread and cannot measure height, which
+  is what the packet's one-inch thinning trigger is stated in. The two are not
+  interchangeable and the gardener needs a ruler for that call.
+- Note: Plant count read 29 against 39 a week earlier while cover rose from 0.889 to 0.977
+  percent. Falling count with rising cover is the signature of neighbouring seedlings
+  merging into one blob, not of plants dying.
+
 ## 10.10.2026
 
 ### Four herbs sown into their own pots

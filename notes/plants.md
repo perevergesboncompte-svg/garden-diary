@@ -142,7 +142,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Type: cool-season legume, upright to 24 to 48 in
 - Container: south-east bed, back two thirds against the wall
 - Sown: 07.10.2026
-- Status: sown
+- Status: germinating
 - Plan: 18 plants in 2 rows 9 in apart, seeds 5 in apart and 2 in deep. One packet is
   about 18 seeds, so the bed takes exactly one. Back of the bed because it shades
   whatever sits in front of it. [seed packet]
@@ -160,7 +160,7 @@ one hour before sunset. 4.0 to 4.9 h in September, 2.5 h in December.
 - Type: fast cut-and-come-again leaf
 - Container: south-east bed, front 5 in strip on the railing side
 - Sown: 07.10.2026
-- Status: sown
+- Status: germinating
 - Type: perennial cutting green, a different genus from salad arugula
 - Plan: 7 stations along the front strip 6 in apart, 6 seeds each at 1/4 in deep, thinned
   to one per station once they are half an inch tall. Pick leaves individually or cut the
