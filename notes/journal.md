@@ -2,19 +2,29 @@
 
 ## 17.10.2026
 
-### Caterpillar found on the peas and spinach, and it is not the leafminer
+### Something is stripping the peas and spinach, and photographs cannot say what
 - Action: observed
 - Plants: peas, spinach, lettuce
-- Details: Pea leaflets skeletonised to lace with the veins left standing, several stripped
-  to bare petioles, and one spinach plant of six reduced to bare midribs while its five
-  neighbours stay untouched. Discrete dark pellets sit on the upper surface of a pea
-  leaflet. No slime anywhere in the frames.
-- Learnings: Last week's white serpentine mines were leafminer and that identification
-  still holds, but it is not what is doing this. Tissue removed through the full leaf
-  thickness, plus frass on the leaf surface, is a chewing larva. Damage concentrated on one
-  plant while its neighbours are clean reads as a single large larva rather than a
-  population. The small fly the gardener saw is the leafminer adult and a separate, minor
-  problem.
+- Details: Pea leaflets skeletonised with the veins left standing, several stripped to bare
+  petioles, and one spinach plant of six reduced to bare midribs while its five neighbours
+  stay untouched.
+- Learnings: Slugs, earwigs and young caterpillars all produce this and no photographic
+  feature separates them. Skeletonising in particular points away from caterpillars rather
+  than towards them: slug damage is described as removal of plant tissue between the veins
+  and on the leaf edges, which covers both damage types here in one sentence, while a
+  damage key puts skeletonising with slugs and beetles and puts caterpillars under entire
+  leaves consumed [Pacific Northwest Insect Management Handbook, NC State Extension].
+  Earwig damage on seedlings is described as missing all or parts of their leaves and stem,
+  which UC itself notes may resemble caterpillar feeding.
+- Learnings: Webbing is the one trace no mollusc and no earwig leaves, so it beats frass as
+  a caterpillar test. Slime is what separates molluscs from the other two. No source
+  reachable describes any way to make dried slime visible.
+- Note: An earlier entry here named a caterpillar on the strength of dark specks read as
+  frass on a pea leaflet. At full resolution those marks are diffuse, sit in the leaf plane
+  rather than on it and could be necrotic tissue or a collapsed mine, so the frass is
+  withdrawn and the identification with it. The leafminer identification from the previous
+  week stands, and is a separate minor problem whose adult is the small fly the gardener
+  saw.
 - Note: Measured cover on the spinach frame fell from 6.405 to 4.815 percent while the
   plants visibly grew, which only happens if foliage was removed. The pea bed is otherwise
   dense and thriving, and the stakes are now in.
